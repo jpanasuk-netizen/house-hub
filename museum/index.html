@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Museum of Stolen Fire — Path E Knowledge Atlas</title>
+<meta name="description" content="Path E knowledge atlas — steal free framing, park FOMO. Jeremy gates send/spend/publish."/>
+<style>
+:root{
+  --bg:#070b14; --bg2:#0c1220; --navy:#121a2e; --panel:#151d33;
+  --gold:#d4a84b; --gold2:#f0d78c; --amber:#c4892a;
+  --red:#c45c5c; --red2:#8b3030; --steal:#3d8f6e; --steal2:#2a6b52;
+  --ink:#e8e4d9; --muted:#8b93a7; --line:rgba(212,168,75,.18);
+  --glow:rgba(212,168,75,.35);
+  --font: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans: "Segoe UI",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); line-height:1.45;
+  min-height:100vh;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(212,168,75,.08), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(60,90,160,.06), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 80%, rgba(100,40,40,.05), transparent);
+}
+/* grain overlay */
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+a{color:var(--gold2)}
+.wrap{max-width:1120px; margin:0 auto; padding:0 1.25rem 4rem}
+
+/* HERO */
+.hero{
+  text-align:center; padding:3.5rem 1rem 2rem; position:relative;
+}
+.hero .torch{
+  width:48px; height:72px; margin:0 auto 1rem; position:relative;
+}
+.hero .torch svg{width:48px; height:72px; filter:drop-shadow(0 0 12px var(--glow))}
+.hero h1{
+  font-family:var(--font); font-weight:600; font-size:clamp(1.9rem,5vw,3.1rem);
+  letter-spacing:.04em; color:var(--gold2); margin:0 0 .4rem;
+  text-shadow:0 0 40px var(--glow);
+}
+.hero .sub{
+  color:var(--muted); font-size:1.05rem; max-width:36rem; margin:0 auto 1.5rem;
+  font-family:var(--font); font-style:italic;
+}
+.hero .tagline{
+  display:inline-flex; gap:.5rem; flex-wrap:wrap; justify-content:center;
+  font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold);
+}
+
+/* SPINE OS */
+.spine{
+  background:linear-gradient(180deg, var(--navy), var(--panel));
+  border:1px solid var(--line); border-radius:16px;
+  padding:1.5rem 1.25rem 1.75rem; margin:1.5rem 0 2.5rem;
+  box-shadow:0 0 0 1px rgba(0,0,0,.4), 0 20px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.04);
+  position:relative; overflow:hidden;
+}
+.spine::after{
+  content:""; position:absolute; top:0; left:10%; right:10%; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:.5;
+}
+.spine h2{
+  font-family:var(--font); text-align:center; color:var(--gold2);
+  font-size:1.15rem; letter-spacing:.08em; margin:0 0 .25rem;
+}
+.spine .spine-sub{text-align:center; color:var(--muted); font-size:.8rem; margin:0 0 1.25rem}
+.os-diagram{
+  display:grid; grid-template-columns:1fr; gap:1rem; align-items:center;
+}
+@media(min-width:720px){
+  .os-diagram{grid-template-columns:1fr auto 1fr; gap:1.25rem}
+}
+.pipe-row{
+  display:flex; flex-wrap:wrap; gap:.75rem; justify-content:center;
+}
+.pipe{
+  flex:1 1 140px; max-width:200px; text-align:center;
+  background:rgba(7,11,20,.65); border:1px solid var(--line);
+  border-radius:12px; padding:1rem .75rem; position:relative;
+  transition:border-color .25s, box-shadow .25s, transform .25s;
+}
+.pipe:hover{
+  border-color:var(--gold); box-shadow:0 0 24px var(--glow); transform:translateY(-2px);
+}
+.pipe .letter{
+  font-family:var(--font); font-size:1.6rem; color:var(--gold);
+  display:block; line-height:1; margin-bottom:.35rem;
+}
+.pipe .pname{font-size:.85rem; font-weight:600; color:var(--ink)}
+.pipe .pdesc{font-size:.7rem; color:var(--muted); margin-top:.25rem}
+.cos-core{
+  width:140px; height:140px; margin:0 auto;
+  border-radius:50%;
+  background:radial-gradient(circle at 40% 35%, #2a3550, #0e1528 70%);
+  border:2px solid var(--gold);
+  box-shadow:0 0 30px var(--glow), inset 0 0 20px rgba(212,168,75,.15);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  position:relative; animation:pulse 4s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 20px var(--glow), inset 0 0 20px rgba(212,168,75,.12)}
+  50%{box-shadow:0 0 40px rgba(212,168,75,.55), inset 0 0 28px rgba(212,168,75,.2)}
+}
+.cos-core .cos-label{font-size:.65rem; letter-spacing:.15em; text-transform:uppercase; color:var(--muted)}
+.cos-core .cos-name{font-family:var(--font); font-size:1.35rem; color:var(--gold2); margin:.15rem 0}
+.cos-core .cos-role{font-size:.7rem; color:var(--ink); opacity:.85}
+.cos-ring{
+  position:absolute; inset:-8px; border-radius:50%;
+  border:1px dashed rgba(212,168,75,.35);
+  animation:spin 40s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* CONTROLS */
+.controls{
+  position:sticky; top:0; z-index:100;
+  background:rgba(7,11,20,.92); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  padding:.75rem 0; margin:0 -1.25rem 1.5rem; padding-left:1.25rem; padding-right:1.25rem;
+}
+.controls-inner{max-width:1120px; margin:0 auto; display:flex; flex-wrap:wrap; gap:.6rem; align-items:center}
+.search{
+  flex:1 1 180px; min-width:140px;
+  background:var(--bg2); border:1px solid var(--line); color:var(--ink);
+  border-radius:8px; padding:.55rem .85rem; font-size:.9rem;
+  outline:none;
+}
+.search:focus{border-color:var(--gold); box-shadow:0 0 0 2px rgba(212,168,75,.2)}
+.chips{display:flex; flex-wrap:wrap; gap:.35rem}
+.chip{
+  background:transparent; border:1px solid var(--line); color:var(--muted);
+  border-radius:999px; padding:.35rem .7rem; font-size:.72rem;
+  letter-spacing:.04em; cursor:pointer; text-transform:uppercase;
+  transition:all .2s;
+}
+.chip:hover,.chip.on{
+  border-color:var(--gold); color:var(--gold2); background:rgba(212,168,75,.1);
+}
+.chip.on[data-f="Park"]{border-color:var(--red); color:#f0a8a8; background:rgba(196,92,92,.12)}
+.chip.on[data-f="Steal"]{border-color:var(--steal); color:#a8e0c8; background:rgba(61,143,110,.15)}
+.count-pill{
+  margin-left:auto; font-size:.75rem; color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+
+/* STRATEGY SPINE */
+.strategy{
+  margin:2rem 0 2.5rem; padding:1.5rem;
+  background:var(--bg2); border-left:3px solid var(--gold);
+  border-radius:0 12px 12px 0;
+}
+.strategy h2{
+  font-family:var(--font); color:var(--gold2); margin:0 0 1rem; font-size:1.2rem;
+}
+.strategy ol{margin:0; padding-left:1.2rem}
+.strategy li{margin:.55rem 0; color:var(--ink); font-size:.92rem}
+.strategy li strong{color:var(--gold); font-weight:600}
+.strategy li span{display:block; color:var(--muted); font-size:.8rem; margin-top:.15rem}
+
+/* ROOMS */
+.room{margin:2.5rem 0 1rem}
+.room-head{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:.5rem 1rem;
+  border-bottom:1px solid var(--line); padding-bottom:.6rem; margin-bottom:1rem;
+}
+.room-head h3{
+  font-family:var(--font); color:var(--gold2); margin:0; font-size:1.25rem; letter-spacing:.03em;
+}
+.room-head .rsub{color:var(--muted); font-size:.8rem; font-style:italic; font-family:var(--font)}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+  gap:.85rem;
+}
+
+/* PLAQUES */
+.plaque{
+  background:linear-gradient(145deg, #161e34, #0f1526);
+  border:1px solid rgba(212,168,75,.12);
+  border-radius:10px; padding:1rem 1rem .9rem;
+  cursor:pointer; text-align:left; width:100%;
+  color:inherit; font:inherit;
+  position:relative; overflow:hidden;
+  transition:transform .2s, border-color .2s, box-shadow .25s;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.03);
+}
+.plaque::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg, transparent, rgba(212,168,75,.0), transparent);
+  transition:background .3s;
+}
+.plaque:hover, .plaque:focus-visible{
+  transform:translateY(-3px);
+  border-color:rgba(212,168,75,.45);
+  box-shadow:0 8px 28px rgba(0,0,0,.4), 0 0 20px rgba(212,168,75,.12), inset 0 1px 0 rgba(255,255,255,.05);
+  outline:none;
+}
+.plaque:hover::before, .plaque:focus-visible::before{
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.plaque .pid{
+  font-family:var(--font); font-size:.78rem; color:var(--gold);
+  letter-spacing:.08em; margin-bottom:.35rem;
+}
+.plaque .ptitle{
+  font-size:.88rem; font-weight:600; color:var(--ink);
+  margin-bottom:.4rem; line-height:1.3;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.plaque .psteal{
+  font-size:.78rem; color:var(--muted); line-height:1.35;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  margin-bottom:.65rem; min-height:2.1em;
+}
+.plaque .pchips{display:flex; flex-wrap:wrap; gap:.3rem}
+.badge{
+  font-size:.62rem; letter-spacing:.06em; text-transform:uppercase;
+  padding:.2rem .45rem; border-radius:4px; font-weight:700;
+}
+.badge.steal{background:rgba(61,143,110,.25); color:#9ee0c0; border:1px solid rgba(61,143,110,.4)}
+.badge.park{background:rgba(196,92,92,.2); color:#f0b0b0; border:1px solid rgba(196,92,92,.4)}
+.badge.hype{background:rgba(196,137,42,.2); color:#f0d78c; border:1px solid rgba(196,137,42,.35)}
+.badge.pipe{background:rgba(100,120,180,.15); color:#a8b8e0; border:1px solid rgba(100,120,180,.3)}
+
+.room.hidden, .plaque.hidden{display:none !important}
+.empty-msg{
+  display:none; text-align:center; color:var(--muted); padding:2rem; font-family:var(--font); font-style:italic;
+}
+.empty-msg.show{display:block}
+
+/* MODAL */
+.modal-backdrop{
+  position:fixed; inset:0; background:rgba(3,6,12,.82); z-index:2000;
+  display:none; align-items:center; justify-content:center; padding:1rem;
+  backdrop-filter:blur(4px);
+}
+.modal-backdrop.open{display:flex}
+.modal{
+  background:linear-gradient(165deg, #1a233a, #0d1322);
+  border:1px solid var(--line); border-radius:14px;
+  max-width:560px; width:100%; max-height:min(88vh,720px);
+  overflow:auto; padding:1.5rem 1.4rem 1.3rem;
+  box-shadow:0 24px 80px rgba(0,0,0,.6), 0 0 40px rgba(212,168,75,.1);
+  position:relative; animation:modalIn .28s ease;
+}
+@keyframes modalIn{
+  from{opacity:0; transform:translateY(12px) scale(.98)}
+  to{opacity:1; transform:none}
+}
+.modal .close{
+  position:absolute; top:.7rem; right:.85rem;
+  background:transparent; border:none; color:var(--muted);
+  font-size:1.5rem; cursor:pointer; line-height:1; padding:.25rem .4rem;
+}
+.modal .close:hover{color:var(--gold2)}
+.modal .mid{font-family:var(--font); color:var(--gold); letter-spacing:.1em; font-size:.8rem}
+.modal h3{font-family:var(--font); color:var(--gold2); margin:.3rem 0 .8rem; font-size:1.25rem}
+.modal .mchips{display:flex; flex-wrap:wrap; gap:.35rem; margin-bottom:1rem}
+.modal section{margin:0 0 .9rem}
+.modal section h4{
+  margin:0 0 .3rem; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold); font-weight:600;
+}
+.modal section p{margin:0; font-size:.9rem; color:var(--ink); line-height:1.5}
+.modal .meta{font-size:.72rem; color:var(--muted); margin-top:1rem; padding-top:.75rem; border-top:1px solid var(--line)}
+
+/* FOOTER */
+footer{
+  margin-top:3rem; padding:2rem 1rem; text-align:center;
+  border-top:1px solid var(--line); color:var(--muted); font-size:.8rem;
+}
+footer .fmark{font-family:var(--font); color:var(--gold); font-size:1rem; margin-bottom:.5rem}
+footer .warn{color:#c9a070; max-width:36rem; margin:.75rem auto 0; line-height:1.5}
+
+@media(max-width:480px){
+  .hero{padding:2.5rem .5rem 1.5rem}
+  .cos-core{width:110px; height:110px}
+  .plaque{padding:.85rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="torch" aria-hidden="true">
+      <svg viewBox="0 0 48 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 70h4v-18h-4z" fill="#5a4a30"/>
+        <path d="M18 52h12l2-6H16l2 6z" fill="#8a7040"/>
+        <ellipse cx="24" cy="28" rx="14" ry="20" fill="url(#flame)"/>
+        <ellipse cx="24" cy="32" rx="8" ry="12" fill="#fff3c4" opacity=".85"/>
+        <defs>
+          <radialGradient id="flame" cx="50%" cy="70%" r="60%">
+            <stop offset="0%" stop-color="#fff6d0"/>
+            <stop offset="40%" stop-color="#f0b040"/>
+            <stop offset="100%" stop-color="#c04020" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+    <h1>Museum of Stolen Fire</h1>
+    <p class="sub">Path E knowledge atlas — steal free framing, park FOMO</p>
+    <div class="tagline">
+      <span>Cash war</span><span>·</span>
+      <span>No invented $</span><span>·</span>
+      <span>Jeremy gates</span>
+    </div>
+  </header>
+
+  <section class="spine" aria-label="Operating system — three cash pipes">
+    <h2>Operating System</h2>
+    <p class="spine-sub">Three cash pipes + CoS (Leo) as the glowing control plane</p>
+    <div class="os-diagram">
+      <div class="pipe-row">
+        <div class="pipe" data-pipe="A">
+          <span class="letter">A</span>
+          <div class="pname">MoneyBot</div>
+          <div class="pdesc">Paper alpha · qlib smoke · BTCC desk LIVE off</div>
+        </div>
+        <div class="pipe" data-pipe="B">
+          <span class="letter">B</span>
+          <div class="pname">CONNECT $99.99</div>
+          <div class="pdesc">ProposalCloser drafts · first-100 · Jeremy send gate</div>
+        </div>
+      </div>
+      <div class="cos-core" title="Chief of Staff">
+        <div class="cos-ring"></div>
+        <span class="cos-label">CoS</span>
+        <span class="cos-name">Leo</span>
+        <span class="cos-role">triage · dispatch · escalate</span>
+      </div>
+      <div class="pipe-row">
+        <div class="pipe" data-pipe="C" style="max-width:280px;flex-basis:200px">
+          <span class="letter">C</span>
+          <div class="pname">Ret + Machine Room</div>
+          <div class="pdesc">Path G YouTube · Shorts TV formats · tube cadence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strategy" id="strategy-spine">
+    <h2>Strategy Spine</h2>
+    <ol id="strategy-list"></ol>
+  </section>
+
+  <div class="controls">
+    <div class="controls-inner">
+      <input class="search" id="search" type="search" placeholder="Search plaques…" autocomplete="off"/>
+      <div class="chips" id="chips" role="toolbar" aria-label="Filters"></div>
+      <span class="count-pill" id="count"></span>
+    </div>
+  </div>
+
+  <main id="museum"></main>
+  <p class="empty-msg" id="empty">No plaques match this filter. Try All or clear search.</p>
+
+  <footer>
+    <div class="fmark">Museum of Stolen Fire</div>
+    <div>Path E / Path G learn atlas · built from real cards, not invent</div>
+    <p class="warn">No invented $. Jeremy gates send/spend/publish. DataForSEO parked. Archegos content HOLD.</p>
+  </footer>
+</div>
+
+<div class="modal-backdrop" id="backdrop" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="modal" id="modal">
+    <button class="close" id="m-close" aria-label="Close">&times;</button>
+    <div class="mid" id="m-id"></div>
+    <h3 id="m-title"></h3>
+    <div class="mchips" id="m-chips"></div>
+    <section><h4>Learn</h4><p id="m-learn"></p></section>
+    <section><h4>Do-not</h4><p id="m-donot"></p></section>
+    <section><h4>Plug</h4><p id="m-plug"></p></section>
+    <section><h4>Next</h4><p id="m-next"></p></section>
+    <div class="meta" id="m-meta"></div>
+  </div>
+</div>
+
+<script id="cards-data" type="application/json">
+[{"id": "L7", "uid": "L7-bogzabs96-statics", "title": "Bogzabs96 “100+ statics in 30 minutes”", "steal_line": "Thinking step (20 messages) > render step. Same design constant while testing copy; then break visuals on winners…", "learn": "Thinking step (20 messages) > render step. Same design constant while testing copy; then break visuals on winners only.", "do_not": "No new Meta/TikTok ads Grok seat - Don’t treat “$107M spent” / “best performing ad” as house proof - Don’t discover messaging with expensive video first (Path G / CONNECT)", "plug": "Pipe B CONNECT: message-list → static/carousel variants before cinematic video packaging - Path G / thetubebot: thumb = static; batch message tests; legibility at phone size; visual-difference on top titles - Path E: no new seat unless OpsLog shows repeating creative bottleneck", "next": "Optional ≤1hr: ProposalCloser or thetubebot — write a 10-line CONNECT or Ret message list (no generate yet) 2. Park full Meta ads stack", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$107M"], "source": "by-bucket"}, {"id": "L10", "uid": "L10-thedennis-diversity", "title": "thedennis “Ad Formats Worth Testing This Quarter”", "steal_line": "Reskins ≠ tests. Change the shape of the ad (format) and the claim (message), not just the filter.", "learn": "Reskins ≠ tests. Change the shape of the ad (format) and the claim (message), not just the filter.", "do_not": "No Meta ads bot / no “20 versions” farm - Don’t invent ROAS from this note - Not a BTCC trading signal", "plug": "CONNECT (B): static first — side-by-side (agent vs chaos), annotated “what you get”, DM-format FAQ, 3★ honesty if real reviews exist - Path G: UGC-shaped Ret clips (problem demo, founder-to-camera); thumbs as static annotated / side-by-side - Pairs with L7 Bogzabs: message list…", "next": "Write CONNECT message list (10 lines) if not done 2. Pick 3 formats only: e.g. annotated static + side-by-side + problem-demo script outline 3. Generate later via thetubebot/ProposalCloser — no new seat", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L11", "uid": "L11-lorenzo-map-why-ads-win", "title": "lorenzopravata “Stop copying winning ads. Start mapping why they won”", "steal_line": "Style wasn’t the point. Context (persona + awareness + angle) was. Gaps beat clone volume.", "learn": "Style wasn’t the point. Context (persona + awareness + angle) was. Gaps beat clone volume.", "do_not": "Don’t clone competitor hooks onto CONNECT/Ret - No Meta agency seat / don’t DM MAP funnels - Not a BTCC trade signal", "plug": "Stack: L7 message list → L10 format diversity → L11 persona/awareness/angle map + gaps - CONNECT: personas (operator drowning in tabs / first-time agent buyer); map awareness language; one angle per persona; fill unaware/problem gaps before more video - Path G: same for Ret…", "next": "One-page CONNECT map stub: 2 personas × awareness stages that exist × 1 angle/pain each × mark GAP 2. Only then pick formats from L10", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L13", "uid": "L13-CONNECT-stakes-draft-v1", "title": "CONNECT draft — stakes filter steps 1–4 only", "steal_line": "Not “agents are cool.” The interesting part is missed handoffs — the tab you meant to answer, the follow-up that…", "learn": "Not “agents are cool.” The interesting part is missed handoffs — the tab you meant to answer, the follow-up that died, the calendar thing that never got booked because it lived in three apps.", "do_not": "No invented $ metrics · no reply-for-DM · no publish until Jeremy yes", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L13", "uid": "L13-yegormethod-boring-niche", "title": "yegormethod “boring niche → 20M views” framework", "steal_line": "Lead with THEIR problem and a checkable story. Product pitch is step 8, not step 1. Don’t bury the fix behind a DM.", "learn": "Lead with THEIR problem and a checkable story. Product pitch is step 8, not step 1. Don’t bury the fix behind a DM.", "do_not": "Don’t treat 20M views / view-to-USD as house numbers - No engagement-farm “reply for the method” funnels - No new content/marketing seat - Don’t invent evidence screenshots", "plug": "CONNECT (B): “drowning in tabs / missed handoffs” stakes first → how agent desk fixes it → then $99.99 (after evidence of the problem) - Path G / Ret: stakes-first titles (lose the arena / blow CDs / get embarrassed) before addon pitch; evidence = VOD clip not vibes - Pairs L7…", "next": "Rewrite one CONNECT or Ret draft using steps 1–4 only (stakes + feeling + first line) — no publish without Jeremy 2. Or park generate; keep framework on file", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$1,800,000"], "source": "by-bucket"}, {"id": "L14", "uid": "L14-CONNECT-6slide-outline", "title": "CONNECT 6-slide outline (slideshow)", "steal_line": "DRAFT — Jeremy gates publish/post. Pairs L13 stakes + L14 organic shape.", "learn": "DRAFT — Jeremy gates publish/post. Pairs L13 stakes + L14 organic shape.", "do_not": "engagement farm · fake 100M · new seats", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L14", "uid": "L14-rhysclipping-organic-100m", "title": "rhysclipping “100M views to your app with organic”", "steal_line": "Distribution system > clever one-offs. Document validated formats (name, 3 examples, audio, frame-by-frame,…", "learn": "Distribution system > clever one-offs. Document validated formats (name, 3 examples, audio, frame-by-frame, captions). Warm accounts before branded posts. Measure installs/leads not vanity views.", "do_not": "Don’t hire their agency / open 50 creator farm this week - Don’t treat 100M / 18B / 62k as house facts - No engagement farms / keyword DMs - No new clipping bot seat — thetubebot owns Path G - Cash war: A/B/C primary; don’t divert Grok Build from paper alpha", "plug": "Path G / Ret: clip the “feeling” moment (CD blow / clutch / tilt) not feature lists; steal Shorts shapes from multi-hit formats; batch same shape; content bank for scripts/thumbs - CONNECT: slideshow/static problem→fix (pairs L7/L10/L11); organic proof before paid - Pairs…", "next": "thetubebot: name one Ret format that’s already working (or closest) → write 5 variants same shape, different words 2. Or: 6-slide CONNECT slideshow outline (problem → twist → agent fix) — Jeremy gates publish", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L15", "uid": "L15-CONNECT-identity-headline", "title": "CONNECT identity-first headline (draft)", "steal_line": "Framework: lifemaximised / IL MAKIAGE — identity title > SKU. Jeremy gates send/publish.", "learn": "Framework: lifemaximised / IL MAKIAGE — identity title > SKU. Jeremy gates send/publish.", "do_not": "Google Ads seat this week · invent $10M comps · fake personalization quiz Also: FIRST-100-USERS.md (L28 Napkin/VEED first-users).", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B"], "desk": false, "dollar_park": false, "dollar_claims": ["$10M"], "source": "by-bucket"}, {"id": "L15", "uid": "L15-lifemaximised-ilmakiage", "title": "lifemaximised IL MAKIAGE Google Ads funnel breakdown", "steal_line": "Copy that carries brand identity beats generic category language. Trust signals in the listing. Destination…", "learn": "Copy that carries brand identity beats generic category language. Trust signals in the listing. Destination design matters as much as the click. Never copy rules without the positioning context.", "do_not": "Don’t treat ~$10M/mo as fact - Don’t stand up Google Ads / Shopping spend this week (cash war) - Don’t clone beauty quiz dark patterns / fake personalization - No new ads seat; no engagement farm", "plug": "CONNECT (B): offer title/hook = identity (“Connect the house” not “AI bot setup $99.99”); trust stack on page (what you get, gate, human approve); avoid discount-slop framing; warm inbound first (brand defense later if competitors bid “CONNECT agent”) - Path G: title as…", "next": "Rewrite one CONNECT headline as identity-first (not SKU) — Jeremy gates publish 2. Or park spend; keep checklist on file", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$10M/mo", "$10M/mo", "$10M/mo"], "source": "by-bucket"}, {"id": "L20", "uid": "L20-CONNECT-discovery-qs", "title": "CONNECT discovery questions (draft-only)", "steal_line": "From undefinedKi call taxonomy. Jeremy gates send. ProposalCloser may use.", "learn": "From undefinedKi call taxonomy. Jeremy gates send. ProposalCloser may use.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L20", "uid": "L20-undefinedKi-intel-loop", "title": "undefinedKi “$1M AI OS” photo (Starter Story remix)", "steal_line": "A two-person shop turns customer calls → Notion notes → AI-on-own-data into roadmap, then niche-pivots to…", "learn": "A two-person shop turns customer calls → Notion notes → AI-on-own-data into roadmap, then niche-pivots to short-form video ads.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$1M", "$69K", "$1M", "$1M", "$69K"], "source": "by-bucket"}, {"id": "L24", "uid": "L24-CONNECT-from-agency-teaser", "title": "CONNECT (no course buy)", "steal_line": "Sell a system + delivery, not screenshots / vibes. 2. Ship with: what you automate, how you stand it up, how you…", "learn": "Sell a system + delivery, not screenshots / vibes. 2. Ship with: what you automate, how you stand it up, how you hand off (pairs L20 discovery qs). 3. Never pay IG $50–100 “agency PDF” funnels — no-IG-course-spend hook. When a free public thread appears, BizDev runs Prompt-1 → map ≤3 bullets into CONNECT draft language for ProposalCloser. No new seats.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B"], "desk": false, "dollar_park": false, "dollar_claims": ["$50"], "source": "by-bucket"}, {"id": "L24", "uid": "L24-vibeeval-agency-teaser", "title": "vibeeval AI automation agency teaser → CONNECT watch", "steal_line": "How to build + sell an AI automation agency (promised free long dump); don’t pay IG scammers $50–60 for…", "learn": "How to build + sell an AI automation agency (promised free long dump); don’t pay IG scammers $50–60 for screenshot PDFs.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$50"], "source": "by-bucket"}, {"id": "L27", "uid": "L27-efekorayyy-4platform-pack", "title": "efekorayyy 4-platform pack (STEAL FREE / PARK BUY)", "steal_line": "4-platform A→Z checklist free — map to Path G + CONNECT; never buy Shopier.", "learn": "Explicit 4-platform A→Z checklist (YouTube/X/IG/TikTok: start→niche→content→monetize). Steal free framing; paid Shopier pack is the funnel FOMO.", "do_not": "Shopier buy; invent 10–15k; IG/TikTok growth bots; engagement farms.", "plug": "CONNECT + Path G/Ret CTAs. HOUSE-HOOKS no-Shopier-course-spend.", "next": "IMPLEMENTED — PathG checklist + no-Shopier hook. No purchase.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["10–15k", "10–15k", "10–15k"], "source": "by-bucket"}, {"id": "L28", "uid": "L28-ProposalCloser-first100-checklist", "title": "ProposalCloser — first-100 draft checklist (CONNECT only)", "steal_line": "One line of copy — promise in one sentence (pair L15 identity headline if Jeremy greenlit). 2. Who it’s for / not…", "learn": "One line of copy — promise in one sentence (pair L15 identity headline if Jeremy greenlit). 2. Who it’s for / not for — need-now vs curiosity (L20 discovery qs). 3. Channel — LinkedIn warm inbound only this week (instant channel). Don’t spray IG/TikTok. 4. Ask — next step is clear (call / reply / pay link) — no vague “let’s chat sometime.”", "do_not": "Quote unverified startup FOMO ($100M, “100 users in a day” as our target). - New seats or multi-channel spray. - Send without Jeremy gate.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$100M", "$100M"], "source": "by-bucket"}, {"id": "L28", "uid": "L28-napkin-first100", "title": "Napkin Math: first users for VEED (COPY+IMPLEMENT)", "steal_line": "First ~100 users are the hard part; today you’d still win with brute-force distribution, one sharp line of copy,…", "learn": "First ~100 users are the hard part; today you’d still win with brute-force distribution, one sharp line of copy, and one channel — not more product.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$100M", "$100M", "$100M"], "source": "by-bucket"}, {"id": "L28", "uid": "L28-napkinmath-hermes-extract", "title": "EXTRACT — Napkin Math: first 100 paid customers (Veed)", "steal_line": "First ~100 paid users come from brute-force intensity + 75/25 market/build, not product polish. Mix channels that…", "learn": "First ~100 paid users come from brute-force intensity + 75/25 market/build, not product polish. Mix channels that buy users today with channels that compound later; ship a paywall early; talk to every payer; then find one channel that works and nail it (for Veed: SEO). Real hack = intensity + noticing what bubbles + doubling down.", "do_not": "Invent ARR / “$100M” as house fact (title claim only). - New Grok seats for “acquisition team.” - Spend on backlink farms / PH influencers without Jeremy gate. - Resume MR Shorts ffmpeg (Leo STOP — clips already on D).", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$100M", "$5/mo", "$0.5M", "$100M"], "source": "by-bucket"}, {"id": "L29", "uid": "L29-methodbyvid-tv-formats", "title": "MethodByVid: Shorts formats = old TV (STEAL)", "steal_line": "| TV root | Shorts shape | MR / Ret use | |---------|--------------|--------------| | Countdown | Ranked…", "learn": "| TV root | Shorts shape | MR / Ret use | |---------|--------------|--------------| | Countdown | Ranked worst→best | Rank banks / cracks / fails in Archegos arc | | Cliffhanger | What happened next | End Shorts on open loop → long Slot1 | | (more TBD) | when full post | keep mapping |", "do_not": "Buy MethodByVid product / new seats - Invent more formats than the post states - Delay Shorts publish for this steal", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "Tube: title/pattern bank from TV roots on next MR clip batch; keep current 3 titles as-is (already publishing).", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L33", "uid": "L33-calliope-one-question", "title": "CalliopeLabsyt one-question 2D (tube)", "steal_line": "| Steal | Wire | |-------|------| | One fascinating question open | MR Slot titles + next long outline | |…", "learn": "| Steal | Wire | |-------|------| | One fascinating question open | MR Slot titles + next long outline | | Faceless 2D / simple motion | Already on Machine Room synthetic — keep | | Story over polish | Don’t delay publish for “cinematic” | | ~10m structure | Align with mini-doc length (Slot1 class) |", "do_not": "Buy Calliope / new seats - Invented 119K/22h as our forecast - Drop CONNECT/GFM CTAs for format FOMO", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "Finish 3 Shorts live URLs first 2. Draft 3 “one question” titles for next MR long from existing arcs (Archegos etc.)", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L34", "uid": "L34-projectyta-explaintory", "title": "ProjectYTA ExplainTory niche (tube)", "steal_line": "| Steal | Wire | |-------|------| | “X from every era explained” structure | MR: financial weapons / crashes /…", "learn": "| Steal | Wire | |-------|------| | “X from every era explained” structure | MR: financial weapons / crashes / instruments by era (question-led L33) | | Tight niche catalog (13 vids) | Don’t spray niches; deepen Machine Room | | Faceless explainer energy | Already on MR |", "do_not": "New ExplainTory / weapons channel - Join ProjectYTA community / course - Invented RPM or “this niche prints” - Engagement farms", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "After Shorts URLs: optional 3 title drafts mapping “every era” to finance machine (e.g. deadliest leverage tools by decade) — hold upload.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L35", "uid": "L35-CONNECT-static-ad-briefs", "title": "CONNECT static creative briefs (DRAFT ONLY)", "steal_line": "Source frames: L35-endrewbiz-static-ads/01-03.jpg", "learn": "Source frames: L35-endrewbiz-static-ads/01-03.jpg", "do_not": "Flayr buy · bio “$10K/mo” · frame CTR/CPA numbers (unverified). --- Brief 1 — Chat / story overlay (from 02.jpg shape) Format: Fake-native DM/chat screenshot (WhatsApp/IG-DM look). Not a real conversation. Visual: Dark chat UI. Incoming pain → outgoing preview card with agent desk / Leo handoff still (no fake logos of Meta brands beyond generic chrome). Copy: - Them: “Tired…", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B"], "desk": false, "dollar_park": true, "dollar_claims": ["$10K/mo"], "source": "by-bucket"}, {"id": "L35", "uid": "L35-endrewbiz-static-ads", "title": "EndrewBiz static ad formats (BizDev → CONNECT)", "steal_line": "| Format | CONNECT / cash B use | |--------|----------------------| | IG story overlay | Draft LinkedIn/IG-style…", "learn": "| Format | CONNECT / cash B use | |--------|----------------------| | IG story overlay | Draft LinkedIn/IG-style story frame for CONNECT $99.99 (ProposalCloser draft-only) | | Sticky notes | Why-buy bullets next to agent screenshot | | Notes app | “What you get” list as Notes screenshot mock |", "do_not": "Buy Flayr - Auto-post / spray ads - New seats / new ad-bot - Invented viral metrics", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "BizDev: 3 draft creative briefs for CONNECT (copy only). Jeremy gates any publish/spend.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": false, "dollar_claims": ["$10K/mo"], "source": "by-bucket"}, {"id": "L36", "uid": "L36-iamrexei-30-oss-ai-business", "title": "iamrexei: 30 OSS repos for automating AI businesses", "steal_line": "No single “automate my business” SaaS. Stack layers: Research → Leads → Content → Sales → Support → Automation →…", "learn": "No single “automate my business” SaaS. Stack layers: Research → Leads → Content → Sales → Support → Automation → Analytics → Security. Pick one weekly pain → minimal 3–5 tools → human gates critical sends.", "do_not": "Live money agents, wallet plugins, auto-outbound, duplicate MoneyPrinter under Hermes", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L37", "uid": "L37-mrordia-daily-topics", "title": "MrOrdia daily topic research → tube routine", "steal_line": "Daily topic research routine for Machine Room — tube owns; Leo wakes 8am CT.", "learn": "Daily YT topic research (Trends → niche fit → title bank) owned by tube; Leo wakes weekdays 8am CT.", "do_not": "Invent view forecasts; buy topic tools without Jeremy gate.", "plug": "Pipe C Path G · mrordia-daily-topic-research.md", "next": "Keep routine; feed mr-next-title-bank for uploads.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": true, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L38", "uid": "L38-facelesscanup-research", "title": "facelesscanup market research (tube)", "steal_line": "| Steal | Wire | |-------|------| | Research what’s already working | MrOrdia daily routine + tube checklist | |…", "learn": "| Steal | Wire | |-------|------| | Research what’s already working | MrOrdia daily routine + tube checklist | | Screenshot proof of competitors | Keep evidence in daily-topics files | | Don’t invent niche from vibes | Stay Machine Room / Ret |", "do_not": "Celebrity gossip new channel - Masterclass / course buy - $28k/mo or $3M as our forecast - Engagement farms", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "Tube: fold into daily topic research; Shorts URLs still first.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": true, "dollar_claims": ["$3M", "$28k/mo", "$28k/mo", "$3M"], "source": "by-bucket"}, {"id": "L39", "uid": "L39-storeycopy-live-qa", "title": "Brandon Storey live Q&A / copy academy funnel", "steal_line": "Live Q&A builds authority with aspiring email/copy freelancers and funnels to a staged academy.", "learn": "Live Q&A builds authority with aspiring email/copy freelancers and funnels to a staged academy.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": true, "dollar_claims": ["$120k", "$120k"], "source": "by-bucket"}, {"id": "L40", "uid": "L40-youtubeaut-5k-plan", "title": "YouTubeAut $5k-by-Dec funnel (tube)", "steal_line": "| Step | Their tool | Ours | |------|------------|------| | Lock niche | TubeLab $10+ RPM | Machine Room already…", "learn": "| Step | Their tool | Ours | |------|------------|------| | Lock niche | TubeLab $10+ RPM | Machine Room already locked — don’t niche-hop | | Outlier topics | VIDIQ | MrOrdia daily + Canup research-first | | One video/week | Vidrush | Hermes schedule / Slot queue | | A/B thumbs | — | Draft 2 thumbs per upload; Jeremy gates | | Cut flops | — | OpsLog + prune; don’t double-down blind |", "do_not": "$5k/mo by December as our forecast - Buy TubeLab / VIDIQ / Vidrush - New niches / new seats", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "Tube: keep MR weekly cadence; use daily-topics for outliers; no tool buys.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": true, "dollar_park": false, "dollar_claims": ["$5k", "$5k/mo", "$10", "$5k/mo"], "source": "by-bucket"}, {"id": "L44", "uid": "L44-julianfaceless-kurzgesagt", "title": "julianfaceless Kurzgesagt / monetization (tube)", "steal_line": "| Steal | Wire | |-------|------| | Policy/monetization risk awareness | Tube: monitor YT partner changes for…", "learn": "| Steal | Wire | |-------|------| | Policy/monetization risk awareness | Tube: monitor YT partner changes for MR+Ret | | Diversify surfaces | Already: MR + Ret + Shorts; don’t one-channel bet | | Evidence over rumor | Verify shadowban claims before acting |", "do_not": "tubeproxiess buy / new seats - Invented RPM loss forecasts - Panic niche hop", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "Read full thread if note expands; file YT-policy watch note; keep cash CTAs on Ret only.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L45", "uid": "L45-dkare-grokbot-money", "title": "dkare1009 remix: Greg Isenberg x Billy Howell, make money with Grok Bot (~44m)", "steal_line": "Pick one live project, install a CoS that audits current tools, spawn only a few revenue specialists after the…", "learn": "Pick one live project, install a CoS that audits current tools, spawn only a few revenue specialists after the job is proven, then run a 4-week land (build / execute-no-tinker / hire-fire / automate) so the shared Grok computer pays for itself instead of token-burning idea creep.", "do_not": "Re-derive harness, 10-steps, fail-closed, or L41/L42 from this remix - New seats or a second Grok account \"to keep context clean\" - Invent $ from bagel-shop story or directory asides - Buy the $500 course or any upsell in the comments - Hermes taking tube Studio; LIVE trading; wallets", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "BizDev picks ≤3 NEW rows to pin on existing seats. Hermes idle on re-download. Transcript stays on box.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": true, "dollar_park": true, "dollar_claims": ["$500", "$200", "$500", "$10k", "$25k", "$100k", "$200", "$500", "$2k", "$5k"], "source": "by-bucket"}, {"id": "L46", "uid": "L46-dayiaka-capcut-edit", "title": "dayiakadijital CapCut edit gap (tube)", "steal_line": "| Steal | Wire | |-------|------| | Edit quality bar | CapCut already in Ret/MR pipeline — raise cut/pacing…", "learn": "| Steal | Wire | |-------|------| | Edit quality bar | CapCut already in Ret/MR pipeline — raise cut/pacing checklist | | Triad: unique content + careful VO + strong edit | MR synthetic VO + Hermes render — tighten edit pass | | Study CapCut like class | Optional: pull Onur Naci CapCut 2025 once (process steal only) |", "do_not": "$2–3k / 3–6mo as our forecast - New edit-bot seat - Engagement farms", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "Add short CapCut pacing checklist under PathG; apply on next MR long before upload.", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": true, "dollar_claims": ["$2", "2–3k"], "source": "by-bucket"}, {"id": "L48", "uid": "L48-georgelampro-growth-playbook", "title": "George Lampropoulos Growth Playbook", "steal_line": "Hit early revenue with a simple sellable niche app, one “gotcha” feature, and distribution via niche creators —…", "learn": "Hit early revenue with a simple sellable niche app, one “gotcha” feature, and distribution via niche creators — not polish-first.", "do_not": "All revenue claims; paid 1:1; Shopify/app portfolio FOMO; ads budget without Jeremy.", "plug": "Pipe B CONNECT / Pipe C Path G", "next": "", "bucket": "offer-content", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": true, "dollar_claims": ["$0", "$50k", "$10k", "$0", "$10k", "$50k", "$300k", "0-10k"], "source": "by-bucket"}, {"id": "PG", "uid": "PG-thumb-ab-checklist", "title": "Thumb A/B checklist (closes YouTubeAut cadence gap)", "steal_line": "Before each MR/Ret upload (Jeremy gates publish):", "learn": "Before each MR/Ret upload (Jeremy gates publish):", "do_not": "paid TubeLab/VIDIQ; invented CTR forecasts", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "pathg-youtube", "room": "offer", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "pathg"}, {"id": "L17", "uid": "L17-dkare-4-layers", "title": "dkare1009 4 layers of an agent system", "steal_line": "Agents fail tests after burning tokens because architecture (loop/graph/harness/meta) is missing, not because the…", "learn": "Agents fail tests after burning tokens because architecture (loop/graph/harness/meta) is missing, not because the prompt is weak.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Leo CoS · Agent Desk harness", "next": "", "bucket": "org-design", "room": "desk", "status": "steal", "pipes": [], "desk": true, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L31", "uid": "L31-defileo-grok-ecosystem", "title": "defileo 18 Grok repos (gaps implement)", "steal_line": "Close Grok-ecosystem gaps with HAVE seats — park proxy gateways and star FOMO.", "learn": "Defileo 18-repo Grok ecosystem map → close gaps with what we HAVE (grok-build, Hermes desk, approval gates), not star-count FOMO.", "do_not": "Proxy/sub gateways; airi; star-count FOMO; full-clone every repo.", "plug": "DEFILEO-GROK-ECOSYSTEM-GAPS.md + WEEKLY-PRUNE-CHECKLIST.md", "next": "Prune gaps list; L32 xAI prompts = read-reference only.", "bucket": "agent-desk", "room": "desk", "status": "steal", "pipes": [], "desk": true, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L41", "uid": "L41-gyome-harness-best-setup", "title": "Gyome1 Harness Eng → best setup", "steal_line": "Harness = loops + fail-closed primitives — Tabby only, prune + smoke, no new seats.", "learn": "Harness engineering maps to Ng 3 loops + six primitives (automations, isolation, skills, connectors, maker≠checker, external state). House canon: Tabby Tavern only; weekly prune + smoke CI; no parallel OpenWebUI/n8n.", "do_not": "Paid harness courses; new seats; parallel local AI stacks (OpenWebUI/n8n).", "plug": "BEST-SETUP-HARNESS.md · FAIL-CLOSED-PATHS.md · Leo CoS", "next": "Keep maker≠checker + Fri OpsLog prune; expand smokes not prose.", "bucket": "agent-desk", "room": "desk", "status": "steal", "pipes": ["A"], "desk": true, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L42", "uid": "L42-0xchonsy-lauren-tan", "title": "xChonsy / Lauren Tan (SpaceXAI) Grok Bot lessons", "steal_line": "~80% obvious to a weaker model — Design features so weaker models still succeed; schemas/checklists/smoke >…", "learn": "~80% obvious to a weaker model — Design features so weaker models still succeed; schemas/checklists/smoke > clever prose. 2. Wrong path fails automatically — Don’t rely on “don’t do X” prompts; make the bad path abort (env, CI, defaults). 3. Critical rules in CI/harness, not only AGENTS.md — Docs drift; gates that refuse the action are the real memory. 4. /loop + eval rewrites skills — Prefer eval-driven skill…", "do_not": "New seats · invent lecture ROI/$ · dump lectures to C: · hand-edit AGENTS forever instead of fail-closed + prune", "plug": "Leo CoS · Agent Desk harness", "next": "Leo owns fail-closed + BEST-SETUP land. Hermes: paths/proof when a smoke script needs proof; no re-implement of FAIL-CLOSED.", "bucket": "agent-desk", "room": "desk", "status": "steal", "pipes": [], "desk": true, "dollar_park": true, "dollar_claims": ["$349"], "source": "by-bucket"}, {"id": "L6", "uid": "L6-ruujss-alpha-engine", "title": "RuujSs Alpha Engine (BUILDING)", "steal_line": "Article: “How to Use Loop and Graph Engineering to Build an Alpha Engine (The Complete Build)”", "learn": "Article: “How to Use Loop and Graph Engineering to Build an Alpha Engine (The Complete Build)”", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Pipe A MoneyBot · paper only", "next": "Grok Build implements WSL paper scaffold from these docs CODE in flight (Grok Build 2026-09-05) - Path: C:\\Users\\jpana\\Documents\\HermesTools\\alpha-engine - Spec: Leo/BTCC 1-pager + btcc.discovery.v0 - Mode: paper-only; smoke run-paper; CC Leo on Done…", "bucket": "trading-kept", "room": "trading-kept", "status": "steal", "pipes": ["A", "B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L12", "uid": "L12-quantscience-qlib", "title": "QuantScience / Microsoft Qlib (SMOKE GREEN)", "steal_line": "Qlib smoke green — paper research only; LIVE and Online Serving stay off.", "learn": "Microsoft Qlib smoke green (paper-only). Research/backtest lab; LIVE off; Online Serving not wired. Synthetic offline OK when no pyqlib wheel.", "do_not": "Enable Online Serving; go LIVE without Jeremy ticket; invent backtest PnL as income.", "plug": "Pipe A MoneyBot / btcc-alpha-engine · QLIB-SMOKE-PROOF.md", "next": "Optional real pyqlib on WSL; feed Sharpe/drawdown into Research evidence.", "bucket": "trading-kept", "room": "trading-kept", "status": "steal", "pipes": ["A"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L13", "uid": "L13-quantbeckman-diary-notebook-i", "title": "QuantBeckman Diary of a Quant / Notebook I", "steal_line": "research-design TOC > tipster post; validation math beats more indicators", "learn": "research-design TOC > tipster post; validation math beats more indicators", "do_not": "subscribe-as-strategy; clone ML chapter titles into live 500x; invent we “have Ledoit-Wolf”", "plug": "Pipe A MoneyBot · paper only", "next": "", "bucket": "trading-kept", "room": "trading-kept", "status": "steal", "pipes": ["A", "B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L14", "uid": "L14-zostaff-rug-detector", "title": "zostaff Rug Detector on Skydive", "steal_line": "role-split watchers → discovery-emit / paper FLAG — not a parallel live bot - Do-not: Pump.fun snipes, wallet…", "learn": "role-split watchers → discovery-emit / paper FLAG — not a parallel live bot - Do-not: Pump.fun snipes, wallet keys, new seats, invent ROAS from rugs - Plug: annotated /workspace/btcc-alpha-engine/DISCOVERY-SIGNAL-INTERFACE.md watcher role map - Next: park execute; keep using existing board + paper loop", "do_not": "Pump.fun snipes, wallet keys, new seats, invent ROAS from rugs - Plug: annotated /workspace/btcc-alpha-engine/DISCOVERY-SIGNAL-INTERFACE.md watcher role map - Next: park execute; keep using existing board + paper loop", "plug": "Pipe A MoneyBot · paper only", "next": "park execute; keep using existing board + paper loop", "bucket": "trading-kept", "room": "trading-kept", "status": "steal", "pipes": ["A", "B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L15", "uid": "L15-s0n-ia-claude-bot", "title": "S0NIA Claude trading-bot video", "steal_line": "Status: PARK execute · KEEP process lesson (Leo 2026-09-05)", "learn": "Status: PARK execute · KEEP process lesson (Leo 2026-09-05)", "do_not": "clone Pine/TV bot, live auto-exec, new Grok seats, invent his leaderboard $ as ours", "plug": "Pipe A MoneyBot · paper only", "next": "", "bucket": "trading-kept", "room": "trading-kept", "status": "park", "pipes": ["A", "B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L16", "uid": "L16-late-window-5m", "title": "Polymarket BTC 5m late-window (PAPER RULE)", "steal_line": "Source FOMO: https://x.com/igusai/status/2096304130004246539", "learn": "Source FOMO: https://x.com/igusai/status/2096304130004246539", "do_not": "Park FOMO / invented $. Jeremy gates send/spend/publish.", "plug": "Pipe A MoneyBot · paper only", "next": "", "bucket": "trading-kept", "room": "trading-kept", "status": "park", "pipes": ["A", "B"], "desk": false, "dollar_park": true, "dollar_claims": ["$70"], "source": "by-bucket"}, {"id": "L17", "uid": "L17-mark-douglas-paramuhendisim", "title": "Mark Douglas psych lecture (paramuhendisim)", "steal_line": "Status: KEEP hygiene / PARK execute — ~2h Douglas “mind over market” (Turkish FOMO wrap)", "learn": "Status: KEEP hygiene / PARK execute — ~2h Douglas “mind over market” (Turkish FOMO wrap)", "do_not": "live install, new seats, “weekend watch = edge”", "plug": "Pipe A MoneyBot · paper only", "next": "", "bucket": "trading-kept", "room": "trading-kept", "status": "park", "pipes": ["A", "B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L23", "uid": "L23-igus-settlement-timing", "title": "igusai BTC 5-min Polymarket bot FOMO → paper timing", "steal_line": "OSS bot + light Claude cleanup; edge from late-round BTC direction after move is mostly done.", "learn": "OSS bot + light Claude cleanup; edge from late-round BTC direction after move is mostly done.", "do_not": "Park FOMO / invented $. Jeremy gates send/spend/publish.", "plug": "Pipe A MoneyBot · paper only", "next": "", "bucket": "trading-kept", "room": "trading-kept", "status": "park", "pipes": ["A"], "desk": false, "dollar_park": true, "dollar_claims": ["$13k"], "source": "by-bucket"}, {"id": "L1", "uid": "L1-cryptowluha-mogul", "title": "cryptowluha Mogul directory bot", "steal_line": "one job + scheduled useful pages can compound - Do-not: Mogul/Etsy farms; $185/$13.4k claims; auto-outreach under…", "learn": "one job + scheduled useful pages can compound - Do-not: Mogul/Etsy farms; $185/$13.4k claims; auto-outreach under Jeremy email; new seats - Next: park - Mirror: ../by-bucket/foom-park/L1-cryptowluha-mogul.md", "do_not": "Mogul/Etsy farms; $185/$13.4k claims; auto-outreach under Jeremy email; new seats - Next: park - Mirror: ../by-bucket/foom-park/L1-cryptowluha-mogul.md", "plug": "PARK — not a cash pipe", "next": "park - Mirror: ../by-bucket/foom-park/L1-cryptowluha-mogul.md", "bucket": "foom-park", "room": "trading-park", "status": "park", "pipes": [], "desk": false, "dollar_park": true, "dollar_claims": ["$13.4k", "$185", "$13.4k"], "source": "by-bucket"}, {"id": "L2", "uid": "L2-nftcps-ai-stock", "title": "NFTCPS AI炒股 6 Skills", "steal_line": "research = data + process, not fortune-telling - Do-not: install any of the 6 stock skills; LP/wallet FOMO;…", "learn": "research = data + process, not fortune-telling - Do-not: install any of the 6 stock skills; LP/wallet FOMO; trading desks in cash war - Next: park hard", "do_not": "install any of the 6 stock skills; LP/wallet FOMO; trading desks in cash war - Next: park hard", "plug": "PARK — not a cash pipe", "next": "park hard", "bucket": "trading-park", "room": "trading-park", "status": "park", "pipes": [], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L4", "uid": "L4-antpalkin-hedge-fund-quote", "title": "antpalkin hedge-fund quote (TRADING-PARK half)", "steal_line": "Quote URL: https://x.com/antpalkin/status/2095587061113954508", "learn": "Quote URL: https://x.com/antpalkin/status/2095587061113954508", "do_not": "No Skydive install - No Filings/Earnings/Sector/Sentiment/Insiders seats - No overnight ticker watchlist desk - Treat $4.44/night and analyst-salary comps as unverified story, not proof - BTCC = signals only Org-design half (steal rules only): ../org-design/L4-antpalkin-agent-teams.md", "plug": "PARK — not a cash pipe", "next": "", "bucket": "trading-park", "room": "trading-park", "status": "park", "pipes": ["A"], "desk": false, "dollar_park": true, "dollar_claims": ["$4.44", "$4.44"], "source": "by-bucket"}, {"id": "L12", "uid": "L12-zostaff-rug-detector", "title": "zostaff “Rug Detector on Skydive” (Pump.fun / RH Chain)", "steal_line": "Risk stacks: concentration + creator history + cluster funding. Specialized seats beat one mega-bot.…", "learn": "Risk stacks: concentration + creator history + cluster funding. Specialized seats beat one mega-bot. Verdict-with-reasoning > raw score dumps. (Same Path E DNA as RuujSs/adiix — different domain.)", "do_not": "Do NOT install Skydive / 4 rug-scout bots - Do NOT run Pump.fun / Pons / Pools.trade scanners - Do NOT connect wallets or chase memecoin launches - No new Grok seats; A/B/C + paper alpha stay primary - Treat $12M fees / valuation claims as unverified hype", "plug": "BTCC: optional hygiene tags only if ever looking at thin/new names — creator history, concentration, lock — not a memecoin desk; keep Coinbase/Kraken/BTCC/Kalshi confluence + paper alpha - Path E: reinforces one-job seats + evidence before Done (already rolled) - Grok Build…", "next": "Park hard. Leo: no hire. BTCC: ignore as trade system; optional note “serial-creator / cluster” as future hygiene if asked.", "bucket": "trading-park", "room": "trading-park", "status": "park", "pipes": ["A"], "desk": true, "dollar_park": true, "dollar_claims": ["$20", "$200", "$12M"], "source": "by-bucket"}, {"id": "L21", "uid": "L21-laurgrowth-ttshop-slideshow", "title": "laurgrowth TikTok Shop slideshow FOMO", "steal_line": "TikTok Shop affiliates supposedly print big months with “simplest slideshows”; copy the process for organic…", "learn": "TikTok Shop affiliates supposedly print big months with “simplest slideshows”; copy the process for organic affiliate offers (supplement offer CTA).", "do_not": "Park FOMO / invented $. Jeremy gates send/spend/publish.", "plug": "PARK — not a cash pipe", "next": "", "bucket": "foom-park", "room": "trading-park", "status": "park", "pipes": ["C"], "desk": false, "dollar_park": true, "dollar_claims": ["$10k/mo", "$10k"], "source": "by-bucket"}, {"id": "L23", "uid": "L23-igus-late-window-5m", "title": "igusai Polymarket late-window (PARK live)", "steal_line": "/workspace/btcc-alpha-engine/LATE-WINDOW-5M.md (paper) Do-not: live clone, $13k claim as fact, new seats", "learn": "/workspace/btcc-alpha-engine/LATE-WINDOW-5M.md (paper) Do-not: live clone, $13k claim as fact, new seats", "do_not": "live clone, $13k claim as fact, new seats", "plug": "PARK — not a cash pipe", "next": "", "bucket": "trading-park", "room": "trading-park", "status": "park", "pipes": ["A"], "desk": false, "dollar_park": true, "dollar_claims": ["$13k"], "source": "by-bucket"}, {"id": "L25", "uid": "L25-konig-github-list", "title": "konig0000 GitHub FOMO list (PARK)", "steal_line": "Warmup ≠ evaluation window 2. Positions from fills not targets 3. Label OHLC caliber (adjusted/raw) 4. Risk stage…", "learn": "Warmup ≠ evaluation window 2. Positions from fills not targets 3. Label OHLC caliber (adjusted/raw) 4. Risk stage before any “exec” (PaperExec only) 5. No-source → no number (grounding)", "do_not": "Install AutoHedge for trading, wallets, invent P&L from GitHub stars, new seats, LIVE venues.", "plug": "PARK — not a cash pipe", "next": "", "bucket": "trading-park", "room": "trading-park", "status": "park", "pipes": ["A"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L30", "uid": "L30-immortalhowwl-astra-heist", "title": "immortalhowwl GPT6-Astra / Money Heist (PARK live)", "steal_line": "Steal→paper: VOLUME-BREAKOUT-FILTER-PAPER.md", "learn": "Steal→paper: VOLUME-BREAKOUT-FILTER-PAPER.md", "do_not": "$67→$4560 RH memecoin FOMO · no new seats Video review evidence (2026-09-05) - UI header: “OPTHIEST DESK immortalhowl” — custom FUI, not Robinhood - Activity log claims wallet cluster / short opened / execution space (theatrical) - On-screen REALIZED PROFIT ~+$1 → ~+$4,493; ETH balance 0.0205 → 1.4036 — unverified / demo - Confirms HARD PARK live memecoin path; keep paper…", "plug": "PARK — not a cash pipe", "next": "", "bucket": "trading-fomo", "room": "trading-park", "status": "park", "pipes": ["A"], "desk": false, "dollar_park": true, "dollar_claims": ["$67", "$4560", "$1", "$4,493"], "source": "by-bucket"}, {"id": "L30", "uid": "L30-immortalhowwl-money-heist", "title": "immortalhowwl Money Heist / GPT6-Astra (PARK FOMO)", "steal_line": "One-instruction volume-breakout scan (paper watch) 2. Multi-filter paper: wallet / liq / narrative / market /…", "learn": "One-instruction volume-breakout scan (paper watch) 2. Multi-filter paper: wallet / liq / narrative / market / VETO 3. Human gate before money", "do_not": "Print-money claims · Robinhood memecoin LIVE · new seats · wallets", "plug": "PARK — not a cash pipe", "next": "", "bucket": "trading-park", "room": "trading-park", "status": "park", "pipes": ["A", "B"], "desk": false, "dollar_park": true, "dollar_claims": ["$4.5k", "$67", "$4560"], "source": "by-bucket"}, {"id": "L47", "uid": "L47-realjgbanks-ai-cycle", "title": "RealJGBanks AI cycle ticker list", "steal_line": "Capital follows AI buildout in phases: stack (chips/DC) → power the machine → automate the world; ticker list as…", "learn": "Capital follows AI buildout in phases: stack (chips/DC) → power the machine → automate the world; ticker list as “retirement” FOMO.", "do_not": "All cashtags as investment advice; “retire in 5–10 years” claims; live buys.", "plug": "PARK — not a cash pipe", "next": "", "bucket": "trading-park", "room": "trading-park", "status": "park", "pipes": [], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L2", "uid": "L2-nftcps-repos", "title": "GitHub skill pack (DO NOT INSTALL during cash war)", "steal_line": "Source post: https://x.com/NFTCPS/status/2095708820542771484", "learn": "Source post: https://x.com/NFTCPS/status/2095708820542771484", "do_not": "Park FOMO / invented $. Jeremy gates send/spend/publish.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "github-skills", "room": "org", "status": "park", "pipes": ["A"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-format"}, {"id": "L3", "uid": "L3-adiix-18-rules", "title": "adiix Grok Bot 18 rules", "steal_line": "Adiix 18-rule Grok Bot setup — charter jobs, approval by reversibility, weekly prune. Full triage in…", "learn": "Adiix 18-rule Grok Bot setup — charter jobs, approval by reversibility, weekly prune. Full triage in TRIAGE-adiix-18-rules.md.", "do_not": "Clone all 18 as new seats; treat article roster as hire list.", "plug": "Org design · Leo CoS · DESK-ORG-CHART", "next": "Jeremy delete empty shells; Leo CoS-strict; no new seats", "bucket": "org-design", "room": "org", "status": "steal", "pipes": [], "desk": true, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L4", "uid": "L4-antpalkin-4-pages", "title": "format — antpalkin 4-page image manual", "steal_line": "Full triage: TRIAGE-antpalkin-agent-teams.md (this folder)", "learn": "Full triage: TRIAGE-antpalkin-agent-teams.md (this folder)", "do_not": "Park FOMO / invented $. Jeremy gates send/spend/publish.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "image-manuals", "room": "org", "status": "park", "pipes": [], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-format"}, {"id": "L4", "uid": "L4-antpalkin-agent-teams", "title": "antpalkin agent-teams (ORG-DESIGN half)", "steal_line": "Format: 4-page image manual (+ quoted x-article)", "learn": "Format: 4-page image manual (+ quoted x-article)", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "org-design", "room": "org", "status": "steal", "pipes": [], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L5", "uid": "L5-graphify", "title": "Graphify (token-cut knowledge graph)", "steal_line": "Pay once to map the repo; compound savings on architecture questions. Prefer graph update / local AST path when…", "learn": "Pay once to map the repo; compound savings on architecture questions. Prefer graph update / local AST path when docs say no LLM key needed for code-only extract.", "do_not": "Do NOT invent $ savings or treat 70x as guaranteed - Do NOT create a Graphify Grok Bot seat - Do NOT install on every micro-folder (overhead > benefit under ~20 files) - Do NOT block Hermes — he is implementing now", "plug": "Path E / HermesTools oxygen: cheaper context = more A/B/C cycles on paid/free model seats. Complements FreeModelsBot + codebase-memory MCP (don’t duplicate seats).", "next": "Hermes finishes install + first /graphify on a real house repo. BizDev card stays here. OpsLog one line when GRAPHREPORT.md lands.", "bucket": "org-design", "room": "org", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L6", "uid": "L6-ruujss-loop-graph", "title": "RuujSs loop + graph engineering (ORG-DESIGN half)", "steal_line": "One job per node. Edges enforce path (architecturally, not by vibes). Verifier before Done. Monitoring flags…", "learn": "One job per node. Edges enforce path (architecturally, not by vibes). Verifier before Done. Monitoring flags decay without fabricating results. Same DNA as adiix/antpalkin Path E rules.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Path E LIVE: Leo CoS ≠ production; ProposalCloser drafts-only (no send); OpsLog evidence; antpalkin no-source→cut / no-fabricate. Maps 1:1 — research≠execution.", "next": "Optional one-liner into PATH-E-RUNBOOK: no seat may skip the approval edge (research→gate→act) 2. No install, no new seats, no BTCC desk expansion", "bucket": "org-design", "room": "org", "status": "steal", "pipes": ["A", "B"], "desk": true, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L8", "uid": "L8-heyrobinai-cos", "title": "heyrobinai “$400/hr Chief of Staff” Grok Bot prompt", "steal_line": "CoS underqualified for production work; evidence + human gate; improve by one approved change/week — not constant…", "learn": "CoS underqualified for production work; evidence + human gate; improve by one approved change/week — not constant reorg.", "do_not": "Do NOT create a second Chief of Staff bot - Do NOT treat $400/hr as pricing proof - Do NOT hire from this prompt during cash war (no bottleneck = no seat)", "plug": "Leo already owns triage→delegate→watch→collect→escalate. Path E + OpsLog + Fri rollup match. Optional absorb: quiet hours, TEAM.md/DESK-ORG-CHART.md hygiene, ≤1 weekly change rule.", "next": "Leo: if anything missing vs this prompt, add ≤3 lines to CoS contract (quiet hours / one weekly change / TEAM.md pointer to DESK-ORG-CHART) — no new bot 2. Park copy-paste of full prompt as a new agent", "bucket": "org-design", "room": "org", "status": "steal", "pipes": [], "desk": true, "dollar_park": true, "dollar_claims": ["$400/hr", "$400/hr", "$400/hr"], "source": "by-bucket"}, {"id": "L9", "uid": "L9-kanika-15-mistakes-FULL", "title": "Context Engineering Mistakes (KanikaBK) — full extract", "steal_line": "Post: https://x.com/KanikaBK/status/2095763359857807568", "learn": "Post: https://x.com/KanikaBK/status/2095763359857807568", "do_not": "Park FOMO / invented $. Jeremy gates send/spend/publish.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "x-articles", "room": "org", "status": "park", "pipes": ["B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-format"}, {"id": "L9", "uid": "L9-kanikabk-context-engineering", "title": "KanikaBK 15 context engineering mistakes (HOUSE IMPLEMENT)", "steal_line": "Clean the input layer; agent looks smarter. Bad context compounds across tool steps.", "learn": "Clean the input layer; agent looks smarter. Bad context compounds across tool steps.", "do_not": "No new “Context Engineer” bot - Don’t paste the full 15 as a giant CLAUDE.md dump into every agent (that’s mistake 1) — use the short house pack", "plug": "Path E + OpsLog + drafts-only + evidence. Leo rolls; each bot keeps short standing rules + path pins.", "next": "Point every seat at HOUSE-CONTEXT-RULES.md (or paste the Non-negotiables block into CoS standing + pin templates) 2. Ask each domain bot once: “What files/rules are you using?” — kill junk 3. OpsLog when roll complete", "bucket": "org-design", "room": "org", "status": "steal", "pipes": ["B"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L16", "uid": "L16-sprytixl-morning-anomaly", "title": "Sprytixl morning anomaly loop (IMPLEMENTED)", "steal_line": "Outside + inside joined = cause; report 3 numbers + 1 anomaly; false flags rewrite thresholds; controls attention…", "learn": "Outside + inside joined = cause; report 3 numbers + 1 anomaly; false flags rewrite thresholds; controls attention not revenue.", "do_not": "$10→$10k / +$350 claims; Claude Code paste-to-launch; new bots. Next Weekday morning routine fires; Fri OpsLog rollup stays separate.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "Weekday morning routine fires; Fri OpsLog rollup stays separate.", "bucket": "org-design", "room": "org", "status": "steal", "pipes": [], "desk": false, "dollar_park": true, "dollar_claims": ["$10", "$10k", "$350"], "source": "by-bucket"}, {"id": "L18", "uid": "L18-snskritinaruka-claude-code-gaps", "title": "snskritinaruka Anthropic agent course outline → house gaps", "steal_line": "Build agent teams with Plan mode, skills, hooks, subagents, and self-improving loops/graphs — not chat-only…", "learn": "Build agent teams with Plan mode, skills, hooks, subagents, and self-improving loops/graphs — not chat-only prompts.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "org-design", "room": "org", "status": "steal", "pipes": [], "desk": true, "dollar_park": true, "dollar_claims": ["$500", "$500"], "source": "by-bucket"}, {"id": "L19", "uid": "L19-mr-kozh-office-loop", "title": "mrkozh Grok Bot shared office", "steal_line": "Grok Bot value is the shared system (context/connections/capabilities/cadence), not isolated chats looking busy.", "learn": "Grok Bot value is the shared system (context/connections/capabilities/cadence), not isolated chats looking busy.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "org-design", "room": "org", "status": "steal", "pipes": ["B", "C"], "desk": false, "dollar_park": true, "dollar_claims": ["$2,000", "$2k"], "source": "by-bucket"}, {"id": "L22", "uid": "L22-franpradas-vibecoder-stack", "title": "franpradasAI VIBECODER SaaS stack", "steal_line": "Vibecoder only needs a fixed SaaS kit + mobile Claude dispatch, computer-use, MCPs; funnel to “mount from 0”…", "learn": "Vibecoder only needs a fixed SaaS kit + mobile Claude dispatch, computer-use, MCPs; funnel to “mount from 0” course.", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "org-design", "room": "org", "status": "steal", "pipes": ["C"], "desk": false, "dollar_park": true, "dollar_claims": ["$10k"], "source": "by-bucket"}, {"id": "L29", "uid": "L29-0xCodez-grok-bot-10-steps", "title": "Grok Bot Agents: 10 Steps → House map", "steal_line": "Stop prompting; delegate jobs with charters + approval lines. One Chief coordinates specialists on shared cloud…", "learn": "Stop prompting; delegate jobs with charters + approval lines. One Chief coordinates specialists on shared cloud computer; human only for irreversible / external / money moves. Weekly prune. ---", "do_not": "New seats for “full 10-step clone” - Invent ARR / plan prices from mirrors - Auto-send outbound / auto-pay - Hermes taking tube’s YouTube Studio lane", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "Draft Step-10 weekly prune checklist for OpsLog+Leo (≤1 page) - Optional Inbox Manager charter on an existing seat (GadDesk or Leo) — not a new bot", "bucket": "x-articles", "room": "org", "status": "park", "pipes": [], "desk": true, "dollar_park": true, "dollar_claims": ["$0"], "source": "by-format"}, {"id": "L32", "uid": "L32-xai-grok-prompts-README", "title": "xai-org/grok-prompts (README scout only)", "steal_line": "Official xAI system prompts for Grok chat / @grok on X / some API model prefixes.", "learn": "Official xAI system prompts for Grok chat / @grok on X / some API model prefixes.", "do_not": "Do not invent that we “use” these prompts live", "plug": "Org design · Leo / DESK-ORG-CHART", "next": "", "bucket": "github-skills", "room": "org", "status": "park", "pipes": [], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-format"}, {"id": "L25", "uid": "L25-konig-ads-seo-park", "title": "L25b — konig0000 non-trading pitches (PARK)", "steal_line": "Lists of starred repos ≠ a cash plan. Ads/SEO tools don’t open a new Pipe without Jeremy gate + Path G/CONNECT fit.", "learn": "Lists of starred repos ≠ a cash plan. Ads/SEO tools don’t open a new Pipe without Jeremy gate + Path G/CONNECT fit.", "do_not": "New seats, spend on ads tools, invent ROAS/$, engagement farms.", "plug": "SEO surfaces · Cynthia / SEO Bot", "next": "None. BTCC owns paper-scout notes on Vibe-Trading + AutoHedge process only.", "bucket": "offer-content", "room": "seo", "status": "steal", "pipes": ["A", "B", "C"], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L26", "uid": "L26-ahmtaic-preferred-source", "title": "ahmtaic Google “Preferred Source” badge tool", "steal_line": "Build a “Preferred Source / Tercih Edilen Kaynak” badge in ~10s: domain → style → paste code on site (KOBİ SEO…", "learn": "Build a “Preferred Source / Tercih Edilen Kaynak” badge in ~10s: domain → style → paste code on site (KOBİ SEO tool pitch).", "do_not": "Jeremy gates send/spend/publish. No invented $.", "plug": "SEO surfaces · Cynthia / SEO Bot", "next": "", "bucket": "offer-content", "room": "seo", "status": "steal", "pipes": [], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}, {"id": "L43", "uid": "L43-openseo-status", "title": "OpenSEO status — LightBringer (2026-09-05 4:11PM CT)", "steal_line": "OpenSEO running + MCP wired — SEO Bot continuity; DataForSEO stays parked.", "learn": "OpenSEO healthy on LightBringer (:3021); MCP wired into Hermes. Continuity via existing SEO Bot. No DataForSEO / no spend.", "do_not": "DataForSEO / paid API spend until Jeremy yes; paid SEOMastery course CTA.", "plug": "SEO-BOT-HANDOFF · OPENSEO-STATUS · SEO-GREENLIGHT-QUEUE-2026-09-05", "next": "Apply greenlit Closer/hunt/playbook on-page; SEO Bot verifies.", "bucket": "agent-desk", "room": "seo", "status": "steal", "pipes": [], "desk": false, "dollar_park": false, "dollar_claims": [], "source": "by-bucket"}]
+</script>
+<script>
+(function(){
+  const CARDS = JSON.parse(document.getElementById('cards-data').textContent);
+  const ROOM_META = {"offer": {"name": "Room I \u2014 Offer & Content", "sub": "CONNECT + YouTube \u00b7 steal framing, park FOMO"}, "desk": {"name": "Room II \u2014 Agent Desk & Harness", "sub": "Fail-closed \u00b7 Gyome \u00b7 Lauren Tan \u00b7 CoS Leo"}, "trading-kept": {"name": "Room III-A \u2014 Trading Paper (kept)", "sub": "Filters & smoke only \u00b7 LIVE off"}, "trading-park": {"name": "Room III-B \u2014 Trading PARK (FOMO)", "sub": "Memecoin \u00b7 live clone \u00b7 invented PnL \u2014 do not execute"}, "org": {"name": "Room IV \u2014 Org Design", "sub": "Teams \u00b7 loops \u00b7 context \u00b7 morning anomaly"}, "seo": {"name": "Room V \u2014 SEO & Surfaces", "sub": "OpenSEO \u00b7 greenlight queue \u00b7 DataForSEO parked"}};
+  const ROOM_ORDER = ['offer','desk','trading-kept','trading-park','org','seo'];
+  const SPINE = [["Fail-closed > prompt don\u2019ts", "Wrong path must abort via env/CI/defaults \u2014 not a longer \u201cdon\u2019t\u201d list. (L42 \u00b7 FAIL-CLOSED-PATHS)"], ["Closed research A/B/C footer", "Every learn card ends with exactly 3 options + top rec + park. Never invent $. (CLOSED-RESEARCH-FOOTER)"], ["4-platform pack without Shopier", "YT / X / IG / TikTok A\u2192Z checklist stolen free; Shopier + 10\u201315k claim PARK. (L27 \u00b7 no-Shopier hook)"], ["First-100 users for CONNECT", "One-line promise \u00b7 who for/not \u00b7 LinkedIn warm \u00b7 clear ask. Draft-only; Jeremy gates send. (L28)"], ["TV/Shorts formats + cadence", "Countdown & cliffhanger TV roots \u2192 Shorts; daily topic research; thumb A/B. (L29 \u00b7 L37 \u00b7 Path G)"], ["Paper trading filters only", "Qlib smoke green \u00b7 late-window \u00b7 volume-breakout \u2014 LIVE off, no wallets. (trading-kept)"], ["Weekly prune + smoke CI", "Fri OpsLog prune \u00b7 maker\u2260checker \u00b7 house-rules smoke. (L41 \u00b7 BEST-SETUP-HARNESS)"]];
+
+  const museum = document.getElementById('museum');
+  const chipsEl = document.getElementById('chips');
+  const searchEl = document.getElementById('search');
+  const countEl = document.getElementById('count');
+  const emptyEl = document.getElementById('empty');
+  const backdrop = document.getElementById('backdrop');
+  let filter = 'All';
+  let q = '';
+
+  // Strategy spine
+  const ol = document.getElementById('strategy-list');
+  SPINE.forEach(function(pair){
+    const li = document.createElement('li');
+    li.innerHTML = '<strong>'+esc(pair[0])+'</strong><span>'+esc(pair[1])+'</span>';
+    ol.appendChild(li);
+  });
+
+  const FILTERS = ['All','Steal','Park','Pipe A','Pipe B','Pipe C','Desk'];
+  FILTERS.forEach(function(f){
+    const b = document.createElement('button');
+    b.className = 'chip' + (f==='All'?' on':'');
+    b.type = 'button';
+    b.dataset.f = f;
+    b.textContent = f;
+    b.addEventListener('click', function(){
+      filter = f;
+      chipsEl.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on', c.dataset.f===f); });
+      apply();
+    });
+    chipsEl.appendChild(b);
+  });
+
+  function esc(s){
+    return String(s==null?'':s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function matchCard(c){
+    if(filter==='Steal' && c.status!=='steal') return false;
+    if(filter==='Park' && c.status!=='park' && !c.dollar_park) return false;
+    if(filter==='Pipe A' && (c.pipes||[]).indexOf('A')<0) return false;
+    if(filter==='Pipe B' && (c.pipes||[]).indexOf('B')<0) return false;
+    if(filter==='Pipe C' && (c.pipes||[]).indexOf('C')<0) return false;
+    if(filter==='Desk' && !c.desk && c.room!=='desk') return false;
+    if(q){
+      const hay = (c.id+' '+c.title+' '+c.steal_line+' '+c.learn+' '+c.bucket+' '+(c.pipes||[]).join(' ')).toLowerCase();
+      if(hay.indexOf(q)<0) return false;
+    }
+    return true;
+  }
+
+  function badges(c){
+    let h = '';
+    if(c.status==='steal') h += '<span class="badge steal">STEAL</span>';
+    if(c.status==='park') h += '<span class="badge park">PARK</span>';
+    if(c.dollar_park) h += '<span class="badge hype">$ HYPE</span>';
+    (c.pipes||[]).forEach(function(p){ h += '<span class="badge pipe">Pipe '+p+'</span>'; });
+    if(c.desk) h += '<span class="badge pipe">Desk</span>';
+    return h;
+  }
+
+  function build(){
+    museum.innerHTML = '';
+    ROOM_ORDER.forEach(function(room){
+      const meta = ROOM_META[room];
+      const section = document.createElement('section');
+      section.className = 'room';
+      section.dataset.room = room;
+      section.innerHTML = '<div class="room-head"><h3>'+esc(meta.name)+'</h3><span class="rsub">'+esc(meta.sub)+'</span></div>';
+      const gal = document.createElement('div');
+      gal.className = 'gallery';
+      CARDS.filter(function(c){ return c.room===room; }).forEach(function(c){
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'plaque';
+        btn.dataset.uid = c.uid;
+        btn.innerHTML =
+          '<div class="pid">'+esc(c.id)+'</div>'+
+          '<div class="ptitle">'+esc(c.title)+'</div>'+
+          '<div class="psteal">'+esc(c.steal_line)+'</div>'+
+          '<div class="pchips">'+badges(c)+'</div>';
+        btn.addEventListener('click', function(){ openModal(c); });
+        gal.appendChild(btn);
+      });
+      section.appendChild(gal);
+      museum.appendChild(section);
+    });
+  }
+
+  function apply(){
+    let n = 0;
+    document.querySelectorAll('.plaque').forEach(function(el){
+      const c = CARDS.find(function(x){ return x.uid===el.dataset.uid; });
+      const ok = c && matchCard(c);
+      el.classList.toggle('hidden', !ok);
+      if(ok) n++;
+    });
+    document.querySelectorAll('.room').forEach(function(sec){
+      const any = sec.querySelector('.plaque:not(.hidden)');
+      sec.classList.toggle('hidden', !any);
+    });
+    countEl.textContent = n + ' / ' + CARDS.length + ' plaques';
+    emptyEl.classList.toggle('show', n===0);
+  }
+
+  function openModal(c){
+    document.getElementById('m-id').textContent = c.id + ' · ' + (c.bucket||'');
+    document.getElementById('m-title').textContent = c.title;
+    document.getElementById('m-chips').innerHTML = badges(c);
+    document.getElementById('m-learn').textContent = c.learn || '—';
+    document.getElementById('m-donot').textContent = c.do_not || '—';
+    document.getElementById('m-plug').textContent = c.plug || '—';
+    document.getElementById('m-next').textContent = c.next || '—';
+    let meta = 'Source: ' + (c.source||'') + ' · Room: ' + (c.room||'');
+    if(c.dollar_claims && c.dollar_claims.length){
+      meta += ' · $ claims marked PARK/hype: ' + c.dollar_claims.join(', ');
+    }
+    document.getElementById('m-meta').textContent = meta;
+    backdrop.classList.add('open');
+    document.getElementById('m-close').focus();
+  }
+  function closeModal(){ backdrop.classList.remove('open'); }
+
+  document.getElementById('m-close').addEventListener('click', closeModal);
+  backdrop.addEventListener('click', function(e){ if(e.target===backdrop) closeModal(); });
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape') closeModal();
+  });
+  searchEl.addEventListener('input', function(){
+    q = searchEl.value.trim().toLowerCase();
+    apply();
+  });
+
+  // Pipe click → filter
+  document.querySelectorAll('.pipe').forEach(function(el){
+    el.style.cursor = 'pointer';
+    el.addEventListener('click', function(){
+      const p = 'Pipe ' + el.dataset.pipe;
+      filter = p;
+      chipsEl.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on', c.dataset.f===p); });
+      apply();
+      document.getElementById('museum').scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  build();
+  apply();
+})();
+</script>
+</body>
+</html>
