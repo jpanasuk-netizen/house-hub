@@ -533,3 +533,25 @@ footer a { color: var(--accent2); }
   .event { transition: none; }
   .event:hover, .event:focus-visible { transform: none; }
 }
+
+
+/* Tool badge — which system shipped the win */
+.event .tool {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: #9fd4ff;
+  background: #1a2a3a;
+  border: 1px solid #2e4a66;
+  vertical-align: middle;
+  max-width: 100%;
+  white-space: normal;
+}
+.event .tool-line {
+  color: #9fd4ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+}

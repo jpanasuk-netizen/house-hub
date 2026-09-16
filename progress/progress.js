@@ -51,6 +51,13 @@
     return MONTHS[m - 1] + " " + y;
   }
 
+
+  function toolHtml(ev) {
+    const t = ev.tool;
+    if (!t) return "";
+    return ' <span class="tool" title="Tool that shipped this">' + esc(t) + "</span>";
+  }
+
   function flags(ev) {
     const e = String(ev.evidence || "");
     const out = [];
@@ -176,6 +183,7 @@
           '<span class="date">' + esc(formatDate(ev.date)) + (fl.some(function (f) { return f[0] === "approx"; }) ? " · approx" : "") + "</span>" +
           '<span class="cat">' + esc(ev.category) + "</span>" +
           flagHtml +
+          toolHtml(ev) +
         "</div>" +
         "<p class=\"title\">" + esc(ev.title) + "</p>" +
         '<p class="hint">' + esc(ev.summary) + "</p>" +
@@ -188,6 +196,7 @@
         "<p>" + esc(ev.summary) + "</p>" +
         "<h3>Evidence</h3>" +
         '<div class="evidence">' + esc(ev.evidence || "") + "</div>" +
+        (ev.tool ? "<h3>Tool</h3><p class=\"tool-line\">" + esc(ev.tool) + "</p>" : "") +
         (linkHtml ? "<h3>Links</h3><div class=\"links\">" + linkHtml + "</div>" : "");
 
       btn.addEventListener("click", function () {
