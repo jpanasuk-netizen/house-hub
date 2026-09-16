@@ -1,0 +1,424 @@
+[
+  {
+    "date": "2026-07-27",
+    "title": "free-coding-models architecture review artifact",
+    "summary": "Dated architecture-review HTML exists under free-coding-models (20+ provider free-coding catalog / Hermes wiring later). One of the few July-stamped local receipts on the box.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "/workspace/free-coding-models/architecture-review/2026-07-27-architecture-review.html"
+  },
+  {
+    "date": "2026-07",
+    "title": "July hunt/lab/site activity (approximate)",
+    "summary": "Sparse dated July files on the shared box. Early true-remote hunt pipeline and calc-site existence predate the dense Aug–Sep receipt trail; treat July as under-documented, not empty.",
+    "category": "hunt",
+    "links": [],
+    "evidence": "GAP — approximate month-only; see Gaps"
+  },
+  {
+    "date": "2026-08-21",
+    "title": "Closer resume craft for ally (Jim O'Shea thread)",
+    "summary": "Active resume/profile photo collaboration thread on Aug 21–22 CT. Shows live Closer campaign skill application outside Jeremy’s own packet.",
+    "category": "hunt",
+    "links": [],
+    "evidence": "Gmail thread 1a0188155ba0186b (2026-08-21/22)"
+  },
+  {
+    "date": "2026-08-23",
+    "title": "First-five TARGETS apply list frozen",
+    "summary": "TARGETS.md lists Redapt FDE Agentic AI, Optum Lead AI/ML SE, Turnberry, Target Secure AI, Optum Data Engineer with AI/ML — live listings pulled for V3 PDF + COVER.txt apply motion.",
+    "category": "hunt",
+    "links": [
+      "https://job-boards.greenhouse.io/redapt/jobs/5396488008"
+    ],
+    "evidence": "/workspace/apply/TARGETS.md"
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Hunt keepers wave — Smartsheet / Glean / Aimpoint / Dscout / WorkOS",
+    "summary": "HUNT_2026-08-24.md publishes five true-remote US keepers with canonical apply URLs and salary quotes where printed. Do-not-apply-from-note rule held.",
+    "category": "hunt",
+    "links": [
+      "https://job-boards.greenhouse.io/smartsheet/jobs/7798778",
+      "https://job-boards.greenhouse.io/gleanwork/jobs/4651991005"
+    ],
+    "evidence": "/workspace/apply/HUNT_2026-08-24.md"
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Role-packet HTML wave lands in Drive",
+    "summary": "Multiple for-* packet index.html uploads created/modified Aug 24–27 on Google Drive — coincides with GH Pages + HF twin packet shipping for hunt employers.",
+    "category": "ship",
+    "links": [],
+    "evidence": "Google Drive search modifiedTime>2026-07-01 title index.html (packet parents)"
+  },
+  {
+    "date": "2026-08-26",
+    "title": "THE STATUS hunt board snapshot (37 tracked)",
+    "summary": "HF Space the-status README snapshot: Applied 20 · Pipeline 12 · Withdrew 4 · Rejected 1. Eve owns daily refreshes; APPLICATIONS.xlsx is source of truth.",
+    "category": "hunt",
+    "links": [
+      "https://huggingface.co/spaces/jpanasuk/the-status",
+      "https://huggingface.co/spaces/jpanasuk/the-dashboard"
+    ],
+    "evidence": "/workspace/hunt/the-status/README.md (snapshot 2026-08-27 8:10 AM CT; sheet write 2026-08-26)"
+  },
+  {
+    "date": "2026-08-27",
+    "title": "American Tech Fellowship packet + HF video shipped",
+    "summary": "for-american-tech GH PR #2 merged; self-mail documents Hugging Face packet with Canonical Run video. Palantir ATF presentation PDF present on box.",
+    "category": "hunt",
+    "links": [
+      "https://jpanasuk-netizen.github.io/the-closer/",
+      "https://huggingface.co/spaces/jpanasuk/for-american-tech"
+    ],
+    "evidence": "Gmail 1a0451a23ed64691 · 1a0452cda5e9cc03 · /workspace/atf-present/JAP_PALANTIR_AMERICAN_TECH.pdf"
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Palantir Warp Speed FDSE — rejection",
+    "summary": "Lever rejection for Forward Deployed Software Engineer - Warp Speed. Logged in hunt notes; do-not-bump rule later applied to ATF.",
+    "category": "hunt",
+    "links": [],
+    "evidence": "Gmail 1a046524804cd474 (2026-08-28 03:03 UTC ≈ 2026-08-27 10:03 PM CT)"
+  },
+  {
+    "date": "2026-08-28",
+    "title": "Hunt keepers — Origin / GitLab / UHG / Baseten / SpruceID",
+    "summary": "HUNT_2026-08-28.md adds five new true-remote FDE keepers with covers under /workspace/apply/COVER_*.txt. Pipeline skip list includes Warp Speed rejected + ATF video sent.",
+    "category": "hunt",
+    "links": [
+      "https://jobs.ashbyhq.com/originhq/aa35cc3c-8364-4cea-8057-b50251275684",
+      "https://job-boards.greenhouse.io/gitlab/jobs/8512432002"
+    ],
+    "evidence": "/workspace/apply/HUNT_2026-08-28.md"
+  },
+  {
+    "date": "2026-08-30",
+    "title": "Palantir American Tech Fellowship — video under review",
+    "summary": "Lever update: thank you for video submission; team reviewing. Hunt notes: do not bump Catherine / ATF.",
+    "category": "hunt",
+    "links": [],
+    "evidence": "Gmail 1a0548370de5e449 · /workspace/apply/HUNT_2026-09-03.md Inbox"
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Continuity rule: Treg + Hermes when GrokBot gone",
+    "summary": "User-memory standing fact: once GrokBot access is gone, Jeremy uses Treg with Hermes; Hermes Bot holds WSL continuity.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/home/box/sand-data/user-memory/by-agent/0d0d84b3-2c5e-4bb2-8577-1012cdc656cb/profile.md"
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Hunt keepers — Catena / Climb / Hippocratic (+ more)",
+    "summary": "HUNT_2026-09-03.md publishes new-company keepers; hard stop noted 2026-09-21. Long skip list shows mature pipeline from late-August waves.",
+    "category": "hunt",
+    "links": [
+      "https://jobs.ashbyhq.com/catena/a26bbbb9-1b60-40f1-a772-2f4214c784c7",
+      "https://jobs.ashbyhq.com/climb-ai/e12b94da-93a0-4f58-929a-b9d47a1f507e"
+    ],
+    "evidence": "/workspace/apply/HUNT_2026-09-03.md"
+  },
+  {
+    "date": "2026-09-04",
+    "title": "NVIDIA Developer Program welcome",
+    "summary": "noreply@nvidia.com welcome email confirms NVIDIA Developer Program enrollment (tools/training track).",
+    "category": "ai-stack",
+    "links": [
+      "https://developer.nvidia.com/"
+    ],
+    "evidence": "Gmail 1a06a460f59ac1c2 (2026-09-04 02:36 UTC)"
+  },
+  {
+    "date": "2026-09-04",
+    "title": "PathE org-chart + continuity pack on shared box",
+    "summary": "Dense PathE docs, free-coding-models tree, closer PDFs, and grokbot-continuity-pack appear on box (~Sep 4 mtimes). Desk org chart + agent roster become operable receipts.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/DESK-ORG-CHART.md · /workspace/grokbot-continuity-pack/AGENTS.md"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "Windows Hermes Desktop full pull (HermesTools)",
+    "summary": "MANIFEST/SUMMARY: 5776 files copied from %LOCALAPPDATA%\\hermes into Documents\\HermesTools\\_windows_hermes_full_pull. Skills index + continuity bots mirrored; .env redacted (no secrets in pack).",
+    "category": "lab",
+    "links": [],
+    "evidence": "/workspace/HermesTools/_windows_hermes_full_pull/MANIFEST.md · SUMMARY.md (As of 2026-09-05 CT)"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "Jeremy approvals + Path E seat map locked",
+    "summary": "JEREMY-APPROVED greenlights CONNECT framing, First-100, AGENT-OUTPUT-CHECKS, Jasper Black content queue (per-post still gated). Tabby Tavern = HAVE; shopier/wallets/Comfy parked. DESK-ORG-CHART defines Leo / Money / ProposalCloser / tube / SEO / FreeModels / Hermes / TapRoot / Cynthia / Eve seats.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/JEREMY-APPROVED-2026-09-05.md · DESK-ORG-CHART.md"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "CONNECT OG/canonical shipped (GH + HF twin)",
+    "summary": "CONNECT_YOUR_LIFE.html gets canonical + og/twitter on GitHub Pages primary and HF twin; offer copy KEEP ($99.99 / $1). Live curl-verified same day ~4:08pm CT.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html",
+      "https://jpanasuk-the-closer.static.hf.space/CONNECT_YOUR_LIFE.html"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-DONE-CONNECT-OG-2026-09-05.md"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "House Hub live on GitHub Pages",
+    "summary": "Free hub index ships with OG/canonical; links attested Closer/CONNECT/Hunt/Machine Room/Ret surfaces. Custom domain PARK. Commit bbcdeaaf…",
+    "category": "sites",
+    "links": [
+      "https://jpanasuk-netizen.github.io/house-hub/"
+    ],
+    "evidence": "/workspace/PathE-org-chart/HOUSE-HUB-FREE-SITE.md · SEO-DONE-HOUSE-HUB-OG-2026-09-05.md"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "Closer hub / hunt / playbook + ATF/Edisyl SEO BOTH GH+HF",
+    "summary": "Surgical head tags + footer mesh on the-closer hub, hunt.html, playbook.html, for-american-tech, for-edisyl. Packet equity table already linked GH Pages for multiple employers — left accurate.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/the-closer/",
+      "https://jpanasuk-netizen.github.io/the-closer/hunt.html",
+      "https://jpanasuk-netizen.github.io/the-closer/playbook.html"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-DONE-HUB-HUNT-PLAYBOOK-2026-09-05.md"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "Grok Bot 10-steps → house wiring map",
+    "summary": "Article→seat map: Leo=Chief, seats hired, approval-by-reversibility WIRED; weekly prune still GAP. Documents agent fleet operating model without adding seats.",
+    "category": "agents",
+    "links": [
+      "https://x.com/0xCodez/status/2089676836619878567"
+    ],
+    "evidence": "/workspace/PathE-org-chart/GROK-BOT-AGENTS-10-STEPS.md"
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Machine Room Shorts + L74 Gemini pilot GREEN LIVE",
+    "summary": "PathG machine-room GREEN_LIVE_DONE: rebuild Shorts and L74 Gemini pilot marked live ~7:20pm CT on @themachineroomtoday.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/@themachineroomtoday",
+      "https://youtube.com/shorts/DuE8Bsp-_2M"
+    ],
+    "evidence": "/workspace/PathG-youtube/machine-room/GREEN_LIVE_DONE_2026-09-09.json · L74_GEMINI_LIVE.json"
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Machine Room longs green + flip-to-public batch",
+    "summary": "MR_LONGS_GREEN_DONE and MR_FLIP_PUBLIC_DONE: education-category public longs (containsSyntheticMedia true); multiple previously-private videos flipped public ~6:46–8:47pm CT.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/@themachineroomtoday"
+    ],
+    "evidence": "/workspace/PathG-youtube/machine-room/MR_LONGS_GREEN_DONE_2026-09-10.json · MR_FLIP_PUBLIC_DONE_2026-09-10.json"
+  },
+  {
+    "date": "2026-09-10",
+    "title": "LAND-OS.html desk map stamped",
+    "summary": "Interactive LAND-OS.html written under PathE-org-chart (mtime 2026-09-10) — visual land operating surface for the agent desk.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/LAND-OS.html"
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Cash bridge note (GFM/PayPal — Jeremy-sourced)",
+    "summary": "PathA cash note records Jeremy-sourced GFM inflow and PayPal balance as of ~5:37pm CT. Included as money-lane context only — not a revenue claim for products.",
+    "category": "money",
+    "links": [],
+    "evidence": "/workspace/PathA-cash/JEREMY-CASH-NOTES.md (2026-09-10)"
+  },
+  {
+    "date": "2026-09-11",
+    "title": "Amazon Associates — welcome / start earning",
+    "summary": "associates@amazon.com welcome confirms Associates Program profile setup. Tag used later on calc sisters: generatosi0d-20 → generatorsi0d-20.",
+    "category": "money",
+    "links": [],
+    "evidence": "Gmail 1a08df579f8389c0 (2026-09-11 00:54 UTC)"
+  },
+  {
+    "date": "2026-09-11",
+    "title": "Calc 8-sister inventory + flagship AdSense-ready audit",
+    "summary": "All eight calculator domains HTTPS 200. Flagship generator-sizer.com already has Amazon affiliate + AdSense script; ads.txt gap and commented ad units noted. Monetize unlock order documented without inventing RPM.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/",
+      "https://solar-sizer.com/",
+      "https://welding-calculator.com/",
+      "https://battery-bank-sizer.com/",
+      "https://hvac-load-calc.com/",
+      "https://chickencoopcalc.com/",
+      "https://trailertowcalc.com/",
+      "https://aquarium-stocking.com/"
+    ],
+    "evidence": "/workspace/PathE-org-chart/CALC-SITES-INVENTORY.md · SEO-CALC-FLAGSHIP-ADSENSE-READY.md"
+  },
+  {
+    "date": "2026-09-11",
+    "title": "Google AI Studio paid Tier 1 + GCP API prepay",
+    "summary": "googleaistudio-noreply upgrade to paid Tier 1 (higher rate limits). Same day GCP & APIs one-time prepayment success emails (two billing profiles).",
+    "category": "ai-stack",
+    "links": [
+      "https://aistudio.google.com/"
+    ],
+    "evidence": "Gmail 1a09246cc0b98199 · 1a09222cd0bf3a4f"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "Amazon Associates — You're in congrats",
+    "summary": "store-news@amazon.com 'You're in! Congrats on becoming an Amazon Associate' — confirms Associate status for monetization on calc sisters.",
+    "category": "money",
+    "links": [],
+    "evidence": "Gmail 1a096939ff0c084d (2026-09-12 17:04 UTC)"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "generator-sizer.com Sarvesh HIGH SEO pass",
+    "summary": "Hermes commit 288a6f9: ads.txt 200 with pub line, Organization JSON-LD, Twitter title/desc, og:url on about/privacy/fridge. Live verified ~8:14pm CT. Spend $0.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/288a6f9043346fe75c7357169a8489af16604617"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-DONE-GENERATOR-SIZER-SARVESH-HIGH-2026-09-12.md"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "House live URL receipts list for Sarvesh audit",
+    "summary": "SEO-HOUSE-LIVE-URLS consolidates attested hubs, packets sample, calc cash sites, and YT handles; Knowledge Atlas flagged box-only.",
+    "category": "sites",
+    "links": [
+      "https://jpanasuk-netizen.github.io/house-hub/",
+      "https://jpanasuk-netizen.github.io/the-closer/hunt.html"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-HOUSE-LIVE-URLS-2026-09-12.md"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "TikTok @3jsa7 remux batch 19/19 LIVE",
+    "summary": "TT_BATCH_DONE: 19/19 Machine Room remux posts live via TikTok Studio CDP (GadDesk). IG AutoSocial PARKED.",
+    "category": "media",
+    "links": [
+      "https://www.tiktok.com/@3jsa7"
+    ],
+    "evidence": "/workspace/PathG-youtube/machine-room/TT_BATCH_DONE_2026-09-12.json (~12:25am CT)"
+  },
+  {
+    "date": "2026-09-13",
+    "title": "Google AI Pro 5 TB plan activated",
+    "summary": "googleone-noreply: You've activated a new Google AI Pro 5 TB plan. Concurrent Play refund of prior Google AI Plus (2 TB) $6.99.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "Gmail 1a09bed335d1dcd4 · 1a09bed2ef45cd19 (2026-09-13 18:00 UTC)"
+  },
+  {
+    "date": "2026-09-13",
+    "title": "Solar / welding / battery Amazon CTA PASS (cache-bust)",
+    "summary": "After same-day FAIL at 19:29 CDT, cache-bust re-verify 19:32 CDT PASSes: all 7 solar niche articles ≥1 generatorsi0d-20; welding beginner/quarter-inch/mig-or-tig tagged; battery generator-sizing tagged. No invented rankings.",
+    "category": "money",
+    "links": [
+      "https://solar-sizer.com/",
+      "https://welding-calculator.com/",
+      "https://battery-bank-sizer.com/"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-DONE-SOLAR-WELDING-AMAZON-CTA-REVERIFY-2026-09-13.md"
+  },
+  {
+    "date": "2026-09-13",
+    "title": "8-domain calc traffic hygiene audit stamped",
+    "summary": "SEO-CALC-8DOMAIN-TRAFFIC-HYGIENE documents per-domain hygiene baseline used to drive Amazon CTA and SEO patches across the sister set.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-CALC-8DOMAIN-TRAFFIC-HYGIENE-2026-09-13.md"
+  },
+  {
+    "date": "2026-09-14",
+    "title": "shoppacks.net SEO hygiene PASS (PR #1 merged)",
+    "summary": "Audit found missing canonical/OG; Hermes fixes merged (fd3ecbd…). Live re-verify ~6:42pm CDT: home 200 with canonical+OG+twitter+JSON-LD. No AdSense/Amazon on shoppacks.",
+    "category": "sites",
+    "links": [
+      "https://shoppacks.net/",
+      "https://github.com/jpanasuk-netizen/shoppacks"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-DONE-SHOPPACKS-HYGIENE-2026-09-14.md · SEO-SHOPPACKS-AUDIT-2026-09-14.md"
+  },
+  {
+    "date": "2026-09-14",
+    "title": "KDP account update confirmation (not a live listing claim)",
+    "summary": "Amazon donotreply confirms address/bank changes on Kindle Direct Publishing account. Manuscript PDF path exists on box (The Closer / 3-AM Protocol cover art) — does NOT claim a live Amazon product page.",
+    "category": "ship",
+    "links": [],
+    "evidence": "Gmail 1a09da9055bcb8e6 · /workspace/The-3-AM-Protocol-Cover.jpg · closer PDFs under /workspace"
+  },
+  {
+    "date": "2026-09-14",
+    "title": "NVIDIA Inception application submitted",
+    "summary": "inceptionprogram@nvidia.com: We received your NVIDIA Inception program application (to jpanasuk@generator-sizer.com + contact spanasuk@…). Review within ~10 business days. Timestamp 2026-09-15 03:37 UTC ≈ 2026-09-14 10:37pm CT.",
+    "category": "ai-stack",
+    "links": [
+      "https://www.nvidia.com/en-us/startups/"
+    ],
+    "evidence": "Gmail 1a0a324a81bebb73"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "FreeModelsBot + NIM kimi-k3 default stack documented",
+    "summary": "FREEMODELSBOT.md / FreeModelsBot seat: legal free tiers only; Hermes default NIM moonshotai/kimi-k3; FCM + itsfree.ai + freellm.sh as scout surfaces. Practice pack Hands-On-AI-Engineering cloned on box.",
+    "category": "ai-stack",
+    "links": [
+      "https://itsfree.ai/",
+      "https://freellm.sh/",
+      "https://github.com/Sumanth077/Hands-On-AI-Engineering"
+    ],
+    "evidence": "/workspace/FREEMODELSBOT.md · /workspace/grokbot-continuity-pack/bots/freemodelsbot.md"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "SEO surface inventory — Machine Room / Ret / CONNECT / hunt",
+    "summary": "SEO Bot inventory lists live surfaces (YT Machine Room + Ret @3jsa7, CONNECT LP, closer hub, HF the-status/dashboard, packets) and parks Preferred Source / OpenSEO / GBP until Jeremy greens.",
+    "category": "sites",
+    "links": [
+      "https://www.youtube.com/@themachineroomtoday",
+      "https://www.youtube.com/@3jsa7",
+      "https://lnkd.in/p/gvPGrahR"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-SURFACE-INVENTORY.md"
+  },
+  {
+    "date": "2026-09-15",
+    "title": "Live surface re-verify from executor box",
+    "summary": "Curl -L HTTP 200 confirmed for generator-sizer + 7 sisters, shoppacks.net, house-hub, the-closer hub/hunt/CONNECT/playbook, HF the-closer + the-status, YouTube @themachineroomtoday and @3jsa7.",
+    "category": "ship",
+    "links": [
+      "https://generator-sizer.com/",
+      "https://shoppacks.net/",
+      "https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html",
+      "https://huggingface.co/spaces/jpanasuk/the-status"
+    ],
+    "evidence": "executor curl batch 2026-09-15/16 CT"
+  },
+  {
+    "date": "2026-09",
+    "title": "Agent fleet roster (continuity) — approximate mid-window",
+    "summary": "Standing seats documented: Leo (CoS), Cynthia-Res, Eve, TapRoot, Hermes, Annie++, MoneyBot, ProposalCloser, thetubebot, BizDevIdeaBot, FreeModelsBot, BTCC, GadDesk, Headshot, Grok Build, SEO Bot, OpsLog. Muse/MiMo/bus mentioned in house lore — see Gaps if not charter-backed.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/grokbot-continuity-pack/AGENTS.md · PathE DESK-ORG-CHART.md"
+  },
+  {
+    "date": "2026-09",
+    "title": "User-claimed: Devin community leader / Typesafe / Seek / Treg",
+    "summary": "Task brief lists Devin community leader, Typesafe, Seek, Treg as user-claimed. Treg appears in continuity standing text; Devin/Typesafe/Seek lack dated third-party receipts in this gather pass — flagged unverified.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "UNVERIFIED — user-claimed; Treg noted in continuity AGENTS.md / user-memory"
+  }
+]
