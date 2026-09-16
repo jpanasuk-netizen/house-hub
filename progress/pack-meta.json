@@ -1,7 +1,7 @@
 {
   "range": "2026-07-01 → 2026-09-15 (America/Chicago)",
-  "built": "2026-09-15 evening CT · Hermes executor on shared box",
-  "rules": "dated evidence preferred · no invented revenue $ · no secrets / .env · categories consistent",
+  "built": "2026-09-15 ~10:00 PM CT · Leo + Hermes · tool badges added",
+  "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
   "themes": [
     {
       "label": "Hunt machine",
@@ -26,6 +26,14 @@
     {
       "label": "Media dual-channel",
       "blurb": "Machine Room (@themachineroomtoday) longs/Shorts + Ret/TikTok (@3jsa7) remux batch."
+    },
+    {
+      "label": "Tool → win",
+      "blurb": "Every big ship names the tool: MiMo, AutoClaw, Treg, Hermes, SEO, Associates, NIM, Google AI Pro."
+    },
+    {
+      "label": "Thanks lane",
+      "blurb": "@XiaomiMiMo free MiMo access · @AutoClawAIer / @Zai_org sizing calculator iPhone app."
     }
   ],
   "verified": [
@@ -79,6 +87,15 @@
         "https://freellm.sh/",
         "https://github.com/Sumanth077/Hands-On-AI-Engineering"
       ]
+    },
+    {
+      "group": "Free AI / render partners (thanks)",
+      "urls": [
+        "https://x.com/XiaomiMiMo",
+        "https://x.com/AutoClawAIer",
+        "https://x.com/Zai_org",
+        "https://www.nvidia.com/en-us/startups/"
+      ]
     }
   ],
   "gaps": [
@@ -115,7 +132,7 @@
     {
       "item": "Treg",
       "status": "PARTIAL",
-      "notes": "Named in continuity / user-memory as Hermes partner path; not independently dated as a “signup wave” event."
+      "notes": "Treg used live for MR SVB hook (TREG_HOOK_2026-09-15.md youtube.search.videos). Continuity partner path confirmed."
     },
     {
       "item": "KDP live Amazon product",
@@ -124,8 +141,8 @@
     },
     {
       "item": "Muse / MiMo / bus seats",
-      "status": "PARTIAL / UNVERIFIED",
-      "notes": "Mentioned in task brief; not in DESK-ORG-CHART primary cash-war table."
+      "status": "PARTIAL",
+      "notes": "MiMo thanks @XiaomiMiMo + PUBLISH_CLOCKWORK lock verified; Hermes file-bus :8650 up 2026-09-15; no hermes --profile mimo yet. Muse HTTP API RETIRED 2026-09-14."
     },
     {
       "item": "Annie++ / Scratch / New Bot",
@@ -146,6 +163,11 @@
       "item": "Packet employer GH Pages (full set)",
       "status": "SAMPLE",
       "notes": "for-american-tech / for-edisyl / for-paylocity / for-cresta / for-toloka / for-carex-fde / for-warp-speed attested in SEO-DONE hub note — not individually curl-checked this pass."
+    },
+    {
+      "item": "AutoClaw public GitHub tree",
+      "status": "THIN",
+      "notes": "OAuth/share Gmail + @AutoClawAIer verified; no jpanasuk-netizen/autoclaw repo found yet. iPhone sizing calc claimed by Jeremy."
     }
   ]
 }
