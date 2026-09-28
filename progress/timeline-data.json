@@ -118,6 +118,22 @@
     "evidence": "Gmail 1a0548370de5e449 · /workspace/apply/HUNT_2026-09-03.md Inbox"
   },
   {
+    "date": "2026-09",
+    "title": "Agent fleet roster (continuity) — approximate mid-window",
+    "summary": "Standing seats documented: Leo (CoS), Cynthia-Res, Eve, TapRoot, Hermes, Annie++, MoneyBot, ProposalCloser, thetubebot, BizDevIdeaBot, FreeModelsBot, BTCC, GadDesk, Headshot, Grok Build, SEO Bot, OpsLog. Muse/MiMo/bus mentioned in house lore — see Gaps if not charter-backed.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/grokbot-continuity-pack/AGENTS.md · PathE DESK-ORG-CHART.md"
+  },
+  {
+    "date": "2026-09",
+    "title": "User-claimed: Devin community leader / Typesafe / Seek / Treg",
+    "summary": "Task brief lists Devin community leader, Typesafe, Seek, Treg as user-claimed. Treg appears in continuity standing text; Devin/Typesafe/Seek lack dated third-party receipts in this gather pass — flagged unverified.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "UNVERIFIED — user-claimed; Treg noted in continuity AGENTS.md / user-memory"
+  },
+  {
     "date": "2026-09-03",
     "title": "Hunt keepers — Catena / Climb / Hippocratic (+ more)",
     "summary": "HUNT_2026-09-03.md publishes new-company keepers; hard stop noted 2026-09-21. Long skip list shows mature pipeline from late-August waves.",
@@ -494,22 +510,6 @@
     "tool": "Hermes executor curl"
   },
   {
-    "date": "2026-09",
-    "title": "Agent fleet roster (continuity) — approximate mid-window",
-    "summary": "Standing seats documented: Leo (CoS), Cynthia-Res, Eve, TapRoot, Hermes, Annie++, MoneyBot, ProposalCloser, thetubebot, BizDevIdeaBot, FreeModelsBot, BTCC, GadDesk, Headshot, Grok Build, SEO Bot, OpsLog. Muse/MiMo/bus mentioned in house lore — see Gaps if not charter-backed.",
-    "category": "agents",
-    "links": [],
-    "evidence": "/workspace/grokbot-continuity-pack/AGENTS.md · PathE DESK-ORG-CHART.md"
-  },
-  {
-    "date": "2026-09",
-    "title": "User-claimed: Devin community leader / Typesafe / Seek / Treg",
-    "summary": "Task brief lists Devin community leader, Typesafe, Seek, Treg as user-claimed. Treg appears in continuity standing text; Devin/Typesafe/Seek lack dated third-party receipts in this gather pass — flagged unverified.",
-    "category": "ai-stack",
-    "links": [],
-    "evidence": "UNVERIFIED — user-claimed; Treg noted in continuity AGENTS.md / user-memory"
-  },
-  {
     "date": "2026-09-15",
     "title": "Hermes local file-bus restored (no public credit burn)",
     "summary": "Safe 127.0.0.1:8650 hermes-file-bus-api up; public Muse HTTP API stays retired. SVB MiMo job filed on bus awaiting render profile.",
@@ -532,6 +532,15 @@
     "evidence": "Jeremy draft 2026-09-15 · NVIDIA Inception Gmail 1a0a324a81bebb73 · AutoClaw Gmail 1a0a25ffa6767a0c"
   },
   {
+    "date": "2026-09-15",
+    "title": "Executor re-verify + Hermes file-bus restore",
+    "summary": "Shared-box executor re-checked live surfaces. Hermes local file-bus restored so agent seats share state without public credit burn. Progress desk narrative updated for free-AI wave + crew.",
+    "category": "ship",
+    "links": [],
+    "evidence": "timeline pack 2026-09-15 trio (live re-verify, file-bus, progress desk)",
+    "tool": "Hermes · Leo"
+  },
+  {
     "date": "2026-09-16",
     "title": "SupaBird clone — AI growth tool for X (10 modules)",
     "summary": "Grok Build workspace project supabird-clone: X-GPT writing, growth modules, Node kill-switch scripts, local boot verified alongside FunTokens / Debate Desk / Connecture (HTTP 200 smoke).",
@@ -539,6 +548,63 @@
     "links": [],
     "evidence": "/workspace/projects/supabird-clone (Grok Build profile); week37-review X_POST_SITE.txt",
     "tool": "Grok Build · Hermes"
+  },
+  {
+    "date": "2026-09-16",
+    "title": "BTC 15m typesafe push + Kalshi live lane kept hot",
+    "summary": "btc-15m-typesafe and _btc15m-box-push touched; kalshi-15m-live Freebuff lane continues operator charter ($2/spin era) toward the later Jev desk.",
+    "category": "money",
+    "links": [],
+    "evidence": "HermesTools/btc-15m-typesafe, kalshi-15m-live mtime 2026-09-16/17",
+    "tool": "TypeSafe · Kalshi"
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Kalshi 15m live tools + BTC beat 15m",
+    "summary": "kalshi-15m-live scripts (entry_gate, spin/live fire, OPERATOR.md charter) and btc-beat-15m / jev-dashboard land on the box as the Kalshi BTC 15m research stack.",
+    "category": "money",
+    "links": [],
+    "evidence": "D:/Freebuff/kalshi-15m-live; HermesTools/btc-beat-15m; jev-dashboard",
+    "tool": "Kalshi · Jev"
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Calc-affiliate wave + Muse rig hub",
+    "summary": "Affiliate domain work (_aff-* generator/solar/welding/battery/hvac/coop/trailer/aquarium) refreshed together. muse-rig-hub appears for the local video/rig lane.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/",
+      "https://solar-sizer.com/"
+    ],
+    "evidence": "HermesTools/_aff-* folders mtime 2026-09-18; muse-rig-hub",
+    "tool": "Associates · SEO"
+  },
+  {
+    "date": "2026-09-18",
+    "title": "muse-rig-hub — Muse + browser agent/CLI selector",
+    "summary": "Cloudflare Worker public catalog (/api/catalog /api/bus /mcp) with RIG_TOKEN. Muse (Meta cloud) and the browser GUI both reach the same bus list. House pulls outbound only into bus/inbox — no public tunnel, no credit burn.",
+    "category": "agents",
+    "links": [],
+    "evidence": "Documents/HermesTools/muse-rig-hub/README.md (2026-09-18)",
+    "tool": "Muse · Cloudflare Worker · house-rig-hub"
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Muse local video gateway reserved on :8788",
+    "summary": "Port map documented house-wide: 8788 = Muse local video gateway. Trenchnet desk moved 8788→8791 so it would not collide. Also reserved: 8765 Connecture, 8787 aibus, 8790 mcp-gate.",
+    "category": "lab",
+    "links": [],
+    "evidence": "trenchnet/RECEIPT.md port-move note; trenchnet/README.md Desk UI section",
+    "tool": "Muse gateway · Trenchnet"
+  },
+  {
+    "date": "2026-09-19",
+    "title": "Minions + UI skills + app-starter/xint kit",
+    "summary": "Agent helper toolkit pass: minions, ui-skills, app-starter, xint. Shared scaffolding for the week-37 app ships (Next.js surfaces, UI skins, launch stubs).",
+    "category": "agents",
+    "links": [],
+    "evidence": "HermesTools/{minions,ui-skills,app-starter,xint} mtime 2026-09-19",
+    "tool": "Hermes · Grok Build"
   },
   {
     "date": "2026-09-20",
@@ -550,6 +616,26 @@
     ],
     "evidence": "week37-review/index.html (2026-09-26 capture)",
     "tool": "Hermes · Grok Build"
+  },
+  {
+    "date": "2026-09-20",
+    "title": "Week-37 opens — RuujSs + QuantDinger intake",
+    "summary": "Sunday 20:09 CT intelligence intake. RuujSs and QuantDinger land for triage. Instagram publishing blocked (HTTP 500 from container) — logged as a gap, not a win.",
+    "category": "lab",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review/index.html timeline Sunday 20",
+    "tool": "Hermes bus"
+  },
+  {
+    "date": "2026-09-21",
+    "title": "TheEcomDaddy offer verified at $79/mo",
+    "summary": "Leo ladder query confirms the $79/mo price point. Both Grok and Hermes pick it up for the biz-dev lane. Monday 20:05 CT.",
+    "category": "hunt",
+    "links": [],
+    "evidence": "week37-review timeline Monday 21",
+    "tool": "Leo · Grok Build"
   },
   {
     "date": "2026-09-22",
@@ -572,6 +658,59 @@
     "tool": "Token Desk · paper gate"
   },
   {
+    "date": "2026-09-22",
+    "title": "Experiential Labs credentials page — keys stay private",
+    "summary": "Credentials surface built and shipped with an explicit note that secrets stay out of public artifacts. Aligns with the privacy-sweep skill rule on the Second-Brain vault.",
+    "category": "ship",
+    "links": [],
+    "evidence": "week37-review timeline Tuesday 22",
+    "tool": "Hermes"
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Connecture — real Muse wire-protocol client",
+    "summary": "Not a wrapper: sessions, turns, approvals, models, and live view stream are real Muse protocol traffic. Connector hub 13 of 21 live (Muse, FreeBuff, Grok, …). Control room :8765.",
+    "category": "agents",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review CONNECTURE block; capture_connecture_tabs.py (Muse / Inbox tabs)",
+    "tool": "Connecture · Muse protocol"
+  },
+  {
+    "date": "2026-09-23",
+    "title": "SupaBird ships (Next.js 16) — fleet sync 28 targets",
+    "summary": "Wednesday 18:15 CT. grok-build delivers the X growth tool. First launch threw a malformed C:\\c\\Users path — caught and fixed in five minutes. Fleet sync hits 28 targets.",
+    "category": "ai-stack",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review timeline Wednesday 23; supabird-clone kill_nodes.cmd",
+    "tool": "Grok Build · Next.js"
+  },
+  {
+    "date": "2026-09-23",
+    "title": "Fleet sync 28 targets + path-bug hotfix",
+    "summary": "Same ship window as SupaBird v1.0: fleet sync hits 28 targets. First launch threw a malformed C:\\c\\Users path — caught and fixed in five minutes (grok-build).",
+    "category": "agents",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review What shipped table + timeline Wednesday 23",
+    "tool": "Grok Build · fleet bus"
+  },
+  {
+    "date": "2026-09-23",
+    "title": "SupaBird v1.0 inventory — 10 modules / 11 routes",
+    "summary": "Next.js 16 local app: X-GPT, IdeasLab, Content Machine, Video-to-Post, X Coach, Engage, Collections, Calendar, My Library. Local only; not an income claim.",
+    "category": "ai-stack",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review SupaBird module list",
+    "tool": "Grok Build · Next.js 16"
+  },
+  {
     "date": "2026-09-24",
     "title": "TRENCHNET — Solana / pump.fun desk + Coin Desk integration plan",
     "summary": "Live roster tracker UI on :8791. LIVE trading disarmed by default. Pass 5–6: copy-trade backtest, Helius pool-price reconstruction, scores desk. Coin Desk integration written as investigation-only plan (ports 8765/8787/8788/8790/8791 left untouched).",
@@ -579,6 +718,136 @@
     "links": [],
     "evidence": "Documents/HermesTools/trenchnet/RECEIPT.md; docs/COIN_DESK_INTEGRATION_PLAN.md",
     "tool": "Trenchnet · Helius · Birdeye"
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Motion With Receipts fans out — bus volume 19 events",
+    "summary": "Thursday 18:35 CT. One action, 6 seats, 60 seconds. Bus traffic triples to 19 events — first real spike of week 37. ultimate-quant / autosocial / hyperframes tooling touched same day.",
+    "category": "agents",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review timeline Thursday 24; HermesTools mtimes 2026-09-24",
+    "tool": "Hermes bus · 6 seats"
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Peak day — 35 events in 24h (10× jump)",
+    "summary": "Friday 14:55 CT. Curriculum extraction, trading-desk evidence, and bus traffic compound. Thursday→Friday was 19→35 events in one day.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review timeline Friday 25",
+    "tool": "Hermes bus"
+  },
+  {
+    "date": "2026-09-25",
+    "title": "TheEcomDaddy curriculum extraction — 5 tweets → $79/mo",
+    "summary": "Peak-day lane: five public tweets distilled into a curriculum; offer ladder later confirms $79/mo (matches Monday verification). No revenue claimed.",
+    "category": "hunt",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review What shipped table Fri 25",
+    "tool": "Leo · Grok Build"
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Trading-desk evidence pack (Kalshi 181 samples / 0.0%)",
+    "summary": "Quant Lab + trade-gate screenshots staged for publication: 181 samples, 0.0% hit rate, Sharpe 3.08 on the same record, live P&L −$18.47 over 16 trades (8W/8L). Public page says so out loud.",
+    "category": "money",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review KALSHI 15M DESK block; paper armed=False",
+    "tool": "Kalshi 15m Desk · Quant Lab"
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Bus traffic compounds — day total 35 events",
+    "summary": "Thursday→Friday 19→35 events. Curriculum extraction + trading-desk evidence + bus traffic all land the same day (Friday 14:55 CT peak marker).",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review bar chart Fri 25 = 35",
+    "tool": "Hermes bus"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Gmail restored (26,290 msgs) — four apps HTTP 200",
+    "summary": "Saturday 01:00 CT. Thunderbird syncs 26,290 messages. SupaBird, FunTokens, Debate Desk, and Connecture all boot and return HTTP 200. week37-review site + 17 screenshots published same day.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review timeline Saturday 26; _shots_20260926",
+    "tool": "Thunderbird · Hermes"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "FunTokens + Debate Desk (paper) called out honestly",
+    "summary": "FunTokens watches 40 wallets / 747 tokens watch-only. Debate Desk: 9 agents argue a stock (NVDA Hold). Both paper-only; n=1 hot take disclosed as sample of one on the public site.",
+    "category": "money",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review X_POST_SITE.txt; index.html FunTokens/Debate sections",
+    "tool": "FunTokens · Debate Desk"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Four apps booted — :3000 :8791 :8796 :8765 HTTP 200",
+    "summary": "SupaBird, FunTokens, Debate Desk, Connecture (and related desks) all return HTTP 200 after the Gmail restore window. Smoke is explicit in the week37 ship table.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review What shipped Sat 26 — 4 apps booted",
+    "tool": "Hermes · Connecture"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "MSP integrity check — bundled SHA == live SHA",
+    "summary": "Control-plane integrity probe: bundled SHA matches live SHA (drift: false). Same-day as the 17-screenshot capture pass (02:00–02:45 CT).",
+    "category": "lab",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review What shipped Sat 26 — MSP integrity",
+    "tool": "MSP · FreeBuff"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "week37-review site published — 17 screenshots, paper gates",
+    "summary": "Public review site ships the full week: SupaBird / FunTokens / Debate Desk / Connecture, gates table (nothing live), and honest 0.0% / n=1 disclosures. Screenshots captured same morning.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review/_shots_20260926; X_POST_SITE.txt 2026-09-26",
+    "tool": "Hermes · GH Pages"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Muse 1.3.0 — local video gateway + MSP agent host",
+    "summary": "House stack map: Muse runs the protocol / local video gateway (1.3.0), FreeBuff owns Connecture (0.0.200), Grok is the build engine (grok-4.7), MiMo is a local model (llama.cpp mimo2.cpp). Four roles, not four chatbots.",
+    "category": "agents",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review stack table 2026-09-26",
+    "tool": "Muse · FreeBuff · Grok · MiMo"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Muse bus membership — outbound pull, no inbound exposure",
+    "summary": "sync/apply_bus.py on LightBringer applies Muse-side membership into bus/inbox/*.md + _rig_membership.json + MEMCORE.md. Public half holds one list only; token never enters chat.",
+    "category": "lab",
+    "links": [],
+    "evidence": "muse-rig-hub/README.md architecture diagram; muse-api-server-connection.txt (public bus RETIRED)",
+    "tool": "Muse rig hub · house bus"
   },
   {
     "date": "2026-09-27",
