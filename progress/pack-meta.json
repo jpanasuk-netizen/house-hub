@@ -1,6 +1,6 @@
 {
-  "range": "2026-07-01 → 2026-09-15 (America/Chicago)",
-  "built": "2026-09-15 ~10:00 PM CT · Leo + Hermes · tool badges added",
+  "range": "2026-07-01 → 2026-09-27 (America/Chicago)",
+  "built": "2026-09-27 · MiMo + house-hub pack refresh (trading + agent stack)",
   "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
   "themes": [
     {
@@ -34,6 +34,18 @@
     {
       "label": "Thanks lane",
       "blurb": "@XiaomiMiMo free MiMo access · @AutoClawAIer / @Zai_org sizing calculator iPhone app."
+    },
+    {
+      "label": "Trading desks",
+      "blurb": "Kalshi 15m live (spike + $4.20 clips), Trenchnet Solana paper-first, Coin Desk paper launch desk."
+    },
+    {
+      "label": "Week-37 four-ship",
+      "blurb": "SupaBird clone, Connecture GUI bus, FunTokens, Debate Desk — one week on one 4070."
+    },
+    {
+      "label": "Hermes vendor-survive",
+      "blurb": "Cursor API provider, profile config heal, Markdown Second-Brain state outside any vendor."
     }
   ],
   "verified": [
@@ -95,6 +107,19 @@
         "https://x.com/AutoClawAIer",
         "https://x.com/Zai_org",
         "https://www.nvidia.com/en-us/startups/"
+      ]
+    },
+    {
+      "group": "Trading / lab",
+      "urls": [
+        "https://jpanasuk-netizen.github.io/week37-review/",
+        "https://jpanasuk-netizen.github.io/house-hub/progress/"
+      ]
+    },
+    {
+      "group": "Docs / help",
+      "urls": [
+        "https://help.kalshi.com/en/articles/13823799-crypto-deposits"
       ]
     }
   ],
@@ -168,6 +193,10 @@
       "item": "AutoClaw public GitHub tree",
       "status": "THIN",
       "notes": "OAuth/share Gmail + @AutoClawAIer verified; no jpanasuk-netizen/autoclaw repo found yet. iPhone sizing calc claimed by Jeremy."
-    }
+    },
+    "GAP — SupaBird clone revenue / growth metrics not claimed; only boot + HTTP 200 receipts.",
+    "UNVERIFIED — Connecture connecture.solar-sizer.com public URL not curl-checked in this pack build.",
+    "GAP — Coin Desk is paper-only; no live wallet, no PnL to publish.",
+    "GAP — Kalshi live PnL not invented; ledger is the only source of truth."
   ]
 }
