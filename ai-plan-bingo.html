@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Plan Bingo</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --cell: #101a2e;
+    --line: #22d3ee;
+    --gold: #fbbf24;
+    --ink: #e8eef7;
+    --muted: #93a4bb;
+    --green: #34d399;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", "IBM Plex Sans", system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 28px 16px 40px;
+    min-height: 100vh;
+  }
+  .board {
+    width: min(920px, 100%);
+  }
+  .kicker {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--line);
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 0.95;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  h1 span { color: var(--gold); }
+  .sub {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 22px;
+    max-width: 42em;
+    line-height: 1.5;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+  .cell {
+    background: var(--cell);
+    border: 1.5px solid rgba(34, 211, 238, 0.35);
+    border-radius: 10px;
+    min-height: 118px;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+  }
+  .mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1.5px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: var(--line);
+  }
+  .co {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1.25;
+  }
+  .plan {
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .cell.free {
+    background: linear-gradient(160deg, #1a2418 0%, #122018 100%);
+    border-color: var(--gold);
+  }
+  .star {
+    width: 48px;
+    height: 48px;
+    color: var(--gold);
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .cell.free .co { color: var(--gold); font-size: 14px; letter-spacing: 0.12em; }
+  .cell.free .plan { color: var(--green); }
+  .foot {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .tag {
+    border: 1px solid rgba(34, 211, 238, 0.35);
+    border-radius: 999px;
+    padding: 6px 12px;
+  }
+  @media (max-width: 640px) {
+    .cell { min-height: 96px; padding: 8px 4px; }
+    .co { font-size: 9px; }
+    .plan { font-size: 8px; }
+    .mark { width: 28px; height: 28px; font-size: 11px; }
+    .star { font-size: 32px; width: 36px; height: 36px; }
+  }
+</style>
+</head>
+<body>
+  <div class="board">
+    <div class="kicker">Seat check · 2026</div>
+    <h1>AI <span>Plan</span> Bingo</h1>
+    <p class="sub">The biggest / top plans from the major AI shops. Mark the ones you pay for. Free star in the middle — pick any free tier and you already win that square.</p>
+
+    <div class="grid" aria-label="AI plan bingo board">
+      <div class="cell"><div class="mark">OA</div><div class="co">OpenAI</div><div class="plan">ChatGPT Pro</div></div>
+      <div class="cell"><div class="mark">AN</div><div class="co">Anthropic</div><div class="plan">Claude Max</div></div>
+      <div class="cell"><div class="mark">G</div><div class="co">Google</div><div class="plan">Gemini AI Pro</div></div>
+      <div class="cell"><div class="mark">X</div><div class="co">xAI</div><div class="plan">Grok Heavy</div></div>
+      <div class="cell"><div class="mark">C</div><div class="co">Cursor</div><div class="plan">Ultra</div></div>
+
+      <div class="cell"><div class="mark">P</div><div class="co">Perplexity</div><div class="plan">Max</div></div>
+      <div class="cell"><div class="mark">MJ</div><div class="co">Midjourney</div><div class="plan">Mega</div></div>
+      <div class="cell"><div class="mark">EL</div><div class="co">ElevenLabs</div><div class="plan">Scale</div></div>
+      <div class="cell"><div class="mark">GH</div><div class="co">GitHub Copilot</div><div class="plan">Enterprise</div></div>
+      <div class="cell"><div class="mark">MS</div><div class="co">Microsoft</div><div class="plan">Copilot Pro</div></div>
+
+      <div class="cell"><div class="mark">MI</div><div class="co">Mistral</div><div class="plan">Le Chat Pro</div></div>
+      <div class="cell"><div class="mark">DS</div><div class="co">DeepSeek</div><div class="plan">Pro</div></div>
+      <div class="cell"><div class="mark">K</div><div class="co">Moonshot</div><div class="plan">Kimi</div></div>
+      <div class="cell"><div class="mark">M</div><div class="co">Meta AI</div><div class="plan">Meta AI Pro</div></div>
+      <div class="cell free">
+        <div class="star">★</div>
+        <div class="co">FREE</div>
+        <div class="plan">pick a free tier</div>
+      </div>
+
+      <div class="cell"><div class="mark">R</div><div class="co">Replit</div><div class="plan">Teams</div></div>
+      <div class="cell"><div class="mark">W</div><div class="co">Windsurf</div><div class="plan">Teams</div></div>
+      <div class="cell"><div class="mark">HF</div><div class="co">Hugging Face</div><div class="plan">PRO</div></div>
+      <div class="cell"><div class="mark">FW</div><div class="co">Fireworks</div><div class="plan">Scale</div></div>
+      <div class="cell"><div class="mark">GQ</div><div class="co">Groq</div><div class="plan">Developer</div></div>
+
+      <div class="cell"><div class="mark">N</div><div class="co">Notion AI</div><div class="plan">Business</div></div>
+      <div class="cell"><div class="mark">PO</div><div class="co">Poe</div><div class="plan">Max</div></div>
+      <div class="cell"><div class="mark">CA</div><div class="co">Character.AI</div><div class="plan">c.ai+</div></div>
+      <div class="cell"><div class="mark">RW</div><div class="co">Runway</div><div class="plan">Unlimited</div></div>
+      <div class="cell"><div class="mark">SA</div><div class="co">Stability</div><div class="plan">Enterprise</div></div>
+    </div>
+
+    <div class="foot">
+      <div class="tag">25 squares · one free star</div>
+      <div class="tag">Monograms only · not official logos</div>
+      <div class="tag">Which one are you paying for?</div>
+    </div>
+  </div>
+</body>
+</html>
