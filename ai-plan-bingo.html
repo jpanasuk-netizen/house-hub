@@ -126,6 +126,44 @@
     border-radius: 999px;
     padding: 6px 12px;
   }
+  .sites { margin-top: 28px; }
+  .sites h2 {
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .site-groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .site-groups h3 {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--line);
+    margin-bottom: 8px;
+  }
+  .site-groups ul {
+    list-style: none;
+    border: 1px solid rgba(34, 211, 238, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .site-groups li + li { border-top: 1px solid rgba(34, 211, 238, 0.15); }
+  .site-groups a {
+    display: block;
+    padding: 8px 12px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .site-groups a:hover { background: #152038; color: var(--gold); }
+  @media (max-width: 720px) {
+    .site-groups { grid-template-columns: 1fr; }
+  }
   @media (max-width: 640px) {
     .cell { min-height: 96px; padding: 8px 4px; }
     .co { font-size: 9px; }
@@ -182,6 +220,56 @@
       <div class="tag">Monograms only · not official logos</div>
       <div class="tag">Which one are you paying for?</div>
     </div>
+
+    <section class="sites" aria-label="All house sites">
+      <h2>All my sites</h2>
+      <div class="site-groups">
+        <div>
+          <h3>Hub · Hunt · Offer</h3>
+          <ul>
+            <li><a href="https://jpanasuk-netizen.github.io/house-hub/">House Hub</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/house-hub/progress/">Progress timeline</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/house-hub/museum/">Museum of Stolen Fire</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/the-closer/">The Closer</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/the-closer/hunt.html">Hunt board</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/the-closer/playbook.html">Playbook</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html">CONNECT your life</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/the-closer/connect-one-pager.html">CONNECT one-pager</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/week37-review/">Week 37 review</a></li>
+            <li><a href="https://jpanasuk-netizen.github.io/week37-review/brain.html">Second-brain vault</a></li>
+            <li><a href="https://lnkd.in/p/gvPGrahR">LinkedIn CTA</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Calc sisters</h3>
+          <ul>
+            <li><a href="https://generator-sizer.com/">Generator Sizer</a></li>
+            <li><a href="https://solar-sizer.com/">Solar Sizer</a></li>
+            <li><a href="https://welding-calculator.com/">Welding Calculator</a></li>
+            <li><a href="https://battery-bank-sizer.com/">Battery Bank Sizer</a></li>
+            <li><a href="https://hvac-load-calc.com/">HVAC Load Calc</a></li>
+            <li><a href="https://chickencoopcalc.com/">Chicken Coop Calc</a></li>
+            <li><a href="https://trailertowcalc.com/">Trailer Tow Calc</a></li>
+            <li><a href="https://aquarium-stocking.com/">Aquarium Stocking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Shop · media · HF</h3>
+          <ul>
+            <li><a href="https://shoppacks.net/">Shoppacks</a></li>
+            <li><a href="https://github.com/jpanasuk-netizen/shoppacks">shoppacks (GitHub)</a></li>
+            <li><a href="https://www.youtube.com/@themachineroomtoday">Machine Room · YT</a></li>
+            <li><a href="https://www.youtube.com/@3jsa7">Ret Paladin · YT</a></li>
+            <li><a href="https://www.tiktok.com/@3jsa7">TikTok · 3jsa7</a></li>
+            <li><a href="https://huggingface.co/spaces/jpanasuk/the-status">the-status · HF</a></li>
+            <li><a href="https://huggingface.co/spaces/jpanasuk/the-dashboard">the-dashboard · HF</a></li>
+            <li><a href="https://huggingface.co/spaces/jpanasuk/the-closer">the-closer · HF</a></li>
+            <li><a href="https://jpanasuk-the-closer.static.hf.space/">Closer · HF Space</a></li>
+            <li><a href="https://github.com/jpanasuk-netizen">GitHub · jpanasuk-netizen</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>
