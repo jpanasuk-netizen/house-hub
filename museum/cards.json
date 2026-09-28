@@ -1815,5 +1815,222 @@
     "dollar_park": false,
     "dollar_claims": [],
     "source": "file:WSL:/home/jpanasuk/jev-15m-kalshi-bot/app/spin.py"
+  },
+  {
+    "id": "L63",
+    "uid": "L63-brain-site-skill-catalog",
+    "title": "Second-brain site + 144-skill catalog (published)",
+    "steal_line": "House Hub now carries the second brain as articles + every SKILL.md as a linked page.",
+    "learn": "Components get their own pages (brain hub, CORRECTIONS, lanes, seats, trading journal, vendor-survive, capture loop). Full skill catalog with per-skill pages. No invented facts — counts come from disk. Links: https://jpanasuk-netizen.github.io/house-hub/brain/ · https://jpanasuk-netizen.github.io/house-hub/brain/skills.html · diagram https://jpanasuk-netizen.github.io/week37-review/brain.html",
+    "do_not": "Do not market lock-in. Do not claim skill count as 'product features' without naming the folder. Do not ship secrets on public pages.",
+    "plug": "Museum · house-hub · week37. Path E public surface for the OS.",
+    "next": "When a skill is added in the vault, regenerate brain/s/ pages.",
+    "bucket": "agent-desk",
+    "room": "org",
+    "status": "steal",
+    "pipes": [
+      "C"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://jpanasuk-netizen.github.io/house-hub/brain/"
+  },
+  {
+    "id": "L64",
+    "uid": "L64-house-hub-bingo-progress",
+    "title": "House Hub pack — progress timeline + AI Plan Bingo",
+    "steal_line": "Dated receipts Jul–Sep and a playful bingo of top AI plans with a free-tier star. Every site linked from the bingo footer.",
+    "learn": "Progress pack rules: dated evidence, no invented revenue, no secrets. New trades/agent stack logged (Kalshi, Trenchnet, Coin Desk, Muse, Cursor). Bingo is social-facing with 25 squares + FREE pick-a-free-tier. Links: https://jpanasuk-netizen.github.io/house-hub/progress/ · https://jpanasuk-netizen.github.io/house-hub/ai-plan-bingo.html · https://jpanasuk-netizen.github.io/house-hub/",
+    "do_not": "Do not invent PnL on the timeline. Do not treat bingo squares as endorsements. Do not drop the 0.0% / paper gates narrative.",
+    "plug": "Pipe B marketing · Path E receipts. Cross-link from Museum + brain.",
+    "next": "Keep adding dated events to progress/pack-meta + timeline-data.json only.",
+    "bucket": "offer-content",
+    "room": "offer",
+    "status": "steal",
+    "pipes": [
+      "B"
+    ],
+    "desk": false,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://jpanasuk-netizen.github.io/house-hub/progress/"
+  },
+  {
+    "id": "L65",
+    "uid": "L65-week37-full-link-set",
+    "title": "Week-37 link set (ship + brain + screenshots)",
+    "steal_line": "One URL cluster for the whole week: four-ship write-up, brain OS, gates table, 17 real screenshots.",
+    "learn": "Public URLs: https://jpanasuk-netizen.github.io/week37-review/ · https://jpanasuk-netizen.github.io/week37-review/brain.html · house-hub https://jpanasuk-netizen.github.io/house-hub/ · progress https://jpanasuk-netizen.github.io/house-hub/progress/ · museum https://jpanasuk-netizen.github.io/house-hub/museum/ · skill catalog https://jpanasuk-netizen.github.io/house-hub/brain/skills.html",
+    "do_not": "Do not cut the 0.0% / paper-only sections. Do not invent income. Do not require comment-to-get-link.",
+    "plug": "CONNECT / Path G CTA footer can reuse this cluster.",
+    "next": "When new desks ship, add a progress event + a museum card with the URL.",
+    "bucket": "offer-content",
+    "room": "offer",
+    "status": "steal",
+    "pipes": [
+      "B",
+      "C"
+    ],
+    "desk": false,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://jpanasuk-netizen.github.io/week37-review/"
+  },
+  {
+    "id": "L66",
+    "uid": "L66-connecture-screenshots-set",
+    "title": "Connecture screenshot set (5 files)",
+    "steal_line": "Hero quarter sheet + status + connectors + Thunderbird + bus — real app, not mockups.",
+    "learn": "Files in week37-review/img/: 04-connecture-quarter.png · 10-connecture-status.png · 10-connecture-connectors.png · 10-connecture-thunderbird.png · 10-connecture-bus.png. Page: https://jpanasuk-netizen.github.io/week37-review/",
+    "do_not": "Do not restyle as vendor marketing. Keep dry-run labels honest.",
+    "plug": "Pipe B posts (X long form). Pair L53 Connecture card.",
+    "next": "Reuse same order: hero → status → connectors → mail → bus.",
+    "bucket": "offer-content",
+    "room": "desk",
+    "status": "steal",
+    "pipes": [
+      "B"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://jpanasuk-netizen.github.io/week37-review/"
+  },
+  {
+    "id": "L67",
+    "uid": "L67-xai-w1nklerr-pons-agent-game",
+    "title": "w1nklerr Pons agent village (game = live config)",
+    "steal_line": "Stats in a game literally compile into pollInterval / thinkingBudget / positionSize. One codebase, MODE=live flips to real brain.",
+    "learn": "UPGRADING AN AGENT = editing live config through a UI. Hard rules: errors resolve to SKIP; size capped after the model answers; temperature 0. Deterministic backtest seed makes leaderboards mean something. Source: https://x.com/w1nklerr/status/2096964317107077567 · https://github.com/w1nklerr",
+    "do_not": "Do not treat $10–$439/day burn as our budget. Do not live-trade Pons memecoins. Do not clone their leaderboard claims as house PnL.",
+    "plug": "Trading-kept design notes: default-to-SKIP + size cap already match house gates. Optional: config-as-UI pattern for Path E desks.",
+    "next": "Keep as reference. No install.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": true,
+    "dollar_park": true,
+    "dollar_claims": [
+      "$10",
+      "$439/day",
+      "$400",
+      "$7700"
+    ],
+    "source": "https://x.com/w1nklerr/status/2096964317107077567"
+  },
+  {
+    "id": "L68",
+    "uid": "L68-georgelampro-clipping-q4",
+    "title": "George Lampropoulos Q4 clipping playbook",
+    "steal_line": "When everyone buys ads in Q4, organic clipping is how you lower CAC — max reach instead of outspend.",
+    "learn": "Clipping campaign mechanics: many creators, few winners carry the volume (2 creators = half the views). Seed budget then top up. Build a content vault + live calls so formats stay consistent. Source: https://x.com/GeorgeLampro20/status/2097092691230375995",
+    "do_not": "Do not treat 10M views / MRR as house metrics. Do not run paid clip farms this week. Jeremy gates spend.",
+    "plug": "Pipe B / Path G: if we clip, ship a content vault first; measure installs not views. Pair L27 4-platform pack (free only).",
+    "next": "Park paid clipping until cash war allows. Keep checklist.",
+    "bucket": "offer-content",
+    "room": "offer",
+    "status": "park",
+    "pipes": [
+      "B",
+      "C"
+    ],
+    "desk": false,
+    "dollar_park": true,
+    "dollar_claims": [
+      "10m",
+      "CAC",
+      "ROAS"
+    ],
+    "source": "https://x.com/GeorgeLampro20/status/2097092691230375995"
+  },
+  {
+    "id": "L69",
+    "uid": "L69-adamtwtz-content-rewards",
+    "title": "adamtwtz Content Rewards campaign anatomy",
+    "steal_line": "GLP-1 app: organic slideshows because ads are restricted. Rates $1 RPM / $400 cap / 40% tier-1. Top 2 creators made half the views.",
+    "learn": "Process steal: content vault + prompt bank + tutorial calls = consistent creator output. Fund in tranches. Source: https://x.com/adamtwtz/status/2097073557682028625 · https://x.com/adamtwtz/status/2097073557682028625 (see also 2097073557682028625 thread) full post: https://x.com/adamtwtz/status/2097073557682028625",
+    "do_not": "Do not treat $21k / 23M views / $25k MRR as house proof. Do not open a rewards campaign without Jeremy. No health claims on our properties.",
+    "plug": "Pipe B: vault-first creator briefs if we ever run clip/rewards.",
+    "next": "Park. Steal the vault format only.",
+    "bucket": "offer-content",
+    "room": "offer",
+    "status": "park",
+    "pipes": [
+      "B"
+    ],
+    "desk": false,
+    "dollar_park": true,
+    "dollar_claims": [
+      "$21,418",
+      "23.1M",
+      "$25k",
+      "$0.91"
+    ],
+    "source": "https://x.com/adamtwtz/status/2097073557682028625"
+  },
+  {
+    "id": "L70",
+    "uid": "L70-richoffyoutube-faceless-system",
+    "title": "richoffyoutube 20-step faceless digital products",
+    "steal_line": "Comment-gated PDF funnel + 20-step 'AI does everything' system. Steal the structure, park the funnel.",
+    "learn": "Their shape: niche → scripts batch → product → sales page → daily video → email. CTA is comment '2026' for a free system. Source: https://x.com/richoffyoutube/status/2097120760733077950",
+    "do_not": "Do not run comment-to-DM farms (house rule). Do not claim $20k/mo. Do not buy their kit.",
+    "plug": "Path G outline bank only. Pair L27 no-funnel rule.",
+    "next": "If we use the 20-step spine, strip the engagement bait.",
+    "bucket": "offer-content",
+    "room": "offer",
+    "status": "park",
+    "pipes": [
+      "C"
+    ],
+    "desk": false,
+    "dollar_park": true,
+    "dollar_claims": [
+      "$20K/month",
+      "$2K"
+    ],
+    "source": "https://x.com/richoffyoutube/status/2097120760733077950"
+  },
+  {
+    "id": "L71",
+    "uid": "L71-thierry-corrections-backlinks",
+    "title": "templth critique → bidirectional CORRECTIONS",
+    "steal_line": "A corrections file that does not point at the note (and back) leaves wrong notes looking current.",
+    "learn": "Technical half is right: CORRECTIONS must name the note and the note must link back. Apply to every desk ledger. Source: https://x.com/templth (thread on week37 brain post) · brain.html",
+    "do_not": "Do not flame in public copy. Do not drop the losses from the page. Do not 'fix' by deleting CORRECTIONS.",
+    "plug": "Path E: lint skill checks the two-way link. Museum L55.",
+    "next": "Implement backlink lint; one example on brain site later.",
+    "bucket": "org-design",
+    "room": "org",
+    "status": "steal",
+    "pipes": [],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://x.com/templth"
+  },
+  {
+    "id": "L72",
+    "uid": "L72-zerohash-crypto-withdraw",
+    "title": "Kalshi crypto withdraw + link wallet",
+    "steal_line": "Crypto withdraw needs a prior crypto deposit; US transfers via Zero Hash; keep tx hash.",
+    "learn": "Link a crypto wallet flow: personal wallet ready → pick asset/network → QR or address → verify. Withdraw docs: https://help.kalshi.com/en/articles/13823804-crypto-withdrawals · link wallet: https://help.kalshi.com/en/articles/13823794-link-a-crypto-wallet",
+    "do_not": "Do not withdraw to an unverified address. Do not skip the prior-deposit rule.",
+    "plug": "Pair L51 deposit card. Funding runbook for desk.",
+    "next": "If we ever withdraw, test small first; log hash.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": false,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://help.kalshi.com/en/articles/13823804-crypto-withdrawals"
   }
 ]
