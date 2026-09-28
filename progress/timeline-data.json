@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-07",
+    "title": "July hunt/lab/site activity (approximate)",
+    "summary": "Sparse dated July files on the shared box. Early true-remote hunt pipeline and calc-site existence predate the dense Aug–Sep receipt trail; treat July as under-documented, not empty.",
+    "category": "hunt",
+    "links": [],
+    "evidence": "GAP — approximate month-only; see Gaps"
+  },
+  {
     "date": "2026-07-27",
     "title": "free-coding-models architecture review artifact",
     "summary": "Dated architecture-review HTML exists under free-coding-models (20+ provider free-coding catalog / Hermes wiring later). One of the few July-stamped local receipts on the box.",
@@ -7,14 +15,6 @@
     "links": [],
     "evidence": "/workspace/free-coding-models/architecture-review/2026-07-27-architecture-review.html",
     "tool": "FreeModelsBot · FCM catalog"
-  },
-  {
-    "date": "2026-07",
-    "title": "July hunt/lab/site activity (approximate)",
-    "summary": "Sparse dated July files on the shared box. Early true-remote hunt pipeline and calc-site existence predate the dense Aug–Sep receipt trail; treat July as under-documented, not empty.",
-    "category": "hunt",
-    "links": [],
-    "evidence": "GAP — approximate month-only; see Gaps"
   },
   {
     "date": "2026-08-21",
@@ -56,6 +56,15 @@
     "links": [],
     "evidence": "Google Drive search modifiedTime>2026-07-01 title index.html (packet parents)",
     "tool": "Cynthia-Res · Grok Build / Hermes HTML"
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Continuity rule: Treg + Hermes when GrokBot gone",
+    "summary": "User-memory standing fact: once GrokBot access is gone, Jeremy uses Treg with Hermes; Hermes Bot holds WSL continuity.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/home/box/sand-data/user-memory/by-agent/0d0d84b3-2c5e-4bb2-8577-1012cdc656cb/profile.md",
+    "tool": "Treg · Hermes"
   },
   {
     "date": "2026-08-26",
@@ -107,15 +116,6 @@
     "category": "hunt",
     "links": [],
     "evidence": "Gmail 1a0548370de5e449 · /workspace/apply/HUNT_2026-09-03.md Inbox"
-  },
-  {
-    "date": "2026-08-25",
-    "title": "Continuity rule: Treg + Hermes when GrokBot gone",
-    "summary": "User-memory standing fact: once GrokBot access is gone, Jeremy uses Treg with Hermes; Hermes Bot holds WSL continuity.",
-    "category": "agents",
-    "links": [],
-    "evidence": "/home/box/sand-data/user-memory/by-agent/0d0d84b3-2c5e-4bb2-8577-1012cdc656cb/profile.md",
-    "tool": "Treg · Hermes"
   },
   {
     "date": "2026-09-03",
@@ -212,6 +212,32 @@
     ],
     "evidence": "/workspace/PathE-org-chart/GROK-BOT-AGENTS-10-STEPS.md",
     "tool": "Leo-Bot"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "FreeModelsBot + NIM kimi-k3 default stack documented",
+    "summary": "FREEMODELSBOT.md / FreeModelsBot seat: legal free tiers only; Hermes default NIM moonshotai/kimi-k3; FCM + itsfree.ai + freellm.sh as scout surfaces. Practice pack Hands-On-AI-Engineering cloned on box.",
+    "category": "ai-stack",
+    "links": [
+      "https://itsfree.ai/",
+      "https://freellm.sh/",
+      "https://github.com/Sumanth077/Hands-On-AI-Engineering"
+    ],
+    "evidence": "/workspace/FREEMODELSBOT.md · /workspace/grokbot-continuity-pack/bots/freemodelsbot.md",
+    "tool": "FreeModelsBot · NVIDIA NIM"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "SEO surface inventory — Machine Room / Ret / CONNECT / hunt",
+    "summary": "SEO Bot inventory lists live surfaces (YT Machine Room + Ret @3jsa7, CONNECT LP, closer hub, HF the-status/dashboard, packets) and parks Preferred Source / OpenSEO / GBP until Jeremy greens.",
+    "category": "sites",
+    "links": [
+      "https://www.youtube.com/@themachineroomtoday",
+      "https://www.youtube.com/@3jsa7",
+      "https://lnkd.in/p/gvPGrahR"
+    ],
+    "evidence": "/workspace/PathE-org-chart/SEO-SURFACE-INVENTORY.md",
+    "tool": "SEO Bot"
   },
   {
     "date": "2026-09-09",
@@ -367,6 +393,15 @@
     "tool": "SEO Bot"
   },
   {
+    "date": "2026-09-13",
+    "title": "The 3 AM Protocol manuscript + cover ready for KDP",
+    "summary": "12 chapters + appendices compiled to PDF; Ch1 rewritten with hook; KDP-ready 625×1000 cover JPG. Lane OPEN — not a live ASIN claim.",
+    "category": "ship",
+    "tool": "Hermes · Google AI / Claude rotation · Pillow cover",
+    "links": [],
+    "evidence": "HermesVault/40-Content/The-3-AM-Protocol-Manuscript.pdf · Cover.jpg · LANE_AIEBOOK_KDP.md · book1-ch01.md (2026-09-13)"
+  },
+  {
     "date": "2026-09-14",
     "title": "shoppacks.net SEO hygiene PASS (PR #1 merged)",
     "summary": "Audit found missing canonical/OG; Hermes fixes merged (fd3ecbd…). Live re-verify ~6:42pm CDT: home 200 with canonical+OG+twitter+JSON-LD. No AdSense/Amazon on shoppacks.",
@@ -397,71 +432,6 @@
     ],
     "evidence": "Gmail 1a0a324a81bebb73",
     "tool": "NVIDIA Inception portal"
-  },
-  {
-    "date": "2026-09-05",
-    "title": "FreeModelsBot + NIM kimi-k3 default stack documented",
-    "summary": "FREEMODELSBOT.md / FreeModelsBot seat: legal free tiers only; Hermes default NIM moonshotai/kimi-k3; FCM + itsfree.ai + freellm.sh as scout surfaces. Practice pack Hands-On-AI-Engineering cloned on box.",
-    "category": "ai-stack",
-    "links": [
-      "https://itsfree.ai/",
-      "https://freellm.sh/",
-      "https://github.com/Sumanth077/Hands-On-AI-Engineering"
-    ],
-    "evidence": "/workspace/FREEMODELSBOT.md · /workspace/grokbot-continuity-pack/bots/freemodelsbot.md",
-    "tool": "FreeModelsBot · NVIDIA NIM"
-  },
-  {
-    "date": "2026-09-05",
-    "title": "SEO surface inventory — Machine Room / Ret / CONNECT / hunt",
-    "summary": "SEO Bot inventory lists live surfaces (YT Machine Room + Ret @3jsa7, CONNECT LP, closer hub, HF the-status/dashboard, packets) and parks Preferred Source / OpenSEO / GBP until Jeremy greens.",
-    "category": "sites",
-    "links": [
-      "https://www.youtube.com/@themachineroomtoday",
-      "https://www.youtube.com/@3jsa7",
-      "https://lnkd.in/p/gvPGrahR"
-    ],
-    "evidence": "/workspace/PathE-org-chart/SEO-SURFACE-INVENTORY.md",
-    "tool": "SEO Bot"
-  },
-  {
-    "date": "2026-09-15",
-    "title": "Live surface re-verify from executor box",
-    "summary": "Curl -L HTTP 200 confirmed for generator-sizer + 7 sisters, shoppacks.net, house-hub, the-closer hub/hunt/CONNECT/playbook, HF the-closer + the-status, YouTube @themachineroomtoday and @3jsa7.",
-    "category": "ship",
-    "links": [
-      "https://generator-sizer.com/",
-      "https://shoppacks.net/",
-      "https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html",
-      "https://huggingface.co/spaces/jpanasuk/the-status"
-    ],
-    "evidence": "executor curl batch 2026-09-15/16 CT",
-    "tool": "Hermes executor curl"
-  },
-  {
-    "date": "2026-09",
-    "title": "Agent fleet roster (continuity) — approximate mid-window",
-    "summary": "Standing seats documented: Leo (CoS), Cynthia-Res, Eve, TapRoot, Hermes, Annie++, MoneyBot, ProposalCloser, thetubebot, BizDevIdeaBot, FreeModelsBot, BTCC, GadDesk, Headshot, Grok Build, SEO Bot, OpsLog. Muse/MiMo/bus mentioned in house lore — see Gaps if not charter-backed.",
-    "category": "agents",
-    "links": [],
-    "evidence": "/workspace/grokbot-continuity-pack/AGENTS.md · PathE DESK-ORG-CHART.md"
-  },
-  {
-    "date": "2026-09",
-    "title": "User-claimed: Devin community leader / Typesafe / Seek / Treg",
-    "summary": "Task brief lists Devin community leader, Typesafe, Seek, Treg as user-claimed. Treg appears in continuity standing text; Devin/Typesafe/Seek lack dated third-party receipts in this gather pass — flagged unverified.",
-    "category": "ai-stack",
-    "links": [],
-    "evidence": "UNVERIFIED — user-claimed; Treg noted in continuity AGENTS.md / user-memory"
-  },
-  {
-    "date": "2026-09-13",
-    "title": "The 3 AM Protocol manuscript + cover ready for KDP",
-    "summary": "12 chapters + appendices compiled to PDF; Ch1 rewritten with hook; KDP-ready 625×1000 cover JPG. Lane OPEN — not a live ASIN claim.",
-    "category": "ship",
-    "tool": "Hermes · Google AI / Claude rotation · Pillow cover",
-    "links": [],
-    "evidence": "HermesVault/40-Content/The-3-AM-Protocol-Manuscript.pdf · Cover.jpg · LANE_AIEBOOK_KDP.md · book1-ch01.md (2026-09-13)"
   },
   {
     "date": "2026-09-14",
@@ -511,6 +481,36 @@
   },
   {
     "date": "2026-09-15",
+    "title": "Live surface re-verify from executor box",
+    "summary": "Curl -L HTTP 200 confirmed for generator-sizer + 7 sisters, shoppacks.net, house-hub, the-closer hub/hunt/CONNECT/playbook, HF the-closer + the-status, YouTube @themachineroomtoday and @3jsa7.",
+    "category": "ship",
+    "links": [
+      "https://generator-sizer.com/",
+      "https://shoppacks.net/",
+      "https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html",
+      "https://huggingface.co/spaces/jpanasuk/the-status"
+    ],
+    "evidence": "executor curl batch 2026-09-15/16 CT",
+    "tool": "Hermes executor curl"
+  },
+  {
+    "date": "2026-09",
+    "title": "Agent fleet roster (continuity) — approximate mid-window",
+    "summary": "Standing seats documented: Leo (CoS), Cynthia-Res, Eve, TapRoot, Hermes, Annie++, MoneyBot, ProposalCloser, thetubebot, BizDevIdeaBot, FreeModelsBot, BTCC, GadDesk, Headshot, Grok Build, SEO Bot, OpsLog. Muse/MiMo/bus mentioned in house lore — see Gaps if not charter-backed.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/grokbot-continuity-pack/AGENTS.md · PathE DESK-ORG-CHART.md"
+  },
+  {
+    "date": "2026-09",
+    "title": "User-claimed: Devin community leader / Typesafe / Seek / Treg",
+    "summary": "Task brief lists Devin community leader, Typesafe, Seek, Treg as user-claimed. Treg appears in continuity standing text; Devin/Typesafe/Seek lack dated third-party receipts in this gather pass — flagged unverified.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "UNVERIFIED — user-claimed; Treg noted in continuity AGENTS.md / user-memory"
+  },
+  {
+    "date": "2026-09-15",
     "title": "Hermes local file-bus restored (no public credit burn)",
     "summary": "Safe 127.0.0.1:8650 hermes-file-bus-api up; public Muse HTTP API stays retired. SVB MiMo job filed on bus awaiting render profile.",
     "category": "lab",
@@ -530,5 +530,94 @@
       "https://x.com/AutoClawAIer"
     ],
     "evidence": "Jeremy draft 2026-09-15 · NVIDIA Inception Gmail 1a0a324a81bebb73 · AutoClaw Gmail 1a0a25ffa6767a0c"
+  },
+  {
+    "date": "2026-09-16",
+    "title": "SupaBird clone — AI growth tool for X (10 modules)",
+    "summary": "Grok Build workspace project supabird-clone: X-GPT writing, growth modules, Node kill-switch scripts, local boot verified alongside FunTokens / Debate Desk / Connecture (HTTP 200 smoke).",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "/workspace/projects/supabird-clone (Grok Build profile); week37-review X_POST_SITE.txt",
+    "tool": "Grok Build · Hermes"
+  },
+  {
+    "date": "2026-09-20",
+    "title": "Week-37 agent fleet ship — four systems in seven days",
+    "summary": "SupaBird, FunTokens, The Debate Desk, Connecture documented as a single week-shipped set on one RTX 4070. Paper-only gates called out on the public review site; no income claims.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review/index.html (2026-09-26 capture)",
+    "tool": "Hermes · Grok Build"
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Connecture — Muse wire-protocol GUI + control room",
+    "summary": "Connecture speaks the Muse wire protocol as a real GUI client. Control room on :8765, agent bus 11 helpers on :8787, Thunderbird tab (address books, batch send, dry run). Screenshots 13 of 21 connectors live.",
+    "category": "agents",
+    "links": [
+      "https://jpanasuk-netizen.github.io/week37-review/"
+    ],
+    "evidence": "week37-review screenshots img/10-connecture-*.png; ultimate-quant/tools/capture_connecture_tabs.py",
+    "tool": "Connecture · FreeBuff"
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Coin Desk — paper token-launch desk (PyInstaller)",
+    "summary": "Coin Desk.exe (~9.17 MB PyInstaller) watches hood.fun Base launches every 45s. PAPER only: gate() never executes, max_loss_usd 0. Source WSL ~/token-desk (desk.py). Sibling memecoin-desk Flask on :3011 pulls /api/state.",
+    "category": "money",
+    "links": [],
+    "evidence": "%LOCALAPPDATA%/token-desk-build/; COIN_DESK_INTEGRATION_PLAN.md (2026-09-24)",
+    "tool": "Token Desk · paper gate"
+  },
+  {
+    "date": "2026-09-24",
+    "title": "TRENCHNET — Solana / pump.fun desk + Coin Desk integration plan",
+    "summary": "Live roster tracker UI on :8791. LIVE trading disarmed by default. Pass 5–6: copy-trade backtest, Helius pool-price reconstruction, scores desk. Coin Desk integration written as investigation-only plan (ports 8765/8787/8788/8790/8791 left untouched).",
+    "category": "lab",
+    "links": [],
+    "evidence": "Documents/HermesTools/trenchnet/RECEIPT.md; docs/COIN_DESK_INTEGRATION_PLAN.md",
+    "tool": "Trenchnet · Helius · Birdeye"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Kalshi 15m desk — live KXBTC15M, spike strategy, shard fix",
+    "summary": "jev-15m-kalshi-bot live: $4.20 clips on KXBTC15M, spike trigger (0.5%/1m or 0.8%/3m) optional not required. Fixed ex0→ex2 intra-exchange transfer lag (was sizing $0.08 dust), latency gate, conf floor. HUD :3000 history :3002.",
+    "category": "money",
+    "links": [],
+    "evidence": "spin_ledger.jsonl LIVE_FILLED; app/spike.py; app/kalshi_live.py ensure_shard_funds",
+    "tool": "Jev 1.13 · Kalshi Trade API"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Hermes Cursor provider + model picker (profiles fixed)",
+    "summary": "Cursor API (api.cursor.com/v1) installed for Hermes. Unknown-provider + model-dropdown revert traced to per-profile config.yaml missing providers.cursor — patched across main + 20 bot profiles + WSL.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "hermes profiles/*/config.yaml providers.cursor; /v1/me 200 key JAP",
+    "tool": "Hermes · Cursor API"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Burner → Kalshi funding rail (crypto deposit)",
+    "summary": "Kalshi crypto deposits via Zero Hash confirmed (prior type=crypto history on account). Solana burner wallet funded (~0.12 SOL); Polymarket USDC empty. Transfer path documented; Phantom import file for user-side send.",
+    "category": "money",
+    "links": [
+      "https://help.kalshi.com/en/articles/13823799-crypto-deposits"
+    ],
+    "evidence": "Kalshi /portfolio/deposits type=crypto; Trenchnet TRENCHNET_WALLET_KEY ALhQ burner",
+    "tool": "Zero Hash · Solana"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "House Hub progress pack extended — trading + agent stack",
+    "summary": "Added SupaBird, Connecture, Coin Desk, Trenchnet, Kalshi 15m desk, Hermes/Cursor, and funding-rail receipts to the shared timeline pack. Same rules: dated evidence, no invented revenue, no secrets.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/house-hub/progress/"
+    ],
+    "evidence": "house-hub/progress/timeline-data.json",
+    "tool": "Hermes · house-hub"
   }
 ]
