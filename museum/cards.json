@@ -1555,5 +1555,265 @@
     "dollar_park": false,
     "dollar_claims": [],
     "source": "by-bucket"
+  },
+  {
+    "id": "L50",
+    "uid": "L50-jarrodwatts-spike-strategy",
+    "title": "jarrodwatts/jev-trader e3dfeca spike strategy",
+    "steal_line": "Wait for a sharp move (0.5%/1m or 0.8%/3m); Jev goes long/short/stay-out. Shadow fade+follow on the same exits.",
+    "learn": "Impulse first, judgment second. Code fires the trigger; Jev only chooses after the spike. Shadows (fade vs follow) prove whether the model adds anything. Dry-run only until the paper graph is honest. Source: https://github.com/jarrodwatts/jev-trader/commit/e3dfecacf823ff619ff955b7ba21e5eae9140752",
+    "do_not": "No live size until paper + shadows are logged. Do not treat their XRP stats as house PnL. Do not ask Jev to pick a quiet tape.",
+    "plug": "Kalshi 15m desk: optional spike gate + CUSTOMER_SELL + jev_foresight. Pair chase / real-edge gates.",
+    "next": "Keep data/spike.jsonl; compare Jev vs fade/follow weekly before raising size.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://github.com/jarrodwatts/jev-trader/commit/e3dfecacf823ff619ff955b7ba21e5eae9140752"
+  },
+  {
+    "id": "L51",
+    "uid": "L51-kalshi-zerohash-crypto-deposit",
+    "title": "Kalshi crypto deposit rail (Zero Hash)",
+    "steal_line": "US crypto deposits via Zero Hash — asset+network, QR/address, ~30 min to cash. Crypto withdraw needs a prior crypto deposit.",
+    "learn": "Kalshi is not ACH-only. Always verify asset+network before send; keep the tx hash. Intra-exchange shard transfers lag the POST — poll, don't trust the first balance. Source: https://help.kalshi.com/en/articles/13823799-crypto-deposits",
+    "do_not": "Do not send on the wrong network. Do not invent credit from unconfirmed deposits. Do not log private keys / PEM.",
+    "plug": "Funding path: burner → Kalshi crypto deposit → cash. Desk ensure_shard_funds must poll until dest shard lands.",
+    "next": "Add funds → Crypto in UI; log tx hash in vault; never paste keys.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": false,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://help.kalshi.com/en/articles/13823799-crypto-deposits"
+  },
+  {
+    "id": "L52",
+    "uid": "L52-cursor-api-not-chat",
+    "title": "Cursor API is Background Agents, not chat completions",
+    "steal_line": "api.cursor.com: /v1/me /v1/models /v1/agents — not POST /v1/chat/completions. One turn = one cloud agent run.",
+    "learn": "Cursor public API is an agent factory (create → poll run.result), not an OpenAI chat stream. Hermes chat_completions against it 404s. A local proxy can speak SSE and unwrap run.result — latency stays agent-shaped. Source: https://docs.cursor.com/en/api/overview",
+    "do_not": "Do not point streaming chat at api.cursor.com expecting tokens. Do not default overnight agents to Cursor. Do not leak crsr_ keys.",
+    "plug": "If needed: local proxy → POST /v1/agents prompt.text → poll /runs/{id}. Prefer fcc/vyce for chat.",
+    "next": "fcc+vyce on seats; Cursor only for long build jobs.",
+    "bucket": "agent-desk",
+    "room": "desk",
+    "status": "steal",
+    "pipes": [],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://docs.cursor.com/en/api/overview"
+  },
+  {
+    "id": "L53",
+    "uid": "L53-connecture-muse-wire",
+    "title": "Connecture — Muse wire protocol GUI (FreeBuff)",
+    "steal_line": "Real protocol traffic (sessions/turns/approvals/models), not a wrapper. 13/21 connectors; :8765 room; :8787 bus.",
+    "learn": "Twenty seats on one machine need a shared wire and human-visible glass. MCP mount (HTTP + stdio) + token-gated publish. Port map house law: 8765 Connecture, 8787 aibus, 8788 Muse video, 8790 gate, 8791 Trenchnet. Source: https://jpanasuk-netizen.github.io/week37-review/",
+    "do_not": "Do not call it a chat UI wrapper. Do not open public tunnels for the bus. Do not collide ports.",
+    "plug": "Path E desk anatomy + week37 public write-up. Pair muse-rig-hub outbound pull.",
+    "next": "Keep dry-run tabs honest (Thunderbird batch-send is dry-run).",
+    "bucket": "agent-desk",
+    "room": "desk",
+    "status": "steal",
+    "pipes": [
+      "B",
+      "C"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://jpanasuk-netizen.github.io/week37-review/"
+  },
+  {
+    "id": "L54",
+    "uid": "L54-muse-rig-hub-outbound-pull",
+    "title": "muse-rig-hub — Muse + browser seat selector (outbound only)",
+    "steal_line": "Cloudflare Worker holds ONE list. House PULLs it into bus/inbox. No inbound exposure, no tunnel, no credit burn.",
+    "learn": "Muse lives in Meta's cloud behind Sentinel — it cannot hit 127.0.0.1. House bans public tunnels. Public half stores membership only; LightBringer sync/apply_bus.py pulls outbound. Token never enters chat.",
+    "do_not": "No trycloudflare / public DNS. No house data on the Worker. No inbound API on the bus.",
+    "plug": "Connecture / Hermes seats / Muse. Architecture: local muse-rig-hub README (HermesTools/muse-rig-hub).",
+    "next": "Keep RIG_TOKEN out of logs; membership only on the Worker.",
+    "bucket": "agent-desk",
+    "room": "desk",
+    "status": "steal",
+    "pipes": [
+      "B"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "file:Documents/HermesTools/muse-rig-hub/README.md"
+  },
+  {
+    "id": "L55",
+    "uid": "L55-corrections-md-bidirectional",
+    "title": "CORRECTIONS.md + bidirectional links (Second-Brain OS)",
+    "steal_line": "The folder that teaches must remember the L. Corrections only work if they name the note AND the note points back.",
+    "learn": "Plain Markdown vault + 20 seats + no owner is survivable if query cites notes, privacy sweeps creds, lint checks links. CORRECTIONS.md is why the system works — 0.0% hit rate lives next to the failed playbook. Critique: corrections without backlinks still read as current. Source: https://jpanasuk-netizen.github.io/week37-review/brain.html",
+    "do_not": "Do not hide losses. Do not let one agent own the vault. Do not skip lint/index skills.",
+    "plug": "HermesVault / brain.html. Every CORRECTIONS row names the file it corrects.",
+    "next": "Wire backlinks: CORRECTIONS → note slug → note footer → CORRECTIONS.",
+    "bucket": "org-design",
+    "room": "org",
+    "status": "steal",
+    "pipes": [
+      "C"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://jpanasuk-netizen.github.io/week37-review/brain.html"
+  },
+  {
+    "id": "L56",
+    "uid": "L56-real-edge-and-chase-gates",
+    "title": "Real-edge + chase gates (pay less than Jev's fair)",
+    "steal_line": "Three NO losses = same bug: buy after the dump at ask > model conf. Entry must sit under conf − cushion; skip after Δ already ±25 unless conf ≥ 0.75.",
+    "learn": "If Jev says 0.58 and the ask is 0.72 you are tipping, not trading edge. entry_ceil alone still lets you overpay. Chase + edge gates on BOTH paths (recover + standard). Local: jev-15m-kalshi-bot spin.py SKIP_NO_EDGE / SKIP_CHASE.",
+    "do_not": "Do not buy the third bounce of a dump. Do not disable the cushion for one setup. Do not martingale the chase.",
+    "plug": "jev-15m-kalshi-bot spin.py + risk_gate. Pair jev_foresight.",
+    "next": "When SKIP_NO_EDGE fires, that is the system working.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "file:WSL:/home/jpanasuk/jev-15m-kalshi-bot/app/spin.py"
+  },
+  {
+    "id": "L57",
+    "uid": "L57-jev-foresight-path-battery",
+    "title": "Jev foresight battery — see the rest of the window",
+    "steal_line": "Ask Jev path questions, not just YES/NO: next impulse UP/DOWN/QUIET, will_bounce, settle HOLD/GIVE_BACK/EVEN.",
+    "learn": "Settlement is one tick; remaining minutes are a path. Typed battery carries foresight; risk gate blocks YES when Jev forecasts DOWN ≥0.55 and vice versa. GIVE_BACK + bounce ≥0.65 also blocks. Layer1 fallback is weaker — label it.",
+    "do_not": "Do not treat foresight as certainty. Do not drop the settlement question. Do not invent numeric targets.",
+    "plug": "jev_layer.py questions + risk_gate jev_foresight.",
+    "next": "Log forecast vs outcome; retire the rule if it never blocks a loser.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "file:WSL:/home/jpanasuk/jev-15m-kalshi-bot/app/jev_layer.py"
+  },
+  {
+    "id": "L58",
+    "uid": "L58-typesafe-credits-jev-latest",
+    "title": "TypeSafe 402 + jev-latest catalog hygiene",
+    "steal_line": "Jev looked stuck because credits hit 402 — layer1 only. Catalog dropped jev-1.13.0 for jev-latest/preview.",
+    "learn": "When judge_src is layer1 for long stretches, check billing before rewriting strategy. Keep a fallback provider (fcc/vyce). 402 is not a model bug. Docs: https://console.typesafe.ai/settings/billing",
+    "do_not": "Do not trade live on layer1-only SKIP spam. Do not assume the desk is broken when credits are empty.",
+    "plug": "Kalshi desk + any TypeSafe seat. Health: judge_src in /api/state.",
+    "next": "Auto-reload TypeSafe; alert when ts_err contains 402.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://console.typesafe.ai/settings/billing"
+  },
+  {
+    "id": "L59",
+    "uid": "L59-coin-desk-paper-gate",
+    "title": "Coin Desk — paper token-launch desk (hood.fun)",
+    "steal_line": "gate() always execute:false / approved:false / max_loss_usd:0. PASS/WATCH is a note, not a buy.",
+    "learn": "PyInstaller desk on :3010 polls public board every 45s. Sibling memecoin-desk Flask on :3011 pulls /api/state. Trenchnet integration is investigation-only. Paper gate in code beats a README promise.",
+    "do_not": "No wallet keys. No live buys. Do not treat PASS as a fire signal.",
+    "plug": "Trading-kept / Path E. Pair Trenchnet observe-only. Local plan: ultimate-quant/sources/trenchnet/docs/COIN_DESK_INTEGRATION_PLAN.md",
+    "next": "Keep execute:false; live path needs a new arm + Jeremy ticket.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": false,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "file:Documents/HermesTools/ultimate-quant/sources/trenchnet/docs/COIN_DESK_INTEGRATION_PLAN.md"
+  },
+  {
+    "id": "L60",
+    "uid": "L60-trenchnet-disarmed-port-map",
+    "title": "Trenchnet LIVE disarmed + house port map",
+    "steal_line": "Paper-first Solana roster desk. LIVE disarmed by default. Bind :8791 after leaving :8788 to Muse.",
+    "learn": "Burner wallet + Helius/Birdeye observe/backtest until measured edge. Port collisions killed tools — write the map down. Keys never in git. Local: Documents/HermesTools/trenchnet/README.md + LIVE-RUNBOOK.md",
+    "do_not": "No main-wallet seeds. No LIVE arm without Jeremy confirm. Do not fight Muse/Connecture for ports.",
+    "plug": "LIVE-RUNBOOK · RECEIPT.md · Coin Desk plan (investigation only).",
+    "next": "Leave disarmed; paper scores before any arm ticket.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "file:Documents/HermesTools/trenchnet/README.md"
+  },
+  {
+    "id": "L61",
+    "uid": "L61-week37-paper-gates-public",
+    "title": "Week-37 four-ship — publish the 0.0% on purpose",
+    "steal_line": "Four systems in seven days on one box: SupaBird, FunTokens, Debate Desk, Connecture. Trading tools paper-only and the site says so.",
+    "learn": "Publishing the losing record (Kalshi 0.0% / 181 samples) beats a fake win rate. FunTokens n=1 disclosed as n=1. MSP SHA == live SHA is checkable. Real-app screenshots beat slide claims. Source: https://jpanasuk-netizen.github.io/week37-review/",
+    "do_not": "Do not cut the 0.0% sentence. Do not invent revenue. Do not gate the launch link behind a comment.",
+    "plug": "house-hub progress · week37-review · CONNECT static packs.",
+    "next": "Every new desk ships with its gate table on the page.",
+    "bucket": "offer-content",
+    "room": "offer",
+    "status": "steal",
+    "pipes": [
+      "B",
+      "C"
+    ],
+    "desk": false,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "https://jpanasuk-netizen.github.io/week37-review/"
+  },
+  {
+    "id": "L62",
+    "uid": "L62-customer-sell-ledger",
+    "title": "CUSTOMER_SELL watcher — notice the human exit",
+    "steal_line": "If the user sells in the app, log customer sell + price + total loss — and do not fake it when the positions API is silent.",
+    "learn": "Human exits need first-class ledger rows or the scoreboard lies. Rules: window still open, fill ≥90s old, positions row exists OR realized PnL present. Missing API row ≠ sold. Local: spin.record_customer_sells.",
+    "do_not": "Do not mark full stake lost when realized is None. Do not spam CUSTOMER_SELL on every empty poll.",
+    "plug": "kalshi_live.fetch_positions + ledger result=CUSTOMER_SELL.",
+    "next": "Backfill exit_price when realized PnL arrives.",
+    "bucket": "trading-kept",
+    "room": "trading-kept",
+    "status": "steal",
+    "pipes": [
+      "A"
+    ],
+    "desk": true,
+    "dollar_park": false,
+    "dollar_claims": [],
+    "source": "file:WSL:/home/jpanasuk/jev-15m-kalshi-bot/app/spin.py"
   }
 ]
