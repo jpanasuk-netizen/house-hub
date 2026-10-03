@@ -888,5 +888,369 @@
     ],
     "evidence": "house-hub/progress/timeline-data.json",
     "tool": "Hermes · house-hub"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Trenchnet replay hang fixed — fail-fast FCC + CLI filters",
+    "summary": "Replay looked hung because the FCC writer retried auth after empty replies on every wallet. Now fails fast on 401/404/empty, probes once, and adds --limit / --wallet / --no-fcc. Tests updated. Receipt pass 4 filed.",
+    "category": "lab",
+    "links": [
+      "https://github.com/jpanasuk-netizen/trenchnet/commit/c9e86b7",
+      "https://github.com/jpanasuk-netizen/trenchnet/commit/a92b11e"
+    ],
+    "evidence": "trenchnet commits c9e86b7 + a92b11e (RECEIPT PASS 4)",
+    "tool": "Trenchnet · FCC"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Kalshi 15m desk repo — gated entry bot, paper-only, no secrets",
+    "summary": "Public kalshi-15m-desk repo gets the gated entry bot in paper mode with no secrets in the tree. Live lane stays under FreeBuff with the TypeSafe gate; no P&L published here.",
+    "category": "money",
+    "links": [
+      "https://github.com/jpanasuk-netizen/kalshi-15m-desk/commit/dd98d3f"
+    ],
+    "evidence": "kalshi-15m-desk commit dd98d3f; OPS-LOG desk notes 9/30–10/2 (Kalshi LIVE under FreeBuff)",
+    "tool": "FreeBuff · TypeSafe gate"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "generator-sizer.com — premature AdSense script removed",
+    "summary": "Pulled the AdSense script and commented ad slots that went in before approval, to clear the policy flag. No ad revenue claimed.",
+    "category": "sites",
+    "links": [
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/b3cf711"
+    ],
+    "evidence": "generatorsizer commit b3cf711",
+    "tool": "generatorsizer · GH Pages"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "THE STATUS hunt board refreshed",
+    "summary": "Eve's Hugging Face status Space was updated Sat morning and is running. Details stay on the board itself.",
+    "category": "hunt",
+    "links": [
+      "https://huggingface.co/spaces/jpanasuk/the-status"
+    ],
+    "evidence": "HF API lastModified 2026-09-27 08:07 CT, stage RUNNING",
+    "tool": "Eve · HF Spaces"
+  },
+  {
+    "date": "2026-09-28",
+    "title": "generator-sizer.com lab tools — sequencer, derate, storm runbook, TCO, lot-line noise",
+    "summary": "Five lab tools that plain AdSense calculator clones don't have, plus full-page screenshots for the product post.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/854fd2e",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/8bbf903"
+    ],
+    "evidence": "generatorsizer commits 854fd2e + 8bbf903",
+    "tool": "generatorsizer · Cursor"
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Trenchnet LIVE desk rebuild — TRADING / AUTOBUY toggles, confirm-order send",
+    "summary": "Desk rebuilt with explicit TRADING and AUTOBUY toggles, a confirm step before any order is sent, and a real AUTOBUY loop. No balances or results published.",
+    "category": "lab",
+    "links": [
+      "https://github.com/jpanasuk-netizen/trenchnet/commit/54480f6"
+    ],
+    "evidence": "trenchnet commit 54480f6",
+    "tool": "Trenchnet · Cursor"
+  },
+  {
+    "date": "2026-09-28",
+    "title": "SupaBird — local X growth lab shipped without tokens",
+    "summary": "A clean clone runs on 127.0.0.1:3100 with a $0 plugin profile by default. OAuth tokens stay in a gitignored data/ folder; the FCC venv is not committed.",
+    "category": "ai-stack",
+    "links": [
+      "https://github.com/jpanasuk-netizen/supabird-clone/commit/0df4ebc"
+    ],
+    "evidence": "supabird-clone commit 0df4ebc",
+    "tool": "SupaBird · Cursor"
+  },
+  {
+    "date": "2026-09-28",
+    "title": "House Hub — AI Plan Bingo, Brain articles, week-37 Museum",
+    "summary": "New AI Plan Bingo board linking every house site, second-brain articles plus the full skill catalog with links, and the week-37 Museum hero with expandable steals and source links.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/house-hub/ai-plan-bingo.html",
+      "https://jpanasuk-netizen.github.io/house-hub/brain/",
+      "https://jpanasuk-netizen.github.io/house-hub/museum/"
+    ],
+    "evidence": "house-hub commits 975e8aa, 0634673, daded01, d4b8de0, 1e81137; live 200 on 2026-10-03",
+    "tool": "house-hub · GH Pages"
+  },
+  {
+    "date": "2026-09-29",
+    "title": "SupaBird local lab rebranded Blue Jay — honest UI screenshots",
+    "summary": "The local X lab gets the Blue Jay name and screenshots of the real UI, not mockups.",
+    "category": "ai-stack",
+    "links": [
+      "https://github.com/jpanasuk-netizen/supabird-clone/commit/ade6a37"
+    ],
+    "evidence": "supabird-clone commit ade6a37",
+    "tool": "SupaBird · Cursor"
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Sep 22–28 desk week published and cross-linked",
+    "summary": "The Closer publishes the Sep 22–28 desk week next to the prior one; the hub, brain, museum, and work stream all point at it.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/the-closer/week/2026-09-22_28/",
+      "https://github.com/jpanasuk-netizen/the-closer/commit/935f52e",
+      "https://github.com/jpanasuk-netizen/house-hub/commit/d9cfcc7"
+    ],
+    "evidence": "the-closer 935f52e + house-hub d9cfcc7; live 200",
+    "tool": "the-closer · house-hub"
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Leo-Bot Path E briefs back on schedule",
+    "summary": "Morning CoS brief, morning review, and evening review fire again 9/30 → 10/2 after the board sat stale since 9/24. A/B/C pipes reported with blockers; CONNECT stays drafts-only behind Jeremy's gate.",
+    "category": "agents",
+    "links": [],
+    "evidence": "ops-log/OPS-LOG.md 2026-09-30 07:59 → 2026-10-02 09:37 CT",
+    "tool": "Leo-Bot"
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Machine Room daily topics filed three days running",
+    "summary": "thetubebot files daily topic research for 9/30, 10/1, and 10/2 (five Machine Room candidates each on 10/1 and 10/2). SVB long and Flow Shorts stay live.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/@themachineroomtoday"
+    ],
+    "evidence": "PathG-youtube/learns/daily-topics/2026-09-30.md, 2026-10-01.md, 2026-10-02.md",
+    "tool": "thetubebot · MrOrdia method"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "AI-search structure on all 9 house sites — 32/32 markers live",
+    "summary": "SEO Bot built the Rob Hoffman SOP + Charu Day-1 list changes (key takeaways, question H2s, visible FAQ matching FAQPage schema, methodology note, accuracy fixes). Hermes fast-forwarded the Pages branches; live check found all 32 markers.",
+    "category": "sites",
+    "links": [
+      "https://github.com/jpanasuk-netizen/weldingcalc/commit/dd2c263",
+      "https://github.com/jpanasuk-netizen/solarsizer/commit/c8e445c",
+      "https://github.com/jpanasuk-netizen/shoppacks/commit/2e7b9fa"
+    ],
+    "evidence": "SEO-ROB-HOFFMAN-X-IMPLEMENT-2026-10-01.md; live-verify-20261001-1252.txt; commits on all 9 repos 12:42 CT",
+    "tool": "SEO Bot · Hermes"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "generator-sizer.com redirect loop fixed at Cloudflare",
+    "summary": "Apex and www were stuck in a 301 self-loop at the edge. Rule replaced with a single www → apex redirect and SSL set to Full. HTTP → HTTPS now one hop; hvac-load-calc.com and chickencoopcalc.com also redirect to HTTPS.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/"
+    ],
+    "evidence": "cf-fix-verify-20261001-1353.txt (LIVE PASS 1:53 PM CT)",
+    "tool": "SEO Bot · Cloudflare"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "31 free directory submits across 9 sites + 22 resource-page pitches",
+    "summary": "Free, legit directories only (Internet Intro, NoSignupTools, BiFindr, Prepping, Curlie, Marbleseed, LaunchFree), each awaiting human review. 22 outreach emails to resource-page and guide owners; launch-directory accounts via Google sign-in, no paid links.",
+    "category": "sites",
+    "links": [],
+    "evidence": "SEO-DONE-BACKLINKS-9SITES-SUBMITS-2026-10-01.md; outreach-sends-2026-10-01.md (22 sent); accounts-log.md",
+    "tool": "SEO Bot"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Pre-submit fixes — garbled meta + shoppacks FAQ boilerplate",
+    "summary": "generator-sizer.com home meta description restored; calculator boilerplate removed from the shoppacks.net home and magnet FAQ with FAQPage JSON-LD kept in sync.",
+    "category": "sites",
+    "links": [
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/1c3d356",
+      "https://github.com/jpanasuk-netizen/shoppacks/commit/18ab336",
+      "https://github.com/jpanasuk-netizen/shoppacks/commit/c0b4898"
+    ],
+    "evidence": "generatorsizer 1c3d356/af73a74; shoppacks 6a99450, 18ab336, c0b4898",
+    "tool": "Hermes"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Hermes model picker choice now persists",
+    "summary": "Model pick no longer snaps back after restart; verified working with before/after screenshots.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "hermes-fix-1001/hermes_model_pick_persists_proof.png; hermes_verify_working_2026-10-01_1104.png",
+    "tool": "Hermes"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Fri rollup catch-ups for 9/18 and 9/25",
+    "summary": "BizDevIdeaBot wrote the two missed Friday rollups and slimmed the rollup routine to a date-bounded read.",
+    "category": "agents",
+    "links": [],
+    "evidence": "OPS-LOG.md 2026-10-01 08:30 CT; ops-log/FRI-ROLLUP-2026-09-18.md, FRI-ROLLUP-2026-09-25.md",
+    "tool": "BizDevIdeaBot"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "130 sourced question pages across 8 sizer sites",
+    "summary": "25 generator pages first (all 200, CPSC line on each), then 105 more across solar, welding, battery, HVAC, chicken, trailer, and aquarium. Every figure comes from a cited source (ENERGY STAR, Extension services, CURT, NHTSA, Miller, Hobart, Seriously Fish, Battle Born, NREL PVWatts). Sitemaps resubmitted in Search Console.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/what-size-generator-for-air-compressor.html",
+      "https://welding-calculator.com/what-size-welder-for-1-8-inch-steel.html",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/8a39b0d"
+    ],
+    "evidence": "SEO-GENSIZER-25-QUESTION-PAGES-2026-10-02.md; SEO-SISTER-QUESTION-PAGES-2026-10-02.md (live 14:37–14:42 CT, 0 failing)",
+    "tool": "SEO Bot · Cursor cloud agents"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Every question page linked from its calculator; dead citations replaced",
+    "summary": "All 8 sites: question pages reachable from the homepage and calculator, and bad or dead source links swapped for working ones.",
+    "category": "sites",
+    "links": [
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/bbb0c4f",
+      "https://github.com/jpanasuk-netizen/hvacloadcalc/commit/f6a473f",
+      "https://github.com/jpanasuk-netizen/trailertowcalc/commit/2233de4"
+    ],
+    "evidence": "SEO-INTERNAL-LINKS-SOURCES-2026-10-02.md; commits 16:09–16:24 CT on 8 repos",
+    "tool": "SEO Bot · Cursor cloud agents"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Battery tables follow the stated formula; aquarium stray word fixed",
+    "summary": "battery-bank-sizer.com cabin and van Ah tables now match the page's own formula and were repriced; aquarium-stocking.com filtration option reads plain English again.",
+    "category": "sites",
+    "links": [
+      "https://github.com/jpanasuk-netizen/battery-bank-sizer/commit/1f3bfea",
+      "https://github.com/jpanasuk-netizen/aquariumstocking/commit/f410469"
+    ],
+    "evidence": "SEO-BATTERY-TABLE-FIX-2026-10-02.md; SEO-AQUARIUM-CJK-FIX-2026-10-02.md",
+    "tool": "SEO Bot · Cursor cloud agents"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Leo desk dispatcher + Hermes profiles on the Connecture bus",
+    "summary": "Dispatcher routes notes, remembers the open hand-off, and only reports a reply after that seat actually posts (the old runner invented replies). Hermes profiles bridge to the bus, and a product test walks all 20 bots on the memory and HTTP bus. Kit routed on separate lanes from Hermes on 10/3.",
+    "category": "agents",
+    "links": [
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/e772c17",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/d5f0d22",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/e5a97a0"
+    ],
+    "evidence": "commits e772c17, d5f0d22, e5a97a0, e740498 (Cursor Agent, co-authored by Jeremy)",
+    "tool": "Cursor · Leo · Hermes · Connecture"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Kalshi BTC desk — public win/loss record auto-updated",
+    "summary": "The jaspers-trade-bot repo pushed its public win/loss record through the day. No figures repeated here; the repo is the source of truth.",
+    "category": "money",
+    "links": [
+      "https://github.com/jpanasuk-netizen/jaspers-trade-bot"
+    ],
+    "evidence": "jaspers-trade-bot commits 10/1 15:30 → 10/2 12:00 CT",
+    "tool": "Kalshi 15m desk · TypeSafe"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "OpsLog Fri A/B/C rollup + weekly prune",
+    "summary": "Friday rollup recovered after the 9/25 miss. Prune keeps OpsLog Fri, Path E AM/PM, tube daily topics, MoneyBot board, and CONNECT drafts-only; empty shells (Annie++, Scratch, New Bot) marked to retire.",
+    "category": "agents",
+    "links": [],
+    "evidence": "ops-log/FRI-ROLLUP-2026-10-02.md; OPS-LOG.md PRUNE 2026-10-02; WEEKLY-PRUNE-CHECKLIST.md",
+    "tool": "OpsLog"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "X Trends Desk — Grok X search, drafts only",
+    "summary": "X Trends Desk (xAI SDK + Grok X search) added to SupaBird with a Trends tab and a trends.mjs CLI. Leo-Bot relayed the 12:49 AM and 6:03 AM hot-topic lists to the bus as Machine Room topic ideas. Nothing auto-posts; Jeremy gates publishing.",
+    "category": "ai-stack",
+    "links": [
+      "https://github.com/jpanasuk-netizen/supabird-clone/commit/44c9fe8",
+      "https://github.com/jpanasuk-netizen/supabird-clone/commit/3f6fcea"
+    ],
+    "evidence": "supabird-clone 3f6fcea, 44c9fe8, 8865b45; Connecture bus messages 132–133 (topic trends/2026-10-03)",
+    "tool": "Grok · xAI SDK · Leo-Bot"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Helpful-content audit vs Google's Oct 1 doc update",
+    "summary": "Audit of all 8 calculator sites (234 HTML pages) against Google's updated helpful-content and gen-AI guidance: fabricated-creator rules, calculators as main content, effort and disclosure. Audit only; it drove the fixes below.",
+    "category": "sites",
+    "links": [
+      "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    ],
+    "evidence": "SEO-HELPFUL-CONTENT-AUDIT-2026-10-03.md; seo-audit-20261003/scan.json",
+    "tool": "SEO Bot"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Free competitor content-gap tool — gap map for the sizer sites",
+    "summary": "Self-hostable Python CLI that maps content gaps at $0: no paid SEO APIs and no Google results scraping, demand from autocomplete only. First run found 69 gaps for generator-sizer.com and fed both gap batches.",
+    "category": "lab",
+    "links": [],
+    "evidence": "cloud agent bc-28c50d67 transcript; SEO-GAP-BATCH1-2026-10-03.md",
+    "tool": "SEO Bot · Cursor cloud agent"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "P0 fixes + honest About / Privacy on all 8 sites",
+    "summary": "Internal files stop being served, About and Privacy pages say who actually built each site with no credential claims, and Cloudflare scripts are disclosed. Final check: about/privacy/contact 200 on all 8, internals 404, 0 forbidden-pattern hits.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/about.html",
+      "https://chickencoopcalc.com/about.html",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/488ce10"
+    ],
+    "evidence": "SEO-P0-ABOUT-FIXES-2026-10-03.md; verify-final.txt 08:37 CT; commits bd4e9a6, 144a705, a458726, c86d53d, b8b313d, 8c4f5a8, 488ce10, cb11bc6",
+    "tool": "SEO Bot · Cursor cloud agents"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "61 gap pages — 10 on generator-sizer, then 51 across all 8",
+    "summary": "Batch 1: ten generator pages (how a generator works, food truck, diesel standby, safety, outage use, kWh calculator and more). Batch 2: 51 new pages plus thickened guides, each with a worked example from the site's own calculator, a Sources section, and an AI-assistance line. 52/52 live checks pass. chickencoopcalc near-duplicate flock pages merged into one hub.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/how-does-a-generator-work.html",
+      "https://welding-calculator.com/how-to-weld-aluminum.html",
+      "https://chickencoopcalc.com/chicken-coop-size-by-flock.html"
+    ],
+    "evidence": "SEO-GAP-BATCH1-2026-10-03.md (2341add); SEO-GAP-BATCH2-2026-10-03.md (f3649c0, 7538280, 0f62d4f, 926e73a, 0727d87, d7ad687, 2f9d830, 21ec9c1); chickencoopcalc 608bcc0",
+    "tool": "SEO Bot · Cursor cloud agents"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Fix round — welding TIG chart, oil schedule, solar derate 0.86, 'verified' boxes gone",
+    "summary": "Aluminum TIG rows now follow Lincoln, Miller, and Harris sheets with nearest-row labels; 120 V stick OK up to Handler 140's range. Generator oil schedule follows the Honda EU2200i or Generac manual. Unsourced solar table removed. Solar derate is NREL PVWatts' 0.86 everywhere. Overclaiming 'All calculations verified against' boxes removed from 37 pages. Sitemaps resubmitted for 9 Search Console properties.",
+    "category": "sites",
+    "links": [
+      "https://solar-sizer.com/how-many-solar-panels.html",
+      "https://github.com/jpanasuk-netizen/weldingcalc/commit/b57f991",
+      "https://github.com/jpanasuk-netizen/solarsizer/commit/67ebc97",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/db3b513"
+    ],
+    "evidence": "SEO-GAP-BATCH2-2026-10-03.md fix round; commits 851672c, b57f991, cba3f74, 8308e16, 733bd73, db3b513, 67ebc97, 54fd0ee",
+    "tool": "SEO Bot · Cursor cloud agents"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Reddit sizing-reply kit — Jeremy posts by hand",
+    "summary": "SEO Bot drafts sourced answers to real sizing questions; nothing is posted by a bot. Six replies posted by Jeremy so far, next two no earlier than 10/4.",
+    "category": "sites",
+    "links": [],
+    "evidence": "SEO-REDDIT-SIZING-REPLIES-2026-10-02.md; reddit-kit-2026-10-03.html; reddit-nudge-progress.txt (verified 9:15 AM CT)",
+    "tool": "SEO Bot · Jeremy"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "House Hub progress pack extended through Oct 3",
+    "summary": "Sep 27–Oct 3 receipts added to the same timeline: SEO question and gap pages, fix round, Hermes and Leo bus work, Trenchnet, SupaBird, X Trends Desk. Same rules: dated evidence, no invented revenue, no secrets.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/house-hub/progress/"
+    ],
+    "evidence": "house-hub/progress/timeline-data.json",
+    "tool": "SEO Bot · house-hub"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "range": "2026-07-01 → 2026-09-27 (America/Chicago)",
-  "built": "2026-09-27 · MiMo + house-hub pack refresh (trading + agent stack)",
+  "range": "2026-07-01 → 2026-10-03 (America/Chicago)",
+  "built": "2026-10-03 · SEO Bot pack refresh (Sep 27–Oct 3 agent week)",
   "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
   "themes": [
     {
@@ -46,6 +46,14 @@
     {
       "label": "Hermes vendor-survive",
       "blurb": "Cursor API provider, profile config heal, Markdown Second-Brain state outside any vendor."
+    },
+    {
+      "label": "Sourced calc pages",
+      "blurb": "130 question pages + 61 gap pages on the 8 sizer sites, every figure cited, honest About pages, Oct 2–3."
+    },
+    {
+      "label": "Bus that keeps the thread",
+      "blurb": "Leo dispatcher + Hermes profiles on Connecture; replies only after a seat really posts."
     }
   ],
   "verified": [
@@ -75,6 +83,25 @@
         "https://chickencoopcalc.com/",
         "https://trailertowcalc.com/",
         "https://aquarium-stocking.com/"
+      ]
+    },
+    {
+      "group": "Sep 27–Oct 3 additions (HTTP 200 on 2026-10-03)",
+      "urls": [
+        "https://jpanasuk-netizen.github.io/the-closer/week/2026-09-22_28/",
+        "https://jpanasuk-netizen.github.io/house-hub/ai-plan-bingo.html",
+        "https://jpanasuk-netizen.github.io/house-hub/brain/",
+        "https://jpanasuk-netizen.github.io/house-hub/museum/",
+        "https://generator-sizer.com/about.html",
+        "https://generator-sizer.com/how-does-a-generator-work.html",
+        "https://generator-sizer.com/what-size-generator-for-air-compressor.html",
+        "https://solar-sizer.com/how-many-solar-panels.html",
+        "https://welding-calculator.com/how-to-weld-aluminum.html",
+        "https://chickencoopcalc.com/chicken-coop-size-by-flock.html",
+        "https://github.com/jpanasuk-netizen/supabird-clone",
+        "https://github.com/jpanasuk-netizen/trenchnet",
+        "https://github.com/jpanasuk-netizen/kalshi-15m-desk",
+        "https://huggingface.co/spaces/jpanasuk/the-status"
       ]
     },
     {
@@ -194,9 +221,80 @@
       "status": "THIN",
       "notes": "OAuth/share Gmail + @AutoClawAIer verified; no jpanasuk-netizen/autoclaw repo found yet. iPhone sizing calc claimed by Jeremy."
     },
-    "GAP — SupaBird clone revenue / growth metrics not claimed; only boot + HTTP 200 receipts.",
-    "UNVERIFIED — Connecture connecture.solar-sizer.com public URL not curl-checked in this pack build.",
-    "GAP — Coin Desk is paper-only; no live wallet, no PnL to publish.",
-    "GAP — Kalshi live PnL not invented; ledger is the only source of truth."
+    {
+      "item": "SupaBird growth metrics",
+      "status": "GAP",
+      "notes": "SupaBird clone revenue / growth metrics not claimed; only boot + HTTP 200 receipts."
+    },
+    {
+      "item": "Connecture public URL",
+      "status": "UNVERIFIED",
+      "notes": "Connecture connecture.solar-sizer.com public URL not curl-checked in this pack build."
+    },
+    {
+      "item": "Coin Desk live wallet",
+      "status": "GAP",
+      "notes": "Coin Desk is paper-only; no live wallet, no PnL to publish."
+    },
+    {
+      "item": "Kalshi live P&L",
+      "status": "GAP",
+      "notes": "Kalshi live PnL not invented; ledger is the only source of truth."
+    },
+    {
+      "item": "Quiet seats Sep 27–Oct 3",
+      "status": "QUIET",
+      "notes": "No dated ship found in this window for Headshot, ProposalCloser (CONNECT drafts ready, still waiting on Jeremy's send gate), MoneyBot (board repeats, nothing new), BTCC, BTCC desk, Grok Build, Scratch lab, Annie++, TapRoot, Cynthia-Res, FreeModelsBot, CorrectionBot, GadDesk, localbiz2pitch. Listed as quiet, not invented."
+    },
+    {
+      "item": "Teammate transcripts",
+      "status": "BLOCKED",
+      "notes": "This pack build couldn't read seat transcripts directly. Built from commits, OPS-LOG, the Connecture bus, box receipts, and live checks instead, so quiet seats may have done unfiled work."
+    },
+    {
+      "item": "Path E board 9/24 → 9/30",
+      "status": "GAP",
+      "notes": "Leo-Bot's Path E routines failed in between; the board sat stale until the 9/30 morning brief."
+    },
+    {
+      "item": "Curlie retry (welding + 6 others)",
+      "status": "BLOCKED",
+      "notes": "Fri 10/2 retry hit a captcha; 0/7 submitted, left for another day."
+    },
+    {
+      "item": "HTTPS on battery-bank-sizer.com + trailertowcalc.com",
+      "status": "PARTIAL",
+      "notes": "Both still answer plain http 200 on 2026-10-03; GitHub Pages cert pending before Enforce HTTPS."
+    },
+    {
+      "item": "MiMo lane / SVB Short / IG",
+      "status": "BLOCKED",
+      "notes": "MiMo bus down from 10/1, so the SVB Short master and Batch2 longs aren't rendered; IG / AutoSocial parked until Jeremy says go."
+    },
+    {
+      "item": "Gemini lane on the bus",
+      "status": "BLOCKED",
+      "notes": "Gemini seat isn't answering real questions yet; needs its account signed in."
+    },
+    {
+      "item": "Gap-map tool repo",
+      "status": "NOT LIVE",
+      "notes": "Built by a cloud agent; its repo is an unpublished draft, so no public link yet."
+    },
+    {
+      "item": "LinkedIn Pulse article + 10/1 X house post",
+      "status": "UNVERIFIED",
+      "notes": "Pulse article is a held draft. The X post copy and link check exist; posting not verified in this pack."
+    },
+    {
+      "item": "the-dashboard Space",
+      "status": "GAP",
+      "notes": "Hugging Face reports CONFIG_ERROR on 2026-10-03; the-status Space is running."
+    },
+    {
+      "item": "Jeremy's Windows PC (Hermes / TapRoot logs)",
+      "status": "BLOCKED",
+      "notes": "Not read in this pass; Hermes work above comes from commits and box receipts."
+    }
   ]
 }
