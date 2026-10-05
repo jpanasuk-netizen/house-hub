@@ -1,6 +1,6 @@
 {
-  "range": "2026-07-01 → 2026-10-03 (America/Chicago)",
-  "built": "2026-10-03 · SEO Bot pack refresh (Sep 27–Oct 3 agent week)",
+  "range": "2026-07-01 → 2026-10-05 (America/Chicago)",
+  "built": "2026-10-05 · Cursor pack refresh (Hermes / Grok Bot / Freebuff / GitHub last few days)",
   "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
   "themes": [
     {
@@ -54,6 +54,10 @@
     {
       "label": "Bus that keeps the thread",
       "blurb": "Leo dispatcher + Hermes profiles on Connecture; replies only after a seat really posts."
+    },
+    {
+      "label": "Oct 3–5 receipts",
+      "blurb": "HouseX panel in Blue Jay, Grok OIDC 402, X drafts unfired, generator-sizer layout fix."
     }
   ],
   "verified": [
@@ -147,6 +151,13 @@
       "group": "Docs / help",
       "urls": [
         "https://help.kalshi.com/en/articles/13823799-crypto-deposits"
+      ]
+    },
+    {
+      "group": "Blue Jay / HouseX",
+      "urls": [
+        "https://github.com/jpanasuk-netizen/supabird-clone",
+        "https://github.com/jpanasuk-netizen/supabird-clone/pull/2"
       ]
     }
   ],
@@ -295,6 +306,46 @@
       "item": "Jeremy's Windows PC (Hermes / TapRoot logs)",
       "status": "BLOCKED",
       "notes": "Not read in this pass; Hermes work above comes from commits and box receipts."
+    },
+    {
+      "item": "Grok OIDC / vault nightly reasoning (Oct 4–5)",
+      "status": "BLOCKED",
+      "notes": "STANDING.md 2026-10-04: Grok OIDC 402 (10 days). VAULT_INSIGHTS_2026-10-04 and 2026-10-05: Grok reasoning did not run (rc=1). SYNC_LOG: grokbot-continuity sync FAILED — STANDING.md write blocked."
+    },
+    {
+      "item": "Hermes-aibus from this Cursor executor",
+      "status": "BLOCKED",
+      "notes": "connecture_bus_agents/read: no bus listening at http://127.0.0.1:8789 (start script D:\\Freebuff\\hermes-fix\\start_aibus_8787.sh). Not treated as a house-wide down claim — this cloud box cannot see the bus."
+    },
+    {
+      "item": "X @Jasper_Black Oct 5 queue",
+      "status": "GAP",
+      "notes": "X_DAILY_QUEUE.md assembled #34/#25/#37; X_SHIP_LOG.md has no Oct 5 tweet IDs. Last confirmed fire is 2026-09-06. Do not treat the queue as shipped."
+    },
+    {
+      "item": "email-relay Daily Email Sender (Oct 3–4)",
+      "status": "BLOCKED",
+      "notes": "GitHub Actions failed both days on main 7c4bbee. email_sending_progress.md still marks Oct 1–4 chunks Scheduled, not Sent."
+    },
+    {
+      "item": "Freebuff desk report after Sep 30",
+      "status": "QUIET",
+      "notes": "Last Freebuff-authored vault note in this pass: 00-Inbox/2026-09-30-desk-report-for-cursor-since-sept-20.md. No Oct 3–5 Freebuff desk report found."
+    },
+    {
+      "item": "Machine Room clockwork Oct 3–5",
+      "status": "QUIET",
+      "notes": "Last CLOCKWORK file is 2026-10-02 (DRY — stay_quiet: true; YT/IG pending 0; MiMo Batch2 mp4s still missing). No CLOCKWORK_2026-10-03/04/05 notes in 50-YouTube/machine-room/work."
+    },
+    {
+      "item": "Amazon selling account live listing",
+      "status": "NOT CLAIMED",
+      "notes": "Gmail 2026-10-05 Welcome! Your Amazon selling journey awaits (no-reply@sell.amazon.com) says complete registration. Not a live Amazon seller/product claim."
+    },
+    {
+      "item": "Hermes JOURNAL after Sep 23",
+      "status": "THIN",
+      "notes": "JOURNAL.md last bot-improver row is 2026-09-23 Cynthia Vyce stale_timeout. Oct 3–5 Hermes work in this pack is from GitHub (generator-sizer layout) plus vault/bus gaps, not a new JOURNAL run."
     }
   ]
 }

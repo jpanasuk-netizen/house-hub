@@ -63,6 +63,7 @@
     const out = [];
     if (/^GAP\b/i.test(e)) out.push(["gap", "GAP"]);
     if (/^UNVERIFIED\b/i.test(e)) out.push(["unverified", "UNVERIFIED"]);
+    if (/^BLOCKED\b/i.test(e)) out.push(["blocked", "BLOCKED"]);
     if (/^\d{4}-\d{2}$/.test(ev.date)) out.push(["approx", "approx"]);
     return out;
   }

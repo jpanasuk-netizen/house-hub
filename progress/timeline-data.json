@@ -1252,5 +1252,89 @@
     ],
     "evidence": "house-hub/progress/timeline-data.json",
     "tool": "SEO Bot · house-hub"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Grok xAI $10.00 spend receipt",
+    "summary": "Stripe receipt from Grok xAI [#1670-0205]: Amount paid $10.00, Date paid Oct 2, 2026, 9:02:30 PM. Spend receipt — not product revenue.",
+    "category": "money",
+    "links": [],
+    "evidence": "Gmail 1a0ffeebf31e3358 · receipts+acct_1PksddHJohyvID2c@stripe.com (2026-10-03 04:03 UTC, paid 2026-10-02 21:02:30)"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Grok Bot usage reset (Cursor mail)",
+    "summary": "grok-bot@mail.cursor.com: We reset your Grok Bot usage. Dated program email, not a new seat.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "Gmail 1a1030a56113caaf (2026-10-03 18:31 UTC)"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "generator-sizer layout — Sources out of header, FAQ visible",
+    "summary": "Hermes/GitHub commit 9f60e3b: keep Sources block out of the site header; show FAQ and common-questions sections (scope .panel hiding to tab panels).",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/",
+      "https://github.com/jpanasuk-netizen/generatorsizer/commit/9f60e3b"
+    ],
+    "evidence": "github.com/jpanasuk-netizen/generatorsizer 9f60e3b (2026-10-04 04:07 UTC)"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Grok OIDC 402 — vault insights + grokbot-continuity sync failed",
+    "summary": "BRAIN STANDING 2026-10-04: Grok OIDC 402 (10 days). VAULT_INSIGHTS_2026-10-04 and 2026-10-05: Grok reasoning did not run (rc=1, OIDC). SYNC_LOG: grokbot-continuity sync FAILED — STANDING.md write blocked. Not a completed win.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "BLOCKED — HermesVault 00-Shared/BRAIN/STANDING.md · SYNC_LOG.md · VAULT_INSIGHTS_2026-10-04.md · VAULT_INSIGHTS_2026-10-05.md"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "BRAIN standing — GFM $650/$5K (4 donors)",
+    "summary": "STANDING.md 2026-10-04: GFM $650/$5K (4 donors), cash-war A/B/C active. Jeremy-sourced cash-bridge standing fact — not a product/affiliate earnings claim.",
+    "category": "money",
+    "links": [
+      "https://www.gofundme.com/f/support-jeremys-bridge-to-ssdi"
+    ],
+    "evidence": "HermesVault 00-Shared/BRAIN/STANDING.md (mtime 2026-10-04)"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "email-relay Daily Email Sender failed (Oct 3 and Oct 4)",
+    "summary": "GitHub Actions on jpanasuk-netizen/email-relay: Daily Email Sender workflow All jobs have failed on main (7c4bbee) — Oct 3 (~13:09 UTC) and Oct 4 (~13:47 UTC). Vault email_sending_progress still lists Oct 1–4 chunks as Scheduled, not Sent.",
+    "category": "ship",
+    "links": [
+      "https://github.com/jpanasuk-netizen/email-relay"
+    ],
+    "evidence": "BLOCKED — Gmail GitHub notifications 1a101e21fa6a80d6 (2026-10-03) · 1a1072b81976ca10 (2026-10-04); 40-Content/email_sending_progress.md"
+  },
+  {
+    "date": "2026-10-05",
+    "title": "HouseX desk inside Blue Jay — PR #2 merged",
+    "summary": "Cursor agent merged Add HouseX desk inside Blue Jay on supabird-clone. HouseX is a panel in the Blue Jay desk (127.0.0.1:4747/#/housex), HouseX API on 127.0.0.1:8787/v1, VYCE gpt-6-luna when a key is set, generate never tweets, HTTP 501 shown as not implemented. npm test 8 passing. Drafts do not publish until Schedule or Publish now is confirmed.",
+    "category": "ai-stack",
+    "links": [
+      "https://github.com/jpanasuk-netizen/supabird-clone/pull/2",
+      "https://github.com/jpanasuk-netizen/supabird-clone"
+    ],
+    "evidence": "GitHub PR #2 merged 2026-10-05 13:24 UTC · commits e7b7cbf · 6448583 · 09d7a78 · 028e8b6 · Cursor agent bc-71adb14c"
+  },
+  {
+    "date": "2026-10-05",
+    "title": "X daily queue #34 / #25 / #37 assembled — not fired",
+    "summary": "thetubebot/Hermes X_DAILY_QUEUE.md for @Jasper_Black 2026-10-05 (Sunday): slots #34, #25, #37 from Week 2. Jeremy fires — no auto-posting. Ship log still shows only Sep 6 actually fired; Sep 28 queue was prepared but never fired. Evening hard gate: log fired posts or nothing shipped.",
+    "category": "media",
+    "links": [],
+    "evidence": "GAP — 40-Content/X_DAILY_QUEUE.md (mtime 2026-10-05); X_SHIP_LOG.md last reconcile 2026-09-28, no Oct 5 tweet IDs"
+  },
+  {
+    "date": "2026-10-05",
+    "title": "House Hub progress pack extended through Oct 5",
+    "summary": "Oct 3–5 receipts from Cursor (HouseX/Blue Jay), Hermes vault (STANDING, vault insights, X queue, MR clockwork DRY through Oct 2), Grok/Grok Bot mail (xAI $10 receipt, usage reset, OIDC 402), Freebuff (no new desk report after Sep 30). Same rules: dated evidence, no invented revenue, no secrets.",
+    "category": "ship",
+    "links": [
+      "https://jpanasuk-netizen.github.io/house-hub/progress/"
+    ],
+    "evidence": "this pack build 2026-10-05 CT · Cursor run on house-hub · HermesVault connecture read · Gmail search after:2026/10/02 · gh commits since 2026-10-03"
   }
 ]
