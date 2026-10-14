@@ -1336,5 +1336,113 @@
       "https://jpanasuk-netizen.github.io/house-hub/progress/"
     ],
     "evidence": "this pack build 2026-10-05 CT · Cursor run on house-hub · HermesVault connecture read · Gmail search after:2026/10/02 · gh commits since 2026-10-03"
+  },
+  {
+    "date": "2026-10-06",
+    "category": "sites",
+    "title": "SEO waves 3–4 across all 8 sizer sites",
+    "summary": "IndexNow keys, embeddable calculators, sourced spec charts and original diagrams; affiliate disclosure moved before the first Amazon link; result permalinks, methodology pages; unsourced figures cut and long titles shortened.",
+    "links": [
+      "https://github.com/jpanasuk-netizen/generatorsizer",
+      "https://github.com/jpanasuk-netizen/trailertowcalc"
+    ],
+    "evidence": "Commits 2026-10-06 on all 8 calc repos (e.g. 'Add IndexNow key, calculator embed, spec watts chart, and diagrams.')"
+  },
+  {
+    "date": "2026-10-06",
+    "category": "lab",
+    "title": "Herald-OS 0.1.0-alpha.1 release",
+    "summary": "22 commits on Oct 6: installer asks before touching a disk and boots to Herald OS, bootc image with undoable updates, Arch packages, Mac app, release split into parts under GitHub's 2 GiB limit, checksums.",
+    "links": [
+      "https://github.com/jpanasuk-netizen/Herald-OS"
+    ],
+    "evidence": "Herald-OS commits 2026-10-06"
+  },
+  {
+    "date": "2026-10-06",
+    "category": "ship",
+    "title": "Termy-X: Premium 25k + image attach, CI green",
+    "summary": "OpenCLI image attach and media-timeout patch; Architecture Checks CI fixed (fmt, clippy). Oct 9: inline reply + topic search on the hot/upcoming feed (#1). Oct 11: README connect-your-own-X-account.",
+    "links": [
+      "https://github.com/jpanasuk-netizen/termy-x"
+    ],
+    "evidence": "termy-x commits 2026-10-06 → 10-11"
+  },
+  {
+    "date": "2026-10-06",
+    "category": "ai-stack",
+    "title": "HouseX ripped out of Blue Jay; Trends Desk live replies",
+    "summary": "Blue Jay back to its own shell on 4747 (VYCE gpt-6-luna kept). Oct 7: Trends Desk posts a live reply under a chosen tweet via OpenCLI.",
+    "links": [
+      "https://github.com/jpanasuk-netizen/supabird-clone"
+    ],
+    "evidence": "supabird-clone commits 2026-10-06/07"
+  },
+  {
+    "date": "2026-10-07",
+    "category": "sites",
+    "title": "hvac-load-calc: 7 sizing pages deepened; canonical homepage at /",
+    "summary": "Worked calculator examples, factor tables, size-specific mistakes, DOE/ACCA context. Canonical / instead of index.html on several sites.",
+    "links": [
+      "https://github.com/jpanasuk-netizen/hvacloadcalc"
+    ],
+    "evidence": "hvacloadcalc commits 2026-10-07"
+  },
+  {
+    "date": "2026-10-08",
+    "category": "sites",
+    "title": "generator-sizer: sourced device wattage data page + CSV",
+    "summary": "Computers & devices added to the appliance picklist (maker-published watts); EU2200i dryer-floor correction.",
+    "links": [
+      "https://github.com/jpanasuk-netizen/generatorsizer"
+    ],
+    "evidence": "generatorsizer commits 2026-10-08"
+  },
+  {
+    "date": "2026-10-10",
+    "category": "sites",
+    "title": "Sourced data page + CSV on 7 more sizer sites",
+    "summary": "Trolling-motor amp draw, peak sun hours by city, stick electrode amperage, ENERGY STAR sizing, poultry space, fish size/tank, hitch class ratings.",
+    "links": [
+      "https://github.com/jpanasuk-netizen/battery-bank-sizer",
+      "https://github.com/jpanasuk-netizen/solarsizer"
+    ],
+    "evidence": "Commits 2026-10-10 'Add sourced … data page and CSV'"
+  },
+  {
+    "date": "2026-10-10",
+    "category": "ship",
+    "title": "House Hub: 10 days shipped infographic",
+    "summary": "Connecture card plus Muse Machine Room counts (5 videos + 60 Shorts) and Hermes ships on the hub infographic.",
+    "links": [
+      "https://jpanasuk-netizen.github.io/house-hub/"
+    ],
+    "evidence": "house-hub commits 2026-10-10"
+  },
+  {
+    "date": "2026-10-11",
+    "category": "sites",
+    "title": "Dataset JSON-LD license fix + noindex canonical cleanup",
+    "summary": "All 8 sites: Dataset license as an object (Oct 11). Oct 12: conflicting canonicals dropped on noindex 404/embed pages (battery, welding, hvac).",
+    "links": [],
+    "evidence": "Commits 2026-10-11/12 on calc repos"
+  },
+  {
+    "date": "2026-10-13",
+    "category": "sites",
+    "title": "Week of Oct 13 pages + sitemaps on all 8 sizer sites",
+    "summary": "New page(s) + sitemap entries, approved by Jeremy 10:04 CT.",
+    "links": [],
+    "evidence": "Commits 2026-10-13 'feat: add week of 2026-10-13 new page(s)'"
+  },
+  {
+    "date": "2026-10-13",
+    "category": "ship",
+    "title": "Founders & Builders: 801 commits across 15 public repos since Sep 1",
+    "summary": "Solar-system infographic of every active public repo, counts from the public GitHub API.",
+    "links": [
+      "./founders-oct13.png"
+    ],
+    "evidence": "GitHub API commits?since=2026-09-01, pulled 2026-10-13 ~8 PM CT"
   }
 ]

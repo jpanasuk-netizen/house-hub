@@ -1,6 +1,6 @@
 {
-  "range": "2026-07-01 → 2026-10-05 (America/Chicago)",
-  "built": "2026-10-05 · Cursor pack refresh (Hermes / Grok Bot / Freebuff / GitHub last few days)",
+  "range": "2026-07-01 → 2026-10-13 (America/Chicago)",
+  "built": "2026-10-13 · weeks Sep 29–Oct 5 + Oct 6–12 added from public GitHub commits",
   "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
   "themes": [
     {
@@ -58,6 +58,10 @@
     {
       "label": "Oct 3–5 receipts",
       "blurb": "HouseX panel in Blue Jay, Grok OIDC 402, X drafts unfired, generator-sizer layout fix."
+    },
+    {
+      "label": "Oct 6–13 receipts",
+      "blurb": "SEO waves 3–4 on all 8 sites, sourced data pages + CSVs, Herald-OS alpha, Termy-X feed replies, 801 commits since Sep 1."
     }
   ],
   "verified": [
