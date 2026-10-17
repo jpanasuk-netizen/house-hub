@@ -1444,5 +1444,116 @@
       "./founders-oct13.png"
     ],
     "evidence": "GitHub API commits?since=2026-09-01, pulled 2026-10-13 ~8 PM CT"
+  },
+  {
+    "date": "2026-10-08",
+    "category": "money",
+    "title": "Kalshi sports payout logged; Anthropic Claude Startups declined",
+    "summary": "Late OpsLog add: Kalshi TB vs DAL YES payout on Oct 8 evening and Anthropic Claude Startups decline that afternoon. No figures repeated here beyond the OpsLog receipt.",
+    "links": [],
+    "evidence": "OPS-LOG.md 2026-10-09 ~16:14 CT late add (events 2026-10-08)"
+  },
+  {
+    "date": "2026-10-09",
+    "category": "agents",
+    "title": "Fri A/B/C rollup Oct 9 — tube daily-topics paused",
+    "summary": "Weekly rollup and prune filed. Tube daily-topics routine paused since about Oct 6; GFM nightly chunks kept (Jeremy-confirmed Oct 6); SVB Short/Batch2 retry loop parked until a render lands.",
+    "links": [],
+    "evidence": "OPS-LOG.md 2026-10-09 ~16:14 CT · /workspace/ops-log/FRI-ROLLUP-2026-10-09.md"
+  },
+  {
+    "date": "2026-10-12",
+    "category": "money",
+    "title": "Kalshi payouts Oct 10–11 logged; WI annual report fee paid",
+    "summary": "Monday CoS: MIN Vikings YES sports payout Oct 11, two BTC 15m payouts Oct 10, and a settled NO loss Oct 12 logged in OpsLog. PNC Business Checking was still under review at this date (approved Oct 15 — see that entry).",
+    "links": [],
+    "evidence": "OPS-LOG.md 2026-10-12 ~08:15 CT"
+  },
+  {
+    "date": "2026-10-14",
+    "category": "agents",
+    "title": "Quiet Path E day Oct 14 — gates held, PAT expiry flagged",
+    "summary": "No new live URLs: CONNECT stayed drafts-only awaiting a channel + send yes, tube daily-topics stayed paused (last file Oct 5), SVB Short + Batch2 still missing. GitHub PAT 'test' expiry (~Oct 15) and Robinhood address proof flagged for Jeremy.",
+    "links": [],
+    "evidence": "OPS-LOG.md 2026-10-14 08:00 / 09:31 / 17:23 CT"
+  },
+  {
+    "date": "2026-10-15",
+    "category": "money",
+    "title": "PNC Business Checking (Q Streaming LLC) approved",
+    "summary": "PNC approval logged Oct 15 afternoon, with e-sign and secure-message steps still Jeremy-side. This is the business checking account referenced on the Q Streaming site.",
+    "links": [
+      "https://qstreamingllc.com/"
+    ],
+    "evidence": "OPS-LOG.md 2026-10-15 ~17:30 CT"
+  },
+  {
+    "date": "2026-10-15",
+    "category": "ship",
+    "title": "SIZE IT RIGHT! KDP series build started; 12 Pinterest pin drafts",
+    "summary": "10-book KDP series build (covers, chapter 1, site-footer link map) under /workspace/kdp-books, held from site footers until books are live. 12 Pinterest pin drafts made the same day — drafts only, not published.",
+    "links": [],
+    "evidence": "OPS-LOG.md 2026-10-15 ~17:30 CT shipped today · /workspace/kdp-books · /workspace/pinterest-pins-2026-10-15"
+  },
+  {
+    "date": "2026-10-16",
+    "category": "ship",
+    "title": "Q Streaming LLC website launched — retro rebuild published",
+    "summary": "Company site launched and reworked retro arcade/VHS with THE LAB grid on Oct 16. Repo renamed to q-streaming-llc; old q-streaming URL redirects to it.",
+    "links": [
+      "https://qstreamingllc.com/",
+      "https://github.com/jpanasuk-netizen/q-streaming-llc"
+    ],
+    "evidence": "q-streaming-llc commits 418d228 · 8cddd6a · 300d32f 2026-10-16 CT · q-streaming-redirect commit 7b0eb6e",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-10-16",
+    "category": "ship",
+    "title": "qstreamingllc.com live + LinkedIn company page created",
+    "summary": "Custom domain qstreamingllc.com live via Cloudflare + GitHub Pages with HTTPS. LinkedIn company page created for Q Streaming LLC; new neon logo and banner shipped with the site.",
+    "links": [
+      "https://qstreamingllc.com/",
+      "https://www.linkedin.com/company/q-streaming-llc/"
+    ],
+    "evidence": "q-streaming-llc commit ae456d9 2026-10-16 CT · curl 200 https://qstreamingllc.com/ and LinkedIn company URL 2026-10-16",
+    "tool": "Grok Bot · Jeremy (Cloudflare purchase)"
+  },
+  {
+    "date": "2026-10-16",
+    "category": "ship",
+    "title": "Deck published on site with back-home nav; all-link audit passed",
+    "summary": "Closer Calculator Network deck published on qstreamingllc.com as HTML + PDF, both deck cards fixed, LinkedIn company page added to the site, and a sticky Back to Q Streaming Home button (plus last-slide button) added so the deck is not a dead end. Full site link audit passed.",
+    "links": [
+      "https://qstreamingllc.com/decks/closer-calculator-network.html",
+      "https://qstreamingllc.com/decks/closer-calculator-network.pdf"
+    ],
+    "evidence": "q-streaming-llc commits d458cdb · 9a585e3 2026-10-16 CT · curl 200 deck HTML/PDF 2026-10-16",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-10-16",
+    "category": "ship",
+    "title": "SIZE IT RIGHT! — 10 books rebuilt + 10 EPUBs; KDP bleed approval for book 1",
+    "summary": "All 10 SIZE IT RIGHT! books rebuilt with interiors/wrap covers and 10 EPUBs generated under /workspace/kdp-books/*/v2/. KDP bleed approval for book 1 logged as shipped today. Site footers still held until books are live.",
+    "links": [],
+    "evidence": "/workspace/kdp-books/*/v2/*.epub (10 files, mtimes 2026-10-16 15:40–15:42 CT) · /workspace/kdp-books/PROGRESS.md · OPS-LOG.md 2026-10-16 ~17:25 CT",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-10-16",
+    "category": "lab",
+    "title": "Jev/TypeSafe BTC bot verified live; ETH bot diagnosed stopped since Oct 1",
+    "summary": "BTC bot on Jeremy's PC was getting live Jev answers on Oct 16 evening (latest SKIP, so no bet placed). ETH bot is not broken — it stopped after Oct 1 and has no auto-restart, so it did not come back after the Oct 13 PC restart. It was not restarted (live-armed).",
+    "links": [],
+    "evidence": "Parent-verified Oct 16 checks (Jev answers ~10:00 PM CT; ETH last run 2026-10-01) · OPS-LOG.md Kalshi BTC payouts 2026-10-16 ~17:25 CT"
+  },
+  {
+    "date": "2026-10-16",
+    "category": "agents",
+    "title": "Fri A/B/C rollup Oct 16 filed; PNC welcome mail logged",
+    "summary": "Weekly Fri rollup filed, 12 more Pinterest pin drafts made (not published), and PNC 'new account' welcome for Q Streaming checking logged in the evening review. CONNECT stayed drafts-only; tube stayed paused.",
+    "links": [],
+    "evidence": "/workspace/ops-log/FRI-ROLLUP-2026-10-16.md · OPS-LOG.md 2026-10-16 16:09 / 17:25 CT · /workspace/pinterest-pins-2026-10-16"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "range": "2026-07-01 → 2026-10-13 (America/Chicago)",
-  "built": "2026-10-13 · weeks Sep 29–Oct 5 + Oct 6–12 added from public GitHub commits",
+  "range": "2026-07-01 → 2026-10-16 (America/Chicago)",
+  "built": "2026-10-16 · Oct 14–16 + Oct 9/12 gaps from OPS-LOG, git, live checks",
   "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
   "themes": [
     {
@@ -62,6 +62,10 @@
     {
       "label": "Oct 6–13 receipts",
       "blurb": "SEO waves 3–4 on all 8 sites, sourced data pages + CSVs, Herald-OS alpha, Termy-X feed replies, 801 commits since Sep 1."
+    },
+    {
+      "label": "Oct 14–16 receipts",
+      "blurb": "Q Streaming LLC site + qstreamingllc.com + LinkedIn page, deck on site, SIZE IT RIGHT! 10 EPUBs, PNC checking approved, Jev BTC verified / ETH bot diagnosed."
     }
   ],
   "verified": [
@@ -162,6 +166,16 @@
       "urls": [
         "https://github.com/jpanasuk-netizen/supabird-clone",
         "https://github.com/jpanasuk-netizen/supabird-clone/pull/2"
+      ]
+    },
+    {
+      "group": "Q Streaming LLC (Oct 16)",
+      "urls": [
+        "https://qstreamingllc.com/",
+        "https://qstreamingllc.com/decks/closer-calculator-network.html",
+        "https://qstreamingllc.com/decks/closer-calculator-network.pdf",
+        "https://www.linkedin.com/company/q-streaming-llc/",
+        "https://github.com/jpanasuk-netizen/q-streaming-llc"
       ]
     }
   ],
@@ -350,6 +364,26 @@
       "item": "Hermes JOURNAL after Sep 23",
       "status": "THIN",
       "notes": "JOURNAL.md last bot-improver row is 2026-09-23 Cynthia Vyce stale_timeout. Oct 3–5 Hermes work in this pack is from GitHub (generator-sizer layout) plus vault/bus gaps, not a new JOURNAL run."
+    },
+    {
+      "item": "ETH trading bot — stopped since Oct 1",
+      "status": "BLOCKED",
+      "notes": "Diagnosed Oct 16: not running since after 2026-10-01, no auto-restart (BTC bot has one, ETH does not). Not restarted — it is live-armed, so starting it would place real ETH bets. Awaiting Jeremy: start live, or add auto-restart first."
+    },
+    {
+      "item": "Jev credit balance ($14.27 claimed)",
+      "status": "UNVERIFIED",
+      "notes": "Jev/TypeSafe calls succeeded Oct 16 with no credit errors, but the balance is only shown in the Jev billing console — no API receipt on the box to verify the exact $14.27 figure."
+    },
+    {
+      "item": "CONNECT send + Machine Room SVB Short/Batch2 (Oct 14–16)",
+      "status": "BLOCKED",
+      "notes": "CONNECT remained drafts-only all week awaiting Jeremy channel + send yes. Tube daily-topics paused (last file 2026-10-05); SVB Short mr-svb-42b-run and Batch2 masters still missing per OPS-LOG Oct 14–16."
+    },
+    {
+      "item": "Kalshi withdrawal bank-clear receipts (Oct 12–16)",
+      "status": "GAP",
+      "notes": "OPS-LOG through Oct 16 evening still lists Kalshi withdrawals as in-progress with no bank-clear receipts. Do not treat started/in-progress withdrawals as landed cash."
     }
   ]
 }
