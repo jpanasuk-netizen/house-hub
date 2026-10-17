@@ -1,6 +1,6 @@
 {
   "range": "2026-07-01 → 2026-10-16 (America/Chicago)",
-  "built": "2026-10-16 · Oct 14–16 + Oct 9/12 gaps from OPS-LOG, git, live checks",
+  "built": "2026-10-17 · Muse.ai + Hermes audit (box + LightBringer PC clockwork/profiles read-only) on top of Oct 14-16 pack",
   "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
   "themes": [
     {
@@ -25,11 +25,11 @@
     },
     {
       "label": "Media dual-channel",
-      "blurb": "Machine Room (@themachineroomtoday) longs/Shorts + Ret/TikTok (@3jsa7) remux batch."
+      "blurb": "Machine Room (@themachineroomtoday): Muse.ai made 65 uploads Oct 1-10 (5 videos + 60 Shorts); MiMo was Sep seat, retired Oct 5. Ret/TikTok (@3jsa7) remux batch separate."
     },
     {
       "label": "Tool → win",
-      "blurb": "Every big ship names the tool: MiMo, AutoClaw, Treg, Hermes, SEO, Associates, NIM, Google AI Pro."
+      "blurb": "Every big ship names the tool: Muse.ai (Machine Room from Oct 5), MiMo (Sep renders, retired Oct 5), Hermes, SEO, Associates, NIM, Google AI Pro."
     },
     {
       "label": "Thanks lane",
@@ -128,7 +128,12 @@
       "urls": [
         "https://www.youtube.com/@themachineroomtoday",
         "https://www.youtube.com/@3jsa7",
-        "https://www.tiktok.com/@3jsa7"
+        "https://www.tiktok.com/@3jsa7",
+        "https://www.youtube.com/watch?v=uP-GANtLzig",
+        "https://www.youtube.com/watch?v=hI6b7nOgSZk",
+        "https://www.youtube.com/watch?v=7itCQPBWWAg",
+        "https://www.youtube.com/shorts/O9WTUZN0DTc",
+        "https://muse.ai/join"
       ]
     },
     {
@@ -222,8 +227,8 @@
     },
     {
       "item": "Muse / MiMo / bus seats",
-      "status": "PARTIAL",
-      "notes": "MiMo thanks @XiaomiMiMo + PUBLISH_CLOCKWORK lock verified; Hermes file-bus :8650 up 2026-09-15; no hermes --profile mimo yet. Muse HTTP API RETIRED 2026-09-14."
+      "status": "CORRECTED 2026-10-17",
+      "notes": "MiMo retired Oct 5; Muse.ai is current Machine Room producer (65 uploads Oct 1-10 verified by title/date/URL list). Muse HTTP API retired Sep 14 is a different lane (local gateway :8788). SVB Short + Batch2 still missing Oct 16 per PC clockwork."
     },
     {
       "item": "Annie++ / Scratch / New Bot",
@@ -384,6 +389,21 @@
       "item": "Kalshi withdrawal bank-clear receipts (Oct 12–16)",
       "status": "GAP",
       "notes": "OPS-LOG through Oct 16 evening still lists Kalshi withdrawals as in-progress with no bank-clear receipts. Do not treat started/in-progress withdrawals as landed cash."
+    },
+    {
+      "item": "Muse referral graphics date",
+      "status": "PARTIAL",
+      "notes": "/workspace/muse-referral graphics exist on box but box mtimes are Oct 16 copy stamps, no dated publish receipt — left out as a dated event. Muse IG Story V4Y71Y is dated Oct 5 in OPS-LOG and is included."
+    },
+    {
+      "item": "Hermes WSL direct logs",
+      "status": "PARTIAL",
+      "notes": "Box cannot see WSL directly; Oct 17 pass read LightBringer PC HermesVault clockwork files + profile list via machine tool (CLOCKWORK_2026-10-16 etc). WSL-internal Hermes session logs not independently pulled — Hermes events use box receipts, OPS-LOG, PC clockwork, and shipped packs."
+    },
+    {
+      "item": "Muse/Hermes view counts & revenue",
+      "status": "NEVER INVENTED",
+      "notes": "Muse run lists titles/dates/URLs only; no YouTube view counts, watch time, or revenue in files — none added."
     }
   ]
 }

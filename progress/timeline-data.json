@@ -464,7 +464,7 @@
   {
     "date": "2026-09-14",
     "title": "MiMo free access — Machine Room render seat",
-    "summary": "Xiaomi MiMo granted free access for Machine Room long/Short renders. House lock: MiMo renders assets; Tube/Leo publish on schedule. SVB long+Short queued via Treg hook.",
+    "summary": "Xiaomi MiMo granted free access for Machine Room long/Short renders. House lock: MiMo renders assets; Tube/Leo publish on schedule. SVB long+Short queued via Treg hook. Corrected Oct 17 audit: MiMo was the Sep render seat; MiMo retired Oct 5 and Muse.ai took over Machine Room production (see Oct 5 entry). This Sep 14 entry is historical, not current.",
     "category": "media",
     "tool": "MiMo (@XiaomiMiMo) · Treg · Tube · Hermes bus",
     "links": [
@@ -582,11 +582,11 @@
   {
     "date": "2026-09-18",
     "title": "muse-rig-hub — Muse + browser agent/CLI selector",
-    "summary": "Cloudflare Worker public catalog (/api/catalog /api/bus /mcp) with RIG_TOKEN. Muse (Meta cloud) and the browser GUI both reach the same bus list. House pulls outbound only into bus/inbox — no public tunnel, no credit burn.",
+    "summary": "Built on LightBringer Sep 18 (README/files 21:52-21:59 CT): Cloudflare Worker + GUI catalog + Muse connector brief + bus poller, auth tests 15/15. NOT deployed at build time — receipts say do not claim a live Worker. House pulls outbound only; no inbound exposure.",
     "category": "agents",
     "links": [],
-    "evidence": "Documents/HermesTools/muse-rig-hub/README.md (2026-09-18)",
-    "tool": "Muse · Cloudflare Worker · house-rig-hub"
+    "evidence": "/workspace/PathE-org-chart/weekly/RECEIPTS-2026-09-17_24-muse-mimo-hermes.md · HermesTools/muse-rig-hub/README.md (2026-09-18, NOT deployed)",
+    "tool": "Muse · muse-rig-hub (not deployed)"
   },
   {
     "date": "2026-09-18",
@@ -1555,5 +1555,147 @@
     "summary": "Weekly Fri rollup filed, 12 more Pinterest pin drafts made (not published), and PNC 'new account' welcome for Q Streaming checking logged in the evening review. CONNECT stayed drafts-only; tube stayed paused.",
     "links": [],
     "evidence": "/workspace/ops-log/FRI-ROLLUP-2026-10-16.md · OPS-LOG.md 2026-10-16 16:09 / 17:25 CT · /workspace/pinterest-pins-2026-10-16"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "Hermes reconnect: kitter + hoeem done, CBM parked",
+    "summary": "Hermes Bot on LightBringer: kitter Windows CLI v0.1.4 smoke Done, hoeem P1-8 audit Done (OK=22, GAP=1), codebase-memory MCP (CBM) parked on config.yaml mcp_install failure — intentional park, not a silent fail.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/ops-log/OPS-LOG.md 2026-09-05 ~13:47-13:52 CT · HermesTools/kitter/SMOKE-PROOF.txt · hoeem-p18-audit.txt",
+    "tool": "Hermes Bot · kitter · hoeem"
+  },
+  {
+    "date": "2026-09-17",
+    "title": "HermesVault 00-Continuity packed for Hermes",
+    "summary": "Leo-to-Hermes full continuity pack written 18:00 CT (continuity doc, HOUSE-CONTEXT-RULES, correction queue, Kalshi snapshot) in HermesVault 00-Continuity, mirrored on the box.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/weekly/RECEIPTS-2026-09-17_24-muse-mimo-hermes.md · PathE-org-chart/continuity/LEO-TO-HERMES-FULL-CONTINUITY-2026-09-17.md",
+    "tool": "Hermes Bot · HermesVault"
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Machine Room Flow Shorts live — Hermes Studio publish",
+    "summary": "Three Flow Shorts live ~12:54am CT on @themachineroomtoday via Hermes Studio: Wrong generator size costs you twice; Will the agent email or buy without me?; ONE GPU. WHOLE OFFICE.",
+    "category": "media",
+    "links": [
+      "https://youtube.com/shorts/SD12veIFcKg",
+      "https://youtube.com/shorts/igDaGidVM8Y",
+      "https://youtube.com/shorts/1crW-P_ne2g"
+    ],
+    "evidence": "/workspace/PathE-org-chart/ecombos-flow-2026-09-16/FLOW_SHORTS_LIVE_2026-09-17.json · PUBLISH-MR-BATCH-2026-09-17.json",
+    "tool": "Hermes Studio · Tube"
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Muse lane docs + seat canon written",
+    "summary": "House Muse lane split documented: Meta Muse vs local :8788 video gateway, connector brief rules, and Muse seat page in HermesVault BRAIN. No Muse-authored video this week — lane docs only.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/weekly/RECEIPTS-2026-09-17_24-muse-mimo-hermes.md · HermesTools/MUSE-LANE.md (2026-09-18 21:46 CT) · HermesVault 00-Shared/BRAIN/bots/muse.md",
+    "tool": "Muse lane · HermesVault BRAIN"
+  },
+  {
+    "date": "2026-09-19",
+    "title": "Connecture initial commit — Muse MSP client",
+    "summary": "First Connecture commit 01:30 CT: Muse MSP client with connector hub on GitHub, followed by verified PayPal.Me/Sponsor button commit. Muse-product lane ship (authored jpanasuk-netizen/Codebuff, not a Muse agent session log).",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/weekly/RECEIPTS-2026-09-17_24-muse-mimo-hermes.md · connecture 066293f + 7b31df6 · NOTE: github commit URL returns 404 Oct 17 (repo not public) — no public link claimed",
+    "tool": "Muse MSP · Connecture"
+  },
+  {
+    "date": "2026-09-23",
+    "title": "Hermes primary switched to FCC + Cloudflare Workers AI wired",
+    "summary": "Hermes config-primary fix: model.provider set to fcc (Free Claude Code) 16:13-17:04 CT with FCC-only backups, Kimi/Qwen keys cleared from live env. Cloudflare Workers AI provider wired on disk 20:30 CT (smoke ok, no Worker deployed). Gateway healthy that night: api_server :8642 + Telegram connected. Machine Room publish-watchdog crons left disabled on leo/thetubebot.",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/weekly/RECEIPTS-2026-09-17_24-muse-mimo-hermes.md · /workspace/hermes-gateway-health-2026-09-23.txt · HermesVault/CLOUDFLARE-WORKERS-AI.md (2026-09-23)",
+    "tool": "Hermes Bot · FCC · Cloudflare Workers AI"
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Hermes bus pickup / ACK tests passed",
+    "summary": "Hermes Bot file-bus pickup and ACK tests from Leo 00:44-00:59 CT: four bus messages marked DONE in hermes-bot inbox / bus log. Early proof the Connecture/Hermes bus loop answered.",
+    "category": "agents",
+    "links": [],
+    "evidence": "/workspace/PathE-org-chart/weekly/RECEIPTS-2026-09-17_24-muse-mimo-hermes.md · bus/inbox/hermes-bot.md msgs a272cfb3/ff3888c9/0637e77e/1f37b841",
+    "tool": "Hermes Bot · file-bus"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Hermes fallbacks: GLM-5.3-flash + Sonnet 4.6 + DeepSeek",
+    "summary": "Hermes back on its feet per Sep 30-Oct 10 shipped pack: Cloudflare GLM-5.3-flash primary with Sonnet 4.6 and DeepSeek fallbacks, plus 3 new agent skills in HermesVault (dated Oct 1 in pack).",
+    "category": "ai-stack",
+    "links": [],
+    "evidence": "/workspace/shipped-week-1010/gen.py + x-post.txt (Sep 30-Oct 10 pack, Hermes card Oct 1)",
+    "tool": "Hermes · GLM-5.3-flash · Sonnet 4.6 · DeepSeek"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Muse Machine Room video: How to Grow on X",
+    "summary": "Muse-made Machine Room long: How to Grow on X (Explained by a Lion, a Wolf, a Porcupine and a Dragon), published Oct 3 on @themachineroomtoday.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/watch?v=uP-GANtLzig"
+    ],
+    "evidence": "/workspace/shipped-week-1010/youtube-sep30-oct10.txt · yt-dates.txt 20261003 uP-GANtLzig",
+    "tool": "Muse.ai · Machine Room"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Muse Machine Room video: We Were Wrong About X",
+    "summary": "Muse-made Machine Room long: We Were Wrong About X (Here's What the Algorithm Code Actually Says), published Oct 4.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/watch?v=hI6b7nOgSZk"
+    ],
+    "evidence": "/workspace/shipped-week-1010/youtube-sep30-oct10.txt · yt-dates.txt 20261004 hI6b7nOgSZk",
+    "tool": "Muse.ai · Machine Room"
+  },
+  {
+    "date": "2026-10-05",
+    "title": "Muse.ai takes over Machine Room; Muse IG Story live",
+    "summary": "MiMo retired Oct 5 (bus down) and Muse.ai became the Machine Room producer — SVB Short/Batch2 rerouted via Muse.ai from Oct 6 ops. Same day Muse referral IG Story live with code V4Y71Y (muse.ai/join, 48h Settings code).",
+    "category": "media",
+    "links": [
+      "https://muse.ai/join"
+    ],
+    "evidence": "/workspace/ops-log/OPS-LOG.md 2026-10-05 ~17:29 CT + 2026-10-06 ~08:09 CT · /workspace/muse-ig/caption.txt (code V4Y71Y)",
+    "tool": "Muse.ai · Machine Room · Instagram"
+  },
+  {
+    "date": "2026-10-06",
+    "title": "Muse Machine Room video: The Follow Machine (Growth Grove Pt 3)",
+    "summary": "Muse-made Machine Room long: The Follow Machine: How X's Code Manufactures Followers (Growth Grove Part 3), published Oct 6.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/watch?v=7itCQPBWWAg"
+    ],
+    "evidence": "/workspace/shipped-week-1010/youtube-sep30-oct10.txt · yt-dates.txt 20261006 7itCQPBWWAg",
+    "tool": "Muse.ai · Machine Room"
+  },
+  {
+    "date": "2026-10-10",
+    "title": "Muse Machine Room run: 65 uploads Oct 1-10",
+    "summary": "Verifiable Muse production run: 65 uploads on @themachineroomtoday Oct 1-10 — 5 videos + 60 Shorts. Shorts include Fifty, Not Seventy and Masa Passes the Hat (Oct 10), The Robot Wrote the Lawsuit and Five Bankers, Zero Convictions (Oct 9), Le Chonk and DeepSeek's Twelve Billion Dollar Raise (Oct 8). No view counts claimed — list is titles/dates/URLs only.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/@themachineroomtoday",
+      "https://www.youtube.com/shorts/O9WTUZN0DTc",
+      "https://www.youtube.com/shorts/BC3-Fqg9vp4"
+    ],
+    "evidence": "/workspace/shipped-week-1010/youtube-sep30-oct10.txt (65 lines) · gen.py Muse card · x-post.txt",
+    "tool": "Muse.ai · Machine Room"
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Machine Room Muse lane DRY — SVB Short + Batch2 still missing",
+    "summary": "PC clockwork Oct 16 17:47-17:55 CT (LightBringer, read Oct 17): YT/IG queues 0, no new renders since B2_SVB_final_subbed.mp4 Sep 16, Batch2 FTX/Hollywood/credit-cards still scripts+thumbs only, AutoSocial :3006 down. Muse lane is the route, but no SVB Short (mr-svb-42b-run) or Batch2 master has landed — not claimed as shipped.",
+    "category": "media",
+    "links": [],
+    "evidence": "HermesVault 50-YouTube/machine-room/work/CLOCKWORK_2026-10-16.md (PC LightBringer, read 2026-10-17) · /workspace/ops-log/OPS-LOG.md 2026-10-16 ~17:25 CT",
+    "tool": "Muse.ai · thetubebot · clockwork"
   }
 ]
