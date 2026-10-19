@@ -1697,5 +1697,80 @@
     "links": [],
     "evidence": "HermesVault 50-YouTube/machine-room/work/CLOCKWORK_2026-10-16.md (PC LightBringer, read 2026-10-17) · /workspace/ops-log/OPS-LOG.md 2026-10-16 ~17:25 CT",
     "tool": "Muse.ai · thetubebot · clockwork"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "Termy X Linux build + speed + feed fixes merged to main",
+    "summary": "Linux build (cfg split, rustls, guide, Linux+Windows CI), mimalloc + zero-copy, OpenCLI speed patch, inline reposts, Profile Top 20 + All Tweets 120, Compose drag-copy, Follow/Unfollow, Enter/Ctrl+C fixes. main at 33dcd5f.",
+    "category": "ship",
+    "links": [
+      "https://github.com/jpanasuk-netizen/termy-x/commit/33dcd5f"
+    ],
+    "evidence": "github.com/jpanasuk-netizen/termy-x main 33dcd5f",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "Termy X launch posts live: LinkedIn, Show HN, Dev.to, Facebook",
+    "summary": "LinkedIn with 4 screenshots, Show HN, Dev.to article, Facebook text + repo link. Reddit drafts not posted.",
+    "category": "media",
+    "links": [
+      "https://www.linkedin.com/feed/update/urn:li:ugcPost:7518060626351611905/",
+      "https://news.ycombinator.com/item?id=50158397",
+      "https://dev.to/jasper_black/building-termy-x-putting-an-x-client-inside-a-gpu-terminal-with-rust-and-gpui-1ddj"
+    ],
+    "evidence": "Live post URLs, Oct 19",
+    "tool": "Grok Bot · OpenCLI (LightBringer)"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "softenersizer preview live (domain not bought)",
+    "summary": "Water softener sizing tool: hardness, iron and household size in, then softener size, regen frequency, salt per year and Amazon picks out. softenersizer.com open at $10.46/yr on Cloudflare, not purchased.",
+    "category": "ship",
+    "links": [
+      "https://softenersizer-preview.jpanasuk.workers.dev"
+    ],
+    "evidence": "Cloudflare Workers preview, Oct 19",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "SEO: GSC 808 impressions (vs 369), 3 clicks (vs 1)",
+    "summary": "Weekly GSC digest plus cross-site link map, IndexNow, solar/welding title + meta fixes. HVAC was the only site that dropped.",
+    "category": "sites",
+    "links": [],
+    "evidence": "GSC weekly digest Oct 19",
+    "tool": "SEO seat · Grok Bot"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "Hermes vault week: 4 nightly digests, clockwork DRY",
+    "summary": "VAULT_INSIGHTS Oct 13/14/17/19 written (Oct 18 auth-failure stub). MR clockwork Oct 13–16 + 19 DRY (YT/IG pending 0, no new renders). X queue Oct 19 #48/#54/#18 queued for Jeremy, not posted.",
+    "category": "agents",
+    "links": [],
+    "evidence": "LightBringer Documents/HermesVault 00-Shared/VAULT_INSIGHTS_2026-10-1*.md · 50-YouTube/machine-room/work/CLOCKWORK_2026-10-1*.md · 40-Content/X_SHIP_LOG.md (read 2026-10-19)",
+    "tool": "Hermes"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "Machine Room: 15 Shorts published Oct 18–19",
+    "summary": "Includes The Four-Cent Model That Beats Everything, MAI-Base-2, Open Weights Eat the World, The Saudi Bug Inside OpenAI and The Border Line. Titles, dates and URLs only. Producer not confirmed in Muse logs.",
+    "category": "media",
+    "links": [
+      "https://www.youtube.com/shorts/hHo2iIs4Jps",
+      "https://www.youtube.com/shorts/KbMUbi29RTQ",
+      "https://www.youtube.com/shorts/CXYqgpC0QTg"
+    ],
+    "evidence": "YouTube RSS channel UCNuGgmF_NyIP5VueVxfaEVQ, read 2026-10-19",
+    "tool": "YouTube (agent unconfirmed)"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "Daily AI trends routine created",
+    "summary": "One post per top AI trend with its link, from @Jasper_Black daily around 4 PM CT. First run Oct 20.",
+    "category": "agents",
+    "links": [],
+    "evidence": "Grok Bot routine, Oct 19",
+    "tool": "Grok Bot"
   }
 ]

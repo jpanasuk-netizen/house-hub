@@ -1,409 +1,414 @@
 {
-  "range": "2026-07-01 → 2026-10-16 (America/Chicago)",
-  "built": "2026-10-17 · Muse.ai + Hermes audit (box + LightBringer PC clockwork/profiles read-only) on top of Oct 14-16 pack",
-  "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
-  "themes": [
-    {
-      "label": "Hunt machine",
-      "blurb": "True-remote FDE closer packets, HF status board, Lever ATF/Warp Speed outcomes, daily Eve refreshes."
-    },
-    {
-      "label": "Calc cash sisters",
-      "blurb": "Eight utility domains → Amazon Associates tag generatorsi0d-20 + AdSense-ready flagship (no invented RPM)."
-    },
-    {
-      "label": "Agent org chart",
-      "blurb": "Named seats (Leo dispatch, Hermes lab, Cynthia hunt, SEO, FreeModels, Money, tube) with Jeremy gates on send/spend/publish."
-    },
-    {
-      "label": "Ship receipts over vibes",
-      "blurb": "SEO-DONE_*.md, GREEN_LIVE JSON, Gmail program emails, live curl 200s."
-    },
-    {
-      "label": "Free AI stack wave",
-      "blurb": "NVIDIA Developer + Inception apply, Google AI Pro, NIM kimi-k3 / FCM / FreeModelsBot."
-    },
-    {
-      "label": "Media dual-channel",
-      "blurb": "Machine Room (@themachineroomtoday): Muse.ai made 65 uploads Oct 1-10 (5 videos + 60 Shorts); MiMo was Sep seat, retired Oct 5. Ret/TikTok (@3jsa7) remux batch separate."
-    },
-    {
-      "label": "Tool → win",
-      "blurb": "Every big ship names the tool: Muse.ai (Machine Room from Oct 5), MiMo (Sep renders, retired Oct 5), Hermes, SEO, Associates, NIM, Google AI Pro."
-    },
-    {
-      "label": "Thanks lane",
-      "blurb": "@XiaomiMiMo free MiMo access · @AutoClawAIer / @Zai_org sizing calculator iPhone app."
-    },
-    {
-      "label": "Trading desks",
-      "blurb": "Kalshi 15m live (spike + $4.20 clips), Trenchnet Solana paper-first, Coin Desk paper launch desk."
-    },
-    {
-      "label": "Week-37 four-ship",
-      "blurb": "SupaBird clone, Connecture GUI bus, FunTokens, Debate Desk — one week on one 4070."
-    },
-    {
-      "label": "Hermes vendor-survive",
-      "blurb": "Cursor API provider, profile config heal, Markdown Second-Brain state outside any vendor."
-    },
-    {
-      "label": "Sourced calc pages",
-      "blurb": "130 question pages + 61 gap pages on the 8 sizer sites, every figure cited, honest About pages, Oct 2–3."
-    },
-    {
-      "label": "Bus that keeps the thread",
-      "blurb": "Leo dispatcher + Hermes profiles on Connecture; replies only after a seat really posts."
-    },
-    {
-      "label": "Oct 3–5 receipts",
-      "blurb": "HouseX panel in Blue Jay, Grok OIDC 402, X drafts unfired, generator-sizer layout fix."
-    },
-    {
-      "label": "Oct 6–13 receipts",
-      "blurb": "SEO waves 3–4 on all 8 sites, sourced data pages + CSVs, Herald-OS alpha, Termy-X feed replies, 801 commits since Sep 1."
-    },
-    {
-      "label": "Oct 14–16 receipts",
-      "blurb": "Q Streaming LLC site + qstreamingllc.com + LinkedIn page, deck on site, SIZE IT RIGHT! 10 EPUBs, PNC checking approved, Jev BTC verified / ETH bot diagnosed."
-    }
-  ],
-  "verified": [
-    {
-      "group": "Offer / closer / hunt",
-      "urls": [
-        "https://jpanasuk-netizen.github.io/the-closer/",
-        "https://jpanasuk-netizen.github.io/the-closer/hunt.html",
-        "https://jpanasuk-netizen.github.io/the-closer/playbook.html",
-        "https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html",
-        "https://jpanasuk-netizen.github.io/house-hub/",
-        "https://jpanasuk-the-closer.static.hf.space/",
-        "https://huggingface.co/spaces/jpanasuk/the-closer",
-        "https://huggingface.co/spaces/jpanasuk/the-status",
-        "https://huggingface.co/spaces/jpanasuk/the-dashboard",
-        "https://lnkd.in/p/gvPGrahR"
-      ]
-    },
-    {
-      "group": "Calc sisters (HTTPS 200 on 2026-09-15 executor check)",
-      "urls": [
-        "https://generator-sizer.com/",
-        "https://solar-sizer.com/",
-        "https://welding-calculator.com/",
-        "https://battery-bank-sizer.com/",
-        "https://hvac-load-calc.com/",
-        "https://chickencoopcalc.com/",
-        "https://trailertowcalc.com/",
-        "https://aquarium-stocking.com/"
-      ]
-    },
-    {
-      "group": "Sep 27–Oct 3 additions (HTTP 200 on 2026-10-03)",
-      "urls": [
-        "https://jpanasuk-netizen.github.io/the-closer/week/2026-09-22_28/",
-        "https://jpanasuk-netizen.github.io/house-hub/ai-plan-bingo.html",
-        "https://jpanasuk-netizen.github.io/house-hub/brain/",
-        "https://jpanasuk-netizen.github.io/house-hub/museum/",
-        "https://generator-sizer.com/about.html",
-        "https://generator-sizer.com/how-does-a-generator-work.html",
-        "https://generator-sizer.com/what-size-generator-for-air-compressor.html",
-        "https://solar-sizer.com/how-many-solar-panels.html",
-        "https://welding-calculator.com/how-to-weld-aluminum.html",
-        "https://chickencoopcalc.com/chicken-coop-size-by-flock.html",
-        "https://github.com/jpanasuk-netizen/supabird-clone",
-        "https://github.com/jpanasuk-netizen/trenchnet",
-        "https://github.com/jpanasuk-netizen/kalshi-15m-desk",
-        "https://huggingface.co/spaces/jpanasuk/the-status"
-      ]
-    },
-    {
-      "group": "Shop / packs",
-      "urls": [
-        "https://shoppacks.net/",
-        "https://github.com/jpanasuk-netizen/shoppacks"
-      ]
-    },
-    {
-      "group": "Media",
-      "urls": [
-        "https://www.youtube.com/@themachineroomtoday",
-        "https://www.youtube.com/@3jsa7",
-        "https://www.tiktok.com/@3jsa7",
-        "https://www.youtube.com/watch?v=uP-GANtLzig",
-        "https://www.youtube.com/watch?v=hI6b7nOgSZk",
-        "https://www.youtube.com/watch?v=7itCQPBWWAg",
-        "https://www.youtube.com/shorts/O9WTUZN0DTc",
-        "https://muse.ai/join"
-      ]
-    },
-    {
-      "group": "Free AI scout refs",
-      "urls": [
-        "https://itsfree.ai/",
-        "https://freellm.sh/",
-        "https://github.com/Sumanth077/Hands-On-AI-Engineering"
-      ]
-    },
-    {
-      "group": "Free AI / render partners (thanks)",
-      "urls": [
-        "https://x.com/XiaomiMiMo",
-        "https://x.com/AutoClawAIer",
-        "https://x.com/Zai_org",
-        "https://www.nvidia.com/en-us/startups/"
-      ]
-    },
-    {
-      "group": "Trading / lab",
-      "urls": [
-        "https://jpanasuk-netizen.github.io/week37-review/",
-        "https://jpanasuk-netizen.github.io/house-hub/progress/"
-      ]
-    },
-    {
-      "group": "Docs / help",
-      "urls": [
-        "https://help.kalshi.com/en/articles/13823799-crypto-deposits"
-      ]
-    },
-    {
-      "group": "Blue Jay / HouseX",
-      "urls": [
-        "https://github.com/jpanasuk-netizen/supabird-clone",
-        "https://github.com/jpanasuk-netizen/supabird-clone/pull/2"
-      ]
-    },
-    {
-      "group": "Q Streaming LLC (Oct 16)",
-      "urls": [
-        "https://qstreamingllc.com/",
-        "https://qstreamingllc.com/decks/closer-calculator-network.html",
-        "https://qstreamingllc.com/decks/closer-calculator-network.pdf",
-        "https://www.linkedin.com/company/q-streaming-llc/",
-        "https://github.com/jpanasuk-netizen/q-streaming-llc"
-      ]
-    }
-  ],
-  "gaps": [
-    {
-      "item": "July 2026 day-level events",
-      "status": "GAP",
-      "notes": "Only clear July stamp found: FCM architecture-review 2026-07-27. Month-only placeholder event included."
-    },
-    {
-      "item": "LightBringer HermesVault INDEX / 00-Inbox / LANE_*.md / PROGRESS",
-      "status": "BLOCKED",
-      "notes": "machineId 464f965c-32e0-46c2-b726-cc8eeac74891 not reachable from this executor (no Computer/CloudAgent MCP). HermesTools Windows pull + PathE receipts used instead (dates/titles only where present)."
-    },
-    {
-      "item": "gh repo list jpanasuk-netizen",
-      "status": "BLOCKED",
-      "notes": "gh not authenticated on box (gh auth login / GH_TOKEN missing). Repo URLs inferred from SEO-DONE commits + live Pages."
-    },
-    {
-      "item": "Devin community leader",
-      "status": "UNVERIFIED",
-      "notes": "User-claimed; no Gmail/Drive dated receipt in this pass."
-    },
-    {
-      "item": "Typesafe",
-      "status": "UNVERIFIED",
-      "notes": "User-claimed; no receipt found."
-    },
-    {
-      "item": "Seek",
-      "status": "UNVERIFIED",
-      "notes": "User-claimed; no receipt found."
-    },
-    {
-      "item": "Treg",
-      "status": "PARTIAL",
-      "notes": "Treg used live for MR SVB hook (TREG_HOOK_2026-09-15.md youtube.search.videos). Continuity partner path confirmed."
-    },
-    {
-      "item": "KDP live Amazon product",
-      "status": "NOT CLAIMED",
-      "notes": "Account update email + local manuscript/cover paths only — do not deep-link a product ASIN."
-    },
-    {
-      "item": "Muse / MiMo / bus seats",
-      "status": "CORRECTED 2026-10-17",
-      "notes": "MiMo retired Oct 5; Muse.ai is current Machine Room producer (65 uploads Oct 1-10 verified by title/date/URL list). Muse HTTP API retired Sep 14 is a different lane (local gateway :8788). SVB Short + Batch2 still missing Oct 16 per PC clockwork."
-    },
-    {
-      "item": "Annie++ / Scratch / New Bot",
-      "status": "THIN",
-      "notes": "Continuity marks Annie++ / empty shells; DESK-ORG notes empty shells to retire."
-    },
-    {
-      "item": "Revenue / affiliate earnings",
-      "status": "NEVER INVENTED",
-      "notes": "Associates signup + tagged CTAs verified; no $ earned figures included. PathA GFM/PayPal is Jeremy-sourced cash-bridge note only."
-    },
-    {
-      "item": "AdSense live units",
-      "status": "NOT LIVE",
-      "notes": "Script/pub + ads.txt on flagship; ad units still staged/commented per Sep 11 audit."
-    },
-    {
-      "item": "Packet employer GH Pages (full set)",
-      "status": "SAMPLE",
-      "notes": "for-american-tech / for-edisyl / for-paylocity / for-cresta / for-toloka / for-carex-fde / for-warp-speed attested in SEO-DONE hub note — not individually curl-checked this pass."
-    },
-    {
-      "item": "AutoClaw public GitHub tree",
-      "status": "THIN",
-      "notes": "OAuth/share Gmail + @AutoClawAIer verified; no jpanasuk-netizen/autoclaw repo found yet. iPhone sizing calc claimed by Jeremy."
-    },
-    {
-      "item": "SupaBird growth metrics",
-      "status": "GAP",
-      "notes": "SupaBird clone revenue / growth metrics not claimed; only boot + HTTP 200 receipts."
-    },
-    {
-      "item": "Connecture public URL",
-      "status": "UNVERIFIED",
-      "notes": "Connecture connecture.solar-sizer.com public URL not curl-checked in this pack build."
-    },
-    {
-      "item": "Coin Desk live wallet",
-      "status": "GAP",
-      "notes": "Coin Desk is paper-only; no live wallet, no PnL to publish."
-    },
-    {
-      "item": "Kalshi live P&L",
-      "status": "GAP",
-      "notes": "Kalshi live PnL not invented; ledger is the only source of truth."
-    },
-    {
-      "item": "Quiet seats Sep 27–Oct 3",
-      "status": "QUIET",
-      "notes": "No dated ship found in this window for Headshot, ProposalCloser (CONNECT drafts ready, still waiting on Jeremy's send gate), MoneyBot (board repeats, nothing new), BTCC, BTCC desk, Grok Build, Scratch lab, Annie++, TapRoot, Cynthia-Res, FreeModelsBot, CorrectionBot, GadDesk, localbiz2pitch. Listed as quiet, not invented."
-    },
-    {
-      "item": "Teammate transcripts",
-      "status": "BLOCKED",
-      "notes": "This pack build couldn't read seat transcripts directly. Built from commits, OPS-LOG, the Connecture bus, box receipts, and live checks instead, so quiet seats may have done unfiled work."
-    },
-    {
-      "item": "Path E board 9/24 → 9/30",
-      "status": "GAP",
-      "notes": "Leo-Bot's Path E routines failed in between; the board sat stale until the 9/30 morning brief."
-    },
-    {
-      "item": "Curlie retry (welding + 6 others)",
-      "status": "BLOCKED",
-      "notes": "Fri 10/2 retry hit a captcha; 0/7 submitted, left for another day."
-    },
-    {
-      "item": "HTTPS on battery-bank-sizer.com + trailertowcalc.com",
-      "status": "PARTIAL",
-      "notes": "Both still answer plain http 200 on 2026-10-03; GitHub Pages cert pending before Enforce HTTPS."
-    },
-    {
-      "item": "MiMo lane / SVB Short / IG",
-      "status": "BLOCKED",
-      "notes": "MiMo bus down from 10/1, so the SVB Short master and Batch2 longs aren't rendered; IG / AutoSocial parked until Jeremy says go."
-    },
-    {
-      "item": "Gemini lane on the bus",
-      "status": "BLOCKED",
-      "notes": "Gemini seat isn't answering real questions yet; needs its account signed in."
-    },
-    {
-      "item": "Gap-map tool repo",
-      "status": "NOT LIVE",
-      "notes": "Built by a cloud agent; its repo is an unpublished draft, so no public link yet."
-    },
-    {
-      "item": "LinkedIn Pulse article + 10/1 X house post",
-      "status": "UNVERIFIED",
-      "notes": "Pulse article is a held draft. The X post copy and link check exist; posting not verified in this pack."
-    },
-    {
-      "item": "the-dashboard Space",
-      "status": "GAP",
-      "notes": "Hugging Face reports CONFIG_ERROR on 2026-10-03; the-status Space is running."
-    },
-    {
-      "item": "Jeremy's Windows PC (Hermes / TapRoot logs)",
-      "status": "BLOCKED",
-      "notes": "Not read in this pass; Hermes work above comes from commits and box receipts."
-    },
-    {
-      "item": "Grok OIDC / vault nightly reasoning (Oct 4–5)",
-      "status": "BLOCKED",
-      "notes": "STANDING.md 2026-10-04: Grok OIDC 402 (10 days). VAULT_INSIGHTS_2026-10-04 and 2026-10-05: Grok reasoning did not run (rc=1). SYNC_LOG: grokbot-continuity sync FAILED — STANDING.md write blocked."
-    },
-    {
-      "item": "Hermes-aibus from this Cursor executor",
-      "status": "BLOCKED",
-      "notes": "connecture_bus_agents/read: no bus listening at http://127.0.0.1:8789 (start script D:\\Freebuff\\hermes-fix\\start_aibus_8787.sh). Not treated as a house-wide down claim — this cloud box cannot see the bus."
-    },
-    {
-      "item": "X @Jasper_Black Oct 5 queue",
-      "status": "GAP",
-      "notes": "X_DAILY_QUEUE.md assembled #34/#25/#37; X_SHIP_LOG.md has no Oct 5 tweet IDs. Last confirmed fire is 2026-09-06. Do not treat the queue as shipped."
-    },
-    {
-      "item": "email-relay Daily Email Sender (Oct 3–4)",
-      "status": "BLOCKED",
-      "notes": "GitHub Actions failed both days on main 7c4bbee. email_sending_progress.md still marks Oct 1–4 chunks Scheduled, not Sent."
-    },
-    {
-      "item": "Freebuff desk report after Sep 30",
-      "status": "QUIET",
-      "notes": "Last Freebuff-authored vault note in this pass: 00-Inbox/2026-09-30-desk-report-for-cursor-since-sept-20.md. No Oct 3–5 Freebuff desk report found."
-    },
-    {
-      "item": "Machine Room clockwork Oct 3–5",
-      "status": "QUIET",
-      "notes": "Last CLOCKWORK file is 2026-10-02 (DRY — stay_quiet: true; YT/IG pending 0; MiMo Batch2 mp4s still missing). No CLOCKWORK_2026-10-03/04/05 notes in 50-YouTube/machine-room/work."
-    },
-    {
-      "item": "Amazon selling account live listing",
-      "status": "NOT CLAIMED",
-      "notes": "Gmail 2026-10-05 Welcome! Your Amazon selling journey awaits (no-reply@sell.amazon.com) says complete registration. Not a live Amazon seller/product claim."
-    },
-    {
-      "item": "Hermes JOURNAL after Sep 23",
-      "status": "THIN",
-      "notes": "JOURNAL.md last bot-improver row is 2026-09-23 Cynthia Vyce stale_timeout. Oct 3–5 Hermes work in this pack is from GitHub (generator-sizer layout) plus vault/bus gaps, not a new JOURNAL run."
-    },
-    {
-      "item": "ETH trading bot — stopped since Oct 1",
-      "status": "BLOCKED",
-      "notes": "Diagnosed Oct 16: not running since after 2026-10-01, no auto-restart (BTC bot has one, ETH does not). Not restarted — it is live-armed, so starting it would place real ETH bets. Awaiting Jeremy: start live, or add auto-restart first."
-    },
-    {
-      "item": "Jev credit balance ($14.27 claimed)",
-      "status": "UNVERIFIED",
-      "notes": "Jev/TypeSafe calls succeeded Oct 16 with no credit errors, but the balance is only shown in the Jev billing console — no API receipt on the box to verify the exact $14.27 figure."
-    },
-    {
-      "item": "CONNECT send + Machine Room SVB Short/Batch2 (Oct 14–16)",
-      "status": "BLOCKED",
-      "notes": "CONNECT remained drafts-only all week awaiting Jeremy channel + send yes. Tube daily-topics paused (last file 2026-10-05); SVB Short mr-svb-42b-run and Batch2 masters still missing per OPS-LOG Oct 14–16."
-    },
-    {
-      "item": "Kalshi withdrawal bank-clear receipts (Oct 12–16)",
-      "status": "GAP",
-      "notes": "OPS-LOG through Oct 16 evening still lists Kalshi withdrawals as in-progress with no bank-clear receipts. Do not treat started/in-progress withdrawals as landed cash."
-    },
-    {
-      "item": "Muse referral graphics date",
-      "status": "PARTIAL",
-      "notes": "/workspace/muse-referral graphics exist on box but box mtimes are Oct 16 copy stamps, no dated publish receipt — left out as a dated event. Muse IG Story V4Y71Y is dated Oct 5 in OPS-LOG and is included."
-    },
-    {
-      "item": "Hermes WSL direct logs",
-      "status": "PARTIAL",
-      "notes": "Box cannot see WSL directly; Oct 17 pass read LightBringer PC HermesVault clockwork files + profile list via machine tool (CLOCKWORK_2026-10-16 etc). WSL-internal Hermes session logs not independently pulled — Hermes events use box receipts, OPS-LOG, PC clockwork, and shipped packs."
-    },
-    {
-      "item": "Muse/Hermes view counts & revenue",
-      "status": "NEVER INVENTED",
-      "notes": "Muse run lists titles/dates/URLs only; no YouTube view counts, watch time, or revenue in files — none added."
-    }
-  ]
+ "range": "2026-07-01 → 2026-10-19 (America/Chicago)",
+ "built": "2026-10-19 · Oct 13–19 week (Termy X Linux + launch, softenersizer preview, SEO digest, Hermes vault + Machine Room YT audit)",
+ "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
+ "themes": [
+  {
+   "label": "Hunt machine",
+   "blurb": "True-remote FDE closer packets, HF status board, Lever ATF/Warp Speed outcomes, daily Eve refreshes."
+  },
+  {
+   "label": "Calc cash sisters",
+   "blurb": "Eight utility domains → Amazon Associates tag generatorsi0d-20 + AdSense-ready flagship (no invented RPM)."
+  },
+  {
+   "label": "Agent org chart",
+   "blurb": "Named seats (Leo dispatch, Hermes lab, Cynthia hunt, SEO, FreeModels, Money, tube) with Jeremy gates on send/spend/publish."
+  },
+  {
+   "label": "Ship receipts over vibes",
+   "blurb": "SEO-DONE_*.md, GREEN_LIVE JSON, Gmail program emails, live curl 200s."
+  },
+  {
+   "label": "Free AI stack wave",
+   "blurb": "NVIDIA Developer + Inception apply, Google AI Pro, NIM kimi-k3 / FCM / FreeModelsBot."
+  },
+  {
+   "label": "Media dual-channel",
+   "blurb": "Machine Room (@themachineroomtoday): Muse.ai made 65 uploads Oct 1-10 (5 videos + 60 Shorts); MiMo was Sep seat, retired Oct 5. Ret/TikTok (@3jsa7) remux batch separate."
+  },
+  {
+   "label": "Tool → win",
+   "blurb": "Every big ship names the tool: Muse.ai (Machine Room from Oct 5), MiMo (Sep renders, retired Oct 5), Hermes, SEO, Associates, NIM, Google AI Pro."
+  },
+  {
+   "label": "Thanks lane",
+   "blurb": "@XiaomiMiMo free MiMo access · @AutoClawAIer / @Zai_org sizing calculator iPhone app."
+  },
+  {
+   "label": "Trading desks",
+   "blurb": "Kalshi 15m live (spike + $4.20 clips), Trenchnet Solana paper-first, Coin Desk paper launch desk."
+  },
+  {
+   "label": "Week-37 four-ship",
+   "blurb": "SupaBird clone, Connecture GUI bus, FunTokens, Debate Desk — one week on one 4070."
+  },
+  {
+   "label": "Hermes vendor-survive",
+   "blurb": "Cursor API provider, profile config heal, Markdown Second-Brain state outside any vendor."
+  },
+  {
+   "label": "Sourced calc pages",
+   "blurb": "130 question pages + 61 gap pages on the 8 sizer sites, every figure cited, honest About pages, Oct 2–3."
+  },
+  {
+   "label": "Bus that keeps the thread",
+   "blurb": "Leo dispatcher + Hermes profiles on Connecture; replies only after a seat really posts."
+  },
+  {
+   "label": "Oct 3–5 receipts",
+   "blurb": "HouseX panel in Blue Jay, Grok OIDC 402, X drafts unfired, generator-sizer layout fix."
+  },
+  {
+   "label": "Oct 6–13 receipts",
+   "blurb": "SEO waves 3–4 on all 8 sites, sourced data pages + CSVs, Herald-OS alpha, Termy-X feed replies, 801 commits since Sep 1."
+  },
+  {
+   "label": "Oct 14–16 receipts",
+   "blurb": "Q Streaming LLC site + qstreamingllc.com + LinkedIn page, deck on site, SIZE IT RIGHT! 10 EPUBs, PNC checking approved, Jev BTC verified / ETH bot diagnosed."
+  }
+ ],
+ "verified": [
+  {
+   "group": "Offer / closer / hunt",
+   "urls": [
+    "https://jpanasuk-netizen.github.io/the-closer/",
+    "https://jpanasuk-netizen.github.io/the-closer/hunt.html",
+    "https://jpanasuk-netizen.github.io/the-closer/playbook.html",
+    "https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html",
+    "https://jpanasuk-netizen.github.io/house-hub/",
+    "https://jpanasuk-the-closer.static.hf.space/",
+    "https://huggingface.co/spaces/jpanasuk/the-closer",
+    "https://huggingface.co/spaces/jpanasuk/the-status",
+    "https://huggingface.co/spaces/jpanasuk/the-dashboard",
+    "https://lnkd.in/p/gvPGrahR"
+   ]
+  },
+  {
+   "group": "Calc sisters (HTTPS 200 on 2026-09-15 executor check)",
+   "urls": [
+    "https://generator-sizer.com/",
+    "https://solar-sizer.com/",
+    "https://welding-calculator.com/",
+    "https://battery-bank-sizer.com/",
+    "https://hvac-load-calc.com/",
+    "https://chickencoopcalc.com/",
+    "https://trailertowcalc.com/",
+    "https://aquarium-stocking.com/"
+   ]
+  },
+  {
+   "group": "Sep 27–Oct 3 additions (HTTP 200 on 2026-10-03)",
+   "urls": [
+    "https://jpanasuk-netizen.github.io/the-closer/week/2026-09-22_28/",
+    "https://jpanasuk-netizen.github.io/house-hub/ai-plan-bingo.html",
+    "https://jpanasuk-netizen.github.io/house-hub/brain/",
+    "https://jpanasuk-netizen.github.io/house-hub/museum/",
+    "https://generator-sizer.com/about.html",
+    "https://generator-sizer.com/how-does-a-generator-work.html",
+    "https://generator-sizer.com/what-size-generator-for-air-compressor.html",
+    "https://solar-sizer.com/how-many-solar-panels.html",
+    "https://welding-calculator.com/how-to-weld-aluminum.html",
+    "https://chickencoopcalc.com/chicken-coop-size-by-flock.html",
+    "https://github.com/jpanasuk-netizen/supabird-clone",
+    "https://github.com/jpanasuk-netizen/trenchnet",
+    "https://github.com/jpanasuk-netizen/kalshi-15m-desk",
+    "https://huggingface.co/spaces/jpanasuk/the-status"
+   ]
+  },
+  {
+   "group": "Shop / packs",
+   "urls": [
+    "https://shoppacks.net/",
+    "https://github.com/jpanasuk-netizen/shoppacks"
+   ]
+  },
+  {
+   "group": "Media",
+   "urls": [
+    "https://www.youtube.com/@themachineroomtoday",
+    "https://www.youtube.com/@3jsa7",
+    "https://www.tiktok.com/@3jsa7",
+    "https://www.youtube.com/watch?v=uP-GANtLzig",
+    "https://www.youtube.com/watch?v=hI6b7nOgSZk",
+    "https://www.youtube.com/watch?v=7itCQPBWWAg",
+    "https://www.youtube.com/shorts/O9WTUZN0DTc",
+    "https://muse.ai/join"
+   ]
+  },
+  {
+   "group": "Free AI scout refs",
+   "urls": [
+    "https://itsfree.ai/",
+    "https://freellm.sh/",
+    "https://github.com/Sumanth077/Hands-On-AI-Engineering"
+   ]
+  },
+  {
+   "group": "Free AI / render partners (thanks)",
+   "urls": [
+    "https://x.com/XiaomiMiMo",
+    "https://x.com/AutoClawAIer",
+    "https://x.com/Zai_org",
+    "https://www.nvidia.com/en-us/startups/"
+   ]
+  },
+  {
+   "group": "Trading / lab",
+   "urls": [
+    "https://jpanasuk-netizen.github.io/week37-review/",
+    "https://jpanasuk-netizen.github.io/house-hub/progress/"
+   ]
+  },
+  {
+   "group": "Docs / help",
+   "urls": [
+    "https://help.kalshi.com/en/articles/13823799-crypto-deposits"
+   ]
+  },
+  {
+   "group": "Blue Jay / HouseX",
+   "urls": [
+    "https://github.com/jpanasuk-netizen/supabird-clone",
+    "https://github.com/jpanasuk-netizen/supabird-clone/pull/2"
+   ]
+  },
+  {
+   "group": "Q Streaming LLC (Oct 16)",
+   "urls": [
+    "https://qstreamingllc.com/",
+    "https://qstreamingllc.com/decks/closer-calculator-network.html",
+    "https://qstreamingllc.com/decks/closer-calculator-network.pdf",
+    "https://www.linkedin.com/company/q-streaming-llc/",
+    "https://github.com/jpanasuk-netizen/q-streaming-llc"
+   ]
+  }
+ ],
+ "gaps": [
+  {
+   "item": "July 2026 day-level events",
+   "status": "GAP",
+   "notes": "Only clear July stamp found: FCM architecture-review 2026-07-27. Month-only placeholder event included."
+  },
+  {
+   "item": "LightBringer HermesVault INDEX / 00-Inbox / LANE_*.md / PROGRESS",
+   "status": "BLOCKED",
+   "notes": "machineId 464f965c-32e0-46c2-b726-cc8eeac74891 not reachable from this executor (no Computer/CloudAgent MCP). HermesTools Windows pull + PathE receipts used instead (dates/titles only where present)."
+  },
+  {
+   "item": "gh repo list jpanasuk-netizen",
+   "status": "BLOCKED",
+   "notes": "gh not authenticated on box (gh auth login / GH_TOKEN missing). Repo URLs inferred from SEO-DONE commits + live Pages."
+  },
+  {
+   "item": "Devin community leader",
+   "status": "UNVERIFIED",
+   "notes": "User-claimed; no Gmail/Drive dated receipt in this pass."
+  },
+  {
+   "item": "Typesafe",
+   "status": "UNVERIFIED",
+   "notes": "User-claimed; no receipt found."
+  },
+  {
+   "item": "Seek",
+   "status": "UNVERIFIED",
+   "notes": "User-claimed; no receipt found."
+  },
+  {
+   "item": "Treg",
+   "status": "PARTIAL",
+   "notes": "Treg used live for MR SVB hook (TREG_HOOK_2026-09-15.md youtube.search.videos). Continuity partner path confirmed."
+  },
+  {
+   "item": "KDP live Amazon product",
+   "status": "NOT CLAIMED",
+   "notes": "Account update email + local manuscript/cover paths only — do not deep-link a product ASIN."
+  },
+  {
+   "item": "Muse / MiMo / bus seats",
+   "status": "CORRECTED 2026-10-17",
+   "notes": "MiMo retired Oct 5; Muse.ai is current Machine Room producer (65 uploads Oct 1-10 verified by title/date/URL list). Muse HTTP API retired Sep 14 is a different lane (local gateway :8788). SVB Short + Batch2 still missing Oct 16 per PC clockwork."
+  },
+  {
+   "item": "Annie++ / Scratch / New Bot",
+   "status": "THIN",
+   "notes": "Continuity marks Annie++ / empty shells; DESK-ORG notes empty shells to retire."
+  },
+  {
+   "item": "Revenue / affiliate earnings",
+   "status": "NEVER INVENTED",
+   "notes": "Associates signup + tagged CTAs verified; no $ earned figures included. PathA GFM/PayPal is Jeremy-sourced cash-bridge note only."
+  },
+  {
+   "item": "AdSense live units",
+   "status": "NOT LIVE",
+   "notes": "Script/pub + ads.txt on flagship; ad units still staged/commented per Sep 11 audit."
+  },
+  {
+   "item": "Packet employer GH Pages (full set)",
+   "status": "SAMPLE",
+   "notes": "for-american-tech / for-edisyl / for-paylocity / for-cresta / for-toloka / for-carex-fde / for-warp-speed attested in SEO-DONE hub note — not individually curl-checked this pass."
+  },
+  {
+   "item": "AutoClaw public GitHub tree",
+   "status": "THIN",
+   "notes": "OAuth/share Gmail + @AutoClawAIer verified; no jpanasuk-netizen/autoclaw repo found yet. iPhone sizing calc claimed by Jeremy."
+  },
+  {
+   "item": "SupaBird growth metrics",
+   "status": "GAP",
+   "notes": "SupaBird clone revenue / growth metrics not claimed; only boot + HTTP 200 receipts."
+  },
+  {
+   "item": "Connecture public URL",
+   "status": "UNVERIFIED",
+   "notes": "Connecture connecture.solar-sizer.com public URL not curl-checked in this pack build."
+  },
+  {
+   "item": "Coin Desk live wallet",
+   "status": "GAP",
+   "notes": "Coin Desk is paper-only; no live wallet, no PnL to publish."
+  },
+  {
+   "item": "Kalshi live P&L",
+   "status": "GAP",
+   "notes": "Kalshi live PnL not invented; ledger is the only source of truth."
+  },
+  {
+   "item": "Quiet seats Sep 27–Oct 3",
+   "status": "QUIET",
+   "notes": "No dated ship found in this window for Headshot, ProposalCloser (CONNECT drafts ready, still waiting on Jeremy's send gate), MoneyBot (board repeats, nothing new), BTCC, BTCC desk, Grok Build, Scratch lab, Annie++, TapRoot, Cynthia-Res, FreeModelsBot, CorrectionBot, GadDesk, localbiz2pitch. Listed as quiet, not invented."
+  },
+  {
+   "item": "Teammate transcripts",
+   "status": "BLOCKED",
+   "notes": "This pack build couldn't read seat transcripts directly. Built from commits, OPS-LOG, the Connecture bus, box receipts, and live checks instead, so quiet seats may have done unfiled work."
+  },
+  {
+   "item": "Path E board 9/24 → 9/30",
+   "status": "GAP",
+   "notes": "Leo-Bot's Path E routines failed in between; the board sat stale until the 9/30 morning brief."
+  },
+  {
+   "item": "Curlie retry (welding + 6 others)",
+   "status": "BLOCKED",
+   "notes": "Fri 10/2 retry hit a captcha; 0/7 submitted, left for another day."
+  },
+  {
+   "item": "HTTPS on battery-bank-sizer.com + trailertowcalc.com",
+   "status": "PARTIAL",
+   "notes": "Both still answer plain http 200 on 2026-10-03; GitHub Pages cert pending before Enforce HTTPS."
+  },
+  {
+   "item": "MiMo lane / SVB Short / IG",
+   "status": "BLOCKED",
+   "notes": "MiMo bus down from 10/1, so the SVB Short master and Batch2 longs aren't rendered; IG / AutoSocial parked until Jeremy says go."
+  },
+  {
+   "item": "Gemini lane on the bus",
+   "status": "BLOCKED",
+   "notes": "Gemini seat isn't answering real questions yet; needs its account signed in."
+  },
+  {
+   "item": "Gap-map tool repo",
+   "status": "NOT LIVE",
+   "notes": "Built by a cloud agent; its repo is an unpublished draft, so no public link yet."
+  },
+  {
+   "item": "LinkedIn Pulse article + 10/1 X house post",
+   "status": "UNVERIFIED",
+   "notes": "Pulse article is a held draft. The X post copy and link check exist; posting not verified in this pack."
+  },
+  {
+   "item": "the-dashboard Space",
+   "status": "GAP",
+   "notes": "Hugging Face reports CONFIG_ERROR on 2026-10-03; the-status Space is running."
+  },
+  {
+   "item": "Jeremy's Windows PC (Hermes / TapRoot logs)",
+   "status": "BLOCKED",
+   "notes": "Not read in this pass; Hermes work above comes from commits and box receipts."
+  },
+  {
+   "item": "Grok OIDC / vault nightly reasoning (Oct 4–5)",
+   "status": "BLOCKED",
+   "notes": "STANDING.md 2026-10-04: Grok OIDC 402 (10 days). VAULT_INSIGHTS_2026-10-04 and 2026-10-05: Grok reasoning did not run (rc=1). SYNC_LOG: grokbot-continuity sync FAILED — STANDING.md write blocked."
+  },
+  {
+   "item": "Hermes-aibus from this Cursor executor",
+   "status": "BLOCKED",
+   "notes": "connecture_bus_agents/read: no bus listening at http://127.0.0.1:8789 (start script D:\\Freebuff\\hermes-fix\\start_aibus_8787.sh). Not treated as a house-wide down claim — this cloud box cannot see the bus."
+  },
+  {
+   "item": "X @Jasper_Black Oct 5 queue",
+   "status": "GAP",
+   "notes": "X_DAILY_QUEUE.md assembled #34/#25/#37; X_SHIP_LOG.md has no Oct 5 tweet IDs. Last confirmed fire is 2026-09-06. Do not treat the queue as shipped."
+  },
+  {
+   "item": "email-relay Daily Email Sender (Oct 3–4)",
+   "status": "BLOCKED",
+   "notes": "GitHub Actions failed both days on main 7c4bbee. email_sending_progress.md still marks Oct 1–4 chunks Scheduled, not Sent."
+  },
+  {
+   "item": "Freebuff desk report after Sep 30",
+   "status": "QUIET",
+   "notes": "Last Freebuff-authored vault note in this pass: 00-Inbox/2026-09-30-desk-report-for-cursor-since-sept-20.md. No Oct 3–5 Freebuff desk report found."
+  },
+  {
+   "item": "Machine Room clockwork Oct 3–5",
+   "status": "QUIET",
+   "notes": "Last CLOCKWORK file is 2026-10-02 (DRY — stay_quiet: true; YT/IG pending 0; MiMo Batch2 mp4s still missing). No CLOCKWORK_2026-10-03/04/05 notes in 50-YouTube/machine-room/work."
+  },
+  {
+   "item": "Amazon selling account live listing",
+   "status": "NOT CLAIMED",
+   "notes": "Gmail 2026-10-05 Welcome! Your Amazon selling journey awaits (no-reply@sell.amazon.com) says complete registration. Not a live Amazon seller/product claim."
+  },
+  {
+   "item": "Hermes JOURNAL after Sep 23",
+   "status": "THIN",
+   "notes": "JOURNAL.md last bot-improver row is 2026-09-23 Cynthia Vyce stale_timeout. Oct 3–5 Hermes work in this pack is from GitHub (generator-sizer layout) plus vault/bus gaps, not a new JOURNAL run."
+  },
+  {
+   "item": "ETH trading bot — stopped since Oct 1",
+   "status": "BLOCKED",
+   "notes": "Diagnosed Oct 16: not running since after 2026-10-01, no auto-restart (BTC bot has one, ETH does not). Not restarted — it is live-armed, so starting it would place real ETH bets. Awaiting Jeremy: start live, or add auto-restart first."
+  },
+  {
+   "item": "Jev credit balance ($14.27 claimed)",
+   "status": "UNVERIFIED",
+   "notes": "Jev/TypeSafe calls succeeded Oct 16 with no credit errors, but the balance is only shown in the Jev billing console — no API receipt on the box to verify the exact $14.27 figure."
+  },
+  {
+   "item": "CONNECT send + Machine Room SVB Short/Batch2 (Oct 14–16)",
+   "status": "BLOCKED",
+   "notes": "CONNECT remained drafts-only all week awaiting Jeremy channel + send yes. Tube daily-topics paused (last file 2026-10-05); SVB Short mr-svb-42b-run and Batch2 masters still missing per OPS-LOG Oct 14–16."
+  },
+  {
+   "item": "Kalshi withdrawal bank-clear receipts (Oct 12–16)",
+   "status": "GAP",
+   "notes": "OPS-LOG through Oct 16 evening still lists Kalshi withdrawals as in-progress with no bank-clear receipts. Do not treat started/in-progress withdrawals as landed cash."
+  },
+  {
+   "item": "Muse referral graphics date",
+   "status": "PARTIAL",
+   "notes": "/workspace/muse-referral graphics exist on box but box mtimes are Oct 16 copy stamps, no dated publish receipt — left out as a dated event. Muse IG Story V4Y71Y is dated Oct 5 in OPS-LOG and is included."
+  },
+  {
+   "item": "Hermes WSL direct logs",
+   "status": "PARTIAL",
+   "notes": "Box cannot see WSL directly; Oct 17 pass read LightBringer PC HermesVault clockwork files + profile list via machine tool (CLOCKWORK_2026-10-16 etc). WSL-internal Hermes session logs not independently pulled — Hermes events use box receipts, OPS-LOG, PC clockwork, and shipped packs."
+  },
+  {
+   "item": "Muse/Hermes view counts & revenue",
+   "status": "NEVER INVENTED",
+   "notes": "Muse run lists titles/dates/URLs only; no YouTube view counts, watch time, or revenue in files — none added."
+  },
+  {
+   "item": "Machine Room Shorts Oct 18–19 producer",
+   "status": "PARTIAL",
+   "notes": "YouTube RSS shows 15 Shorts published Oct 18–19, but Muse Code session logs on LightBringer don't name these titles, and HermesVault clockwork Oct 19 says DRY. Uploads are listed; no agent is credited. Instagram uploads not independently checked."
+  }
+ ]
 }
