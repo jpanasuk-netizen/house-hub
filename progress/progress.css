@@ -316,7 +316,8 @@ a:hover { color: #b5d6ff; }
   border: 1px solid transparent;
 }
 .flag.gap { color: #1a1206; background: var(--gap); }
-.flag.unverified { color: #1a0812; background: var(--unverified); }
+.flag.unverified,
+.flag.pending { color: #1a0812; background: var(--unverified); }
 .flag.approx { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 40%, var(--line)); }
 .flag.blocked { color: #1a0808; background: var(--blocked); }
 .title {
@@ -498,7 +499,8 @@ a:hover { color: #b5d6ff; }
 .status.GAP { background: var(--gap); color: #1a1206; }
 .status.BLOCKED { background: var(--blocked); color: #1a0808; }
 .status.UNVERIFIED,
-.status.PARTIAL-UNVERIFIED { background: var(--unverified); color: #1a0812; }
+.status.PARTIAL-UNVERIFIED,
+.status.pending { background: var(--unverified); color: #1a0812; }
 .status.PARTIAL { background: #3a3420; color: var(--warn); border: 1px solid color-mix(in srgb, var(--warn) 40%, transparent); }
 .status.NOT-CLAIMED,
 .status.QUIET,

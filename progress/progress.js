@@ -55,14 +55,14 @@
   function toolHtml(ev) {
     const t = ev.tool;
     if (!t) return "";
-    return ' <span class="tool" title="Tool that shipped this">' + esc(t) + "</span>";
+    return ' <span class="tool" title="Tool that shipped this">' + esc(publicCopy(t)) + "</span>";
   }
 
   function flags(ev) {
     const e = String(ev.evidence || "");
     const out = [];
     if (/^GAP\b/i.test(e)) out.push(["gap", "GAP"]);
-    if (/^UNVERIFIED\b/i.test(e)) out.push(["unverified", "UNVERIFIED"]);
+    if (/^(?:UNVERIFIED|pending)\b/i.test(e)) out.push(["pending", "pending"]);
     if (/^BLOCKED\b/i.test(e)) out.push(["blocked", "BLOCKED"]);
     if (/^\d{4}-\d{2}$/.test(ev.date)) out.push(["approx", "approx"]);
     return out;
@@ -81,11 +81,25 @@
     }
   }
 
+  function publicCopy(s) {
+    return String(s == null ? "" : s)
+      .replace(/\bunverified\b/gi, "pending")
+      .replace(/\bverified\b/gi, "sourced");
+  }
+
   function statusClass(status) {
-    return String(status || "")
+    var raw = String(status || "");
+    if (/^unverified$/i.test(raw) || /^partial-unverified$/i.test(raw)) return "pending";
+    return raw
       .replace(/[^\w]+/g, "-")
       .replace(/-+/g, "-")
       .replace(/^-|-$/g, "");
+  }
+
+  function statusLabel(status) {
+    var raw = String(status || "");
+    if (/^unverified$/i.test(raw) || /^partial-unverified$/i.test(raw)) return "pending";
+    return publicCopy(raw);
   }
 
   function sortEvents(list) {
@@ -106,8 +120,8 @@
     themes.forEach(function (t) {
       const span = document.createElement("span");
       span.className = "theme";
-      span.textContent = t.label;
-      if (t.blurb) span.title = t.blurb;
+      span.textContent = publicCopy(t.label);
+      if (t.blurb) span.title = publicCopy(t.blurb);
       themesEl.appendChild(span);
     });
   }
@@ -186,17 +200,17 @@
           flagHtml +
           toolHtml(ev) +
         "</div>" +
-        "<p class=\"title\">" + esc(ev.title) + "</p>" +
-        '<p class="hint">' + esc(ev.summary) + "</p>" +
+        "<p class=\"title\">" + esc(publicCopy(ev.title)) + "</p>" +
+        '<p class="hint">' + esc(publicCopy(ev.summary)) + "</p>" +
         '<div class="expand-cue">Tap for summary + evidence</div>';
 
       const body = document.createElement("div");
       body.className = "body";
       body.innerHTML =
         "<h3>Summary</h3>" +
-        "<p>" + esc(ev.summary) + "</p>" +
+        "<p>" + esc(publicCopy(ev.summary)) + "</p>" +
         "<h3>Evidence</h3>" +
-        '<div class="evidence">' + esc(ev.evidence || "") + "</div>" +
+        '<div class="evidence">' + esc(publicCopy(ev.evidence || "")) + "</div>" +
         (ev.tool ? "<h3>Tool</h3><p class=\"tool-line\">" + esc(ev.tool) + "</p>" : "") +
         (linkHtml ? "<h3>Links</h3><div class=\"links\">" + linkHtml + "</div>" : "");
 
@@ -263,10 +277,10 @@
       const cls = statusClass(row.status);
       card.innerHTML =
         '<div class="gap-head">' +
-          '<span class="status ' + esc(cls) + '">' + esc(row.status) + "</span>" +
-          "<h3>" + esc(row.item) + "</h3>" +
+          '<span class="status ' + esc(cls) + '">' + esc(statusLabel(row.status)) + "</span>" +
+          "<h3>" + esc(publicCopy(row.item)) + "</h3>" +
         "</div>" +
-        "<p>" + esc(row.notes) + "</p>";
+        "<p>" + esc(publicCopy(row.notes)) + "</p>";
       gapsEl.appendChild(card);
     });
   }
