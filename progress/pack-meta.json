@@ -1,8 +1,12 @@
 {
- "range": "2026-07-01 → 2026-11-07 (America/Chicago)",
- "built": "2026-11-07 · ISO weeks 44 and 45 added; week 45 in progress through Nov 7",
+ "range": "2026-07-01 → 2026-11-20 (America/Chicago)",
+ "built": "2026-11-20 · 21-day card added; ISO weeks 46 and 47 added; week 45 closed; week 47 through Nov 20; timeline newest-first",
  "rules": "dated evidence preferred · tool named per win · no invented revenue $ · no secrets / .env",
  "themes": [
+  {
+   "label": "Nov 8–20 receipts",
+   "blurb": "19 calculator pages live (10 on Nov 10, 9 on Nov 17), SEO pass 2, Termy XL install (PR #2 unmerged), CoderLegion Termy X piece, MeshKore relist, Q Streaming deck sent, MadeForBrunettes preview (not live, nothing spent), Wells Fargo fellowship submitted, 192 Pinterest pins in the Oct 31–Nov 20 window."
+  },
   {
    "label": "Hunt machine",
    "blurb": "True-remote FDE closer packets, HF status board, Lever ATF/Warp Speed outcomes, daily Eve refreshes."
@@ -69,6 +73,22 @@
   }
  ],
  "verified": [
+  {
+   "group": "Nov 8–20 additions",
+   "urls": [
+    "https://jpanasuk-netizen.github.io/house-hub/",
+    "https://jpanasuk-netizen.github.io/house-hub/week/2026-11-06.html",
+    "https://jpanasuk-netizen.github.io/house-hub/week/2026-11-13.html",
+    "https://jpanasuk-netizen.github.io/house-hub/progress/",
+    "https://jpanasuk-netizen.github.io/house-hub/progress/sources/2026-11-08_11-20.html",
+    "https://jpanasuk-netizen.github.io/house-hub/ideas/from-x.html",
+    "https://coderlegion.com/34131",
+    "https://meshkore.com/agent/connect-your-life-connect-agent-desk",
+    "https://qstreamingllc.com/deck/",
+    "https://solar-sizer.com/how-much-solar-for-rv.html",
+    "https://generator-sizer.com/what-size-generator-for-200-amp-service.html"
+   ]
+  },
   {
    "group": "Offer / closer / hunt",
    "urls": [

@@ -1770,5 +1770,130 @@
     "links": [],
     "evidence": "Grok Bot routine, Oct 19",
     "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-11-04",
+    "title": "Termy X merged onto upstream rc.10",
+    "summary": "Reply Guy panel work was included. Termy X stayed on its existing path.",
+    "category": "agents",
+    "links": [
+      "https://github.com/jpanasuk-netizen/termy-x"
+    ],
+    "evidence": "Oct 29–Nov 5 week rollup and Nov 7 progress card",
+    "tool": "Hermes"
+  },
+  {
+    "date": "2026-11-08",
+    "title": "MeshKore CONNECT listing relisted",
+    "summary": "The Connect Your Life / CONNECT agent desk listing was put back on MeshKore.",
+    "category": "hunt",
+    "links": [
+      "https://meshkore.com/agent/connect-your-life-connect-agent-desk"
+    ],
+    "evidence": "Live MeshKore listing; Nov 8–20 source notes"
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Termy X piece published on CoderLegion",
+    "summary": "A public article about Termy X went up on CoderLegion.",
+    "category": "ship",
+    "links": [
+      "https://coderlegion.com/34131"
+    ],
+    "evidence": "Live CoderLegion article, Nov 9"
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Ten calculator question pages went live",
+    "summary": "Including the pending solar RV page. The pages returned HTTP 200 and were added to sitemaps.",
+    "category": "sites",
+    "links": [
+      "https://solar-sizer.com/how-much-solar-for-rv.html"
+    ],
+    "evidence": "Nov 8–20 source notes; live URLs on the week page",
+    "tool": "SEO Bot"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Termy XL installed",
+    "summary": "Installed from pull request #2. Termy X was left unchanged. The pull request was not merged.",
+    "category": "agents",
+    "links": [
+      "https://github.com/jpanasuk-netizen/termy-x"
+    ],
+    "evidence": "Nov 6–12 week rollup",
+    "tool": "Hermes"
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Q Streaming deck sent",
+    "summary": "The public deck at qstreamingllc.com/deck was used in a seed-fund outreach on Nov 12.",
+    "category": "hunt",
+    "links": [
+      "https://qstreamingllc.com/deck/"
+    ],
+    "evidence": "Nov 8–20 source notes",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Nine more calculator pages went live",
+    "summary": "IndexNow returned HTTP 200 for both the Nov 10 and Nov 17 batches. Search Console and Bing sitemap resubmits were not completed in that run.",
+    "category": "sites",
+    "links": [
+      "https://generator-sizer.com/what-size-generator-for-200-amp-service.html"
+    ],
+    "evidence": "Nov 13–20 week rollup; live URLs on the source page",
+    "tool": "SEO Bot"
+  },
+  {
+    "date": "2026-11-19",
+    "title": "SEO audit and pass 2 on nine calculator sites",
+    "summary": "A local SEO audit was run, fixes were pushed, and two URLs per site were checked live. No audit scores are claimed here.",
+    "category": "sites",
+    "links": [],
+    "evidence": "Nov 13–20 week rollup",
+    "tool": "SEO Bot"
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Four-sales CONNECT brief written from a Carneiro X article",
+    "summary": "The house direct-response copy skill was updated. The CONNECT brief is drafts-only and has not been published.",
+    "category": "ship",
+    "links": [
+      "https://x.com/i/status/2123414633935520052",
+      "https://jpanasuk-netizen.github.io/house-hub/ideas/from-x.html"
+    ],
+    "evidence": "CONNECT-4-SALES-BRIEF-2026-11-19 on the box; ideas-from-X page",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Pinterest window total, Oct 31–Nov 20: 192 published pins",
+    "summary": "12 pins published on each of 16 days. No published URLs on Oct 31, Nov 3, 6, 10, or 17.",
+    "category": "media",
+    "links": [
+      "https://www.pinterest.com/pin/1114640976560704774/"
+    ],
+    "evidence": "Daily pin-URL receipts in the Nov 8–20 source notes and week rollups",
+    "tool": "SEO Bot · Grok Bot"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "MadeForBrunettes preview store built",
+    "summary": "Shopify preview with a cyberpunk theme and draft products. It is not live yet, and nothing has been spent.",
+    "category": "ship",
+    "links": [],
+    "evidence": "Nov 13–20 week rollup; Leo session work on Nov 20",
+    "tool": "Grok Bot"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Wells Fargo Small Business Fellowship application submitted",
+    "summary": "Submitted via Watson. Watson confirmed receipt the same day.",
+    "category": "hunt",
+    "links": [],
+    "evidence": "Watson confirmation, Nov 20; Nov 13–20 week rollup",
+    "tool": "Grok Bot"
   }
 ]

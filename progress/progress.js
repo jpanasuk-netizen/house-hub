@@ -108,8 +108,8 @@
       .sort(function (a, b) {
         const ka = dateKey(a.ev.date);
         const kb = dateKey(b.ev.date);
-        if (ka < kb) return -1;
-        if (ka > kb) return 1;
+        if (ka < kb) return 1;
+        if (ka > kb) return -1;
         return a.i - b.i;
       })
       .map(function (x) { return x.ev; });
