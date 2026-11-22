@@ -49,3 +49,7 @@ h2{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute
 .meta{margin-top:12px;color:var(--muted);font-size:11px;word-break:break-all}
 footer{margin-top:2.5rem;color:var(--muted);font-size:12px}
 footer a{color:var(--accent)}
+[hidden]{display:none!important}
+.empty{color:var(--muted);font-size:13px;margin-top:14px}
+button.chip{background:transparent;cursor:pointer;font-family:inherit}
+button.chip.active{border-color:var(--accent);color:var(--accent)}
