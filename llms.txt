@@ -1,0 +1,26 @@
+# House Hub
+> Public hub for Jeremy Panasuk, one-person founder of Q Streaming LLC in New Auburn, Wisconsin. Weekly notes, progress, shipped tools, and paid offers.
+
+- Hub: [https://jpanasuk-netizen.github.io/house-hub/](https://jpanasuk-netizen.github.io/house-hub/)
+- Progress: [https://jpanasuk-netizen.github.io/house-hub/progress/](https://jpanasuk-netizen.github.io/house-hub/progress/)
+- Ideas from X: [https://jpanasuk-netizen.github.io/house-hub/ideas/from-x.html](https://jpanasuk-netizen.github.io/house-hub/ideas/from-x.html)
+- Recent week notes: [week of 2026-11-13](https://jpanasuk-netizen.github.io/house-hub/week/2026-11-13.html), [week of 2026-11-06](https://jpanasuk-netizen.github.io/house-hub/week/2026-11-06.html)
+
+## Free calculators
+- [GeneratorSizer](https://generator-sizer.com/)
+- [SolarSizer](https://solar-sizer.com/)
+- [Battery Bank Sizer](https://battery-bank-sizer.com/)
+- [Welding Calculator](https://welding-calculator.com/)
+- [HVAC Load Calc](https://hvac-load-calc.com/)
+- [TrailerTowCalc](https://trailertowcalc.com/)
+- [ChickenCoopCalc](https://chickencoopcalc.com/)
+- [Aquarium Stocking](https://aquarium-stocking.com/)
+
+## Paid / company
+- [CONNECT / Connect Your Life](https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html) — you keep the gate on send, spend, and public
+- [Shop Packs](https://shoppacks.net/) — Welding Shop Operating Pack, $49 once
+- [Q Streaming LLC](https://qstreamingllc.com/) and the [company deck](https://qstreamingllc.com/deck/)
+- [The Closer](https://jpanasuk-netizen.github.io/the-closer/)
+
+## Contact
+jpanasuk@gmail.com — New Auburn, Wisconsin.
